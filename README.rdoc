@@ -4,4 +4,4 @@ Our goal for this project is to create a space where students can discuss litera
 
 We plan to use Rails, Bootstrap, CLR.CC, and Google OAuth.
 
-(https://www.bibliotate.herokuapp.com)
+(https://bibliotate.herokuapp.com/)
