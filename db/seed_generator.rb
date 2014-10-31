@@ -689,7 +689,7 @@ notifications.push notification1
 #Generated data
 
 #users
-role = ["Teacher", "Student"]
+role = ["teacher", "student"]
 gender = ["men", "women"]
 number = [*1..55]
 
@@ -700,7 +700,7 @@ usertotal = 25
     :email => Faker::Internet.email,
     :password_digest => "pablo",
     :photo => "http://randomuser.me/g/portraits/#{gender.sample}/#{number.sample}.jpg",
-    :role => "Teacher",
+    :role => "teacher",
   })
 end
 1.upto(usertotal-5).each do |id|
@@ -709,7 +709,7 @@ end
     :email => Faker::Internet.email,
     :password_digest => "pablo",
     :photo => "http://randomuser.me/g/portraits/#{gender.sample}/#{number.sample}.jpg",
-    :role => "Student",
+    :role => "student",
   })
 end
 
