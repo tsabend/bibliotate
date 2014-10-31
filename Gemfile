@@ -1,8 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'shoulda-matchers'
-gem 'rspec-rails'
-gem 'factory_girl_rails'
+gem 'oauth2'
+gem 'dotenv'
+gem 'doorkeeper'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record
@@ -30,7 +30,7 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-
+  gem 'tactful_tokenizer'
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -39,4 +39,12 @@ gem 'spring',        group: :development
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
+gem 'faker', '~> 1.4.3'
+gem 'pry'
+group :test do
+  gem 'shoulda-matchers', require: false
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'tactful_tokenizer'
+  gem 'byebug'
+end

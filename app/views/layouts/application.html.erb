@@ -2,13 +2,26 @@
 <html>
 <head>
   <title>Bibliotate</title>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<%= render partial:'/layouts/nav' %>
+
+<section id="container" class="container-fluid">
+  <section class="border" id="outer">
+    <section class="border" id="inner">
+      <main>
 <%= yield %>
+      </main>
+    </section>
+  </section>
+</section>
 
 </body>
 </html>
