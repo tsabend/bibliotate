@@ -39,14 +39,3 @@ RSpec.describe User, :type => :model do
     end
   end
 end
-
-
-  # describe "associations" do
-  #   it 'belongs to a question' do
-  #      should belong_to(:question)
-  #   end
-
-  #   it 'has many votes' do
-  #     should have_many(:votes)
-  #   end
-  # end
