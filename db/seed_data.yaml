@@ -1,0 +1,25 @@
+# DON'T EDIT THIS, EDIT seed_generator.rb
+---
+:users:
+- :name: pablo
+  :email: pablo@rox.always
+  :password_digest: pablo
+  :role: teacher
+:enrollments:
+- :user: 1
+  :course: 1
+:stories:
+- :course: 1
+  :titles: the test story
+  :author: big hairy tom
+  :body: this is the story of a girl.
+:sentences:
+- :story: 1
+  :body: this is the story of a girl
+:comments:
+- :sentence: 1
+  :user: 1
+  :body: this sentence stinks of stinky shoes
+:courses:
+- :user: 1
+  :name: wizards
