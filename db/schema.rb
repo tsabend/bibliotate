@@ -39,7 +39,7 @@ ActiveRecord::Schema.define(version: 20141031153617) do
   end
 
   create_table "notifications", force: true do |t|
-    t.string   "status"
+    t.boolean  "status",        default: true
     t.integer  "noteable_id"
     t.string   "noteable_type"
     t.integer  "user_id"

@@ -112,7 +112,7 @@ main {
   margin-bottom: 50px;
 }
 
-main span {
+.sentence {
   color: #7A6A53;
   line-height: 2em;
   text-decoration: none;
@@ -120,8 +120,8 @@ main span {
   font-style: georgia, serif;
 }
 
-main span:hover {
-  text-decoration: underline;
+.sentence:hover {
+  background-color: yellow;
 }
 
 
@@ -130,9 +130,9 @@ main span:hover {
   /*display: none;*/
   border: 1px solid rgba(0,0,0,0.15);
   width: 50%;
-  min-height: 500px;
   background-color: white;
   left: 25%;
+  overflow-y: scroll;
 }
 
 .popup textarea {
@@ -163,15 +163,10 @@ main span:hover {
 }
 
 .submit_link:hover {
-  text-decoration: underline;
+  background-color: grey;
+
 }
 
-.dotted {
-/*  width: 95%;
-  display: block;
-  margin: auto;
-  border-bottom: 1px dashed rgba(0,0,0,0.1);*/
-  color: red;
-}
+
 
 

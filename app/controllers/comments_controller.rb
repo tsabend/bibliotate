@@ -1,12 +1,11 @@
 class CommentsController < ApplicationController
 
   def create
-    puts "FOOBAR"
     comment = Comment.new(comment_params)
     comment.user_id = 1
     comment.save
-    @sentence = Sentence.find(1)
-    redirect_to comment
+    data = {comment: comment, user: comment.user}
+    render :json => data
   end
 
   def show
