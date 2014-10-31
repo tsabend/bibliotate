@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "stories#index"
+  root "courses#index"
   resources :users
   resources :enrollments
   resources :courses do
