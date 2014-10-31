@@ -4,6 +4,7 @@ class CreateStories < ActiveRecord::Migration
       t.belongs_to :course
       t.string :title
       t.string :author
+      t.string :body
 
       t.timestamps
     end
