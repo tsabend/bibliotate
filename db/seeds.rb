@@ -18,14 +18,18 @@ users.each do |attrs|
   User.new(attrs).save(:validate => false)
 end
 
-users.each do |attrs|
-  User.new(attrs).save(:validate => false)
+enrollments.each do |attrs|
+  Enrollments.new(attrs).save(:validate => false)
 end
 
- p stories[0][:body]
-User.create(users)
+comments.each do |attrs|
+  Comments.new(attrs).save(:validate => false)
+end
 
+courses.each do |attrs|
+  Courses.new(attrs).save(:validate => false)
+end
 
-# Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])
+Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])
 
 
