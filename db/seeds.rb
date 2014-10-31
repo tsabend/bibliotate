@@ -13,6 +13,7 @@ enrollments = seed_data[:enrollments]
 stories = seed_data[:stories]
 comments = seed_data[:comments]
 courses = seed_data[:courses]
+notifications = seed_data[:notifications]
 
 users.each do |attrs|
   User.new(attrs).save(:validate => false)
@@ -28,6 +29,9 @@ end
 
 courses.each do |attrs|
   Course.new(attrs).save(:validate => false)
+end
+notifications.each do |attrs|
+  Notification.new(attrs).save(:validate => false)
 end
 
 Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])

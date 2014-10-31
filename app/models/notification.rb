@@ -1,7 +1,7 @@
 class Notification < ActiveRecord::Base
   belongs_to :user
   belongs_to :noteable, polymorphic: true
-  validates :notification_id, presence: true
+  validates :noteable_id, presence: true
   validates :user_id, presence: true
   validates :status, presence: true
   validate :notification_belongs_to_enrollments_and_comments

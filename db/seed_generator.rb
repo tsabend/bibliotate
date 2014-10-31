@@ -663,8 +663,8 @@ course5 = {
 
 notification1 = {
       :user_id => 2,
-      :notable_type => "Comment",
-      :notable_id => "Comment",
+      :noteable_type => "Comment",
+      :noteable_id => 3,
       :status =>  1,
 }
 
@@ -683,6 +683,7 @@ courses.push course2
 courses.push course3
 courses.push course4
 courses.push course5
+notifications.push notification1
 
 
 #Generated data
@@ -784,13 +785,21 @@ end
 end
 
 
+1.upto(20).each do |id|
+  notifications.push({
+    :user_id => [*1..5].sample,
+    :noteable_id => [*1..25].sample,
+    :noteable_type => ["comment","enrollment"].sample,
+  })
+end
 
 tables = {
     :users => users,
     :enrollments => enrollments,
     :stories => stories,
     :comments => comments,
-    :courses => courses
+    :courses => courses,
+    :notifications => notifications
 }
 
 yaml = YAML.dump tables
