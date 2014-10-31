@@ -79,10 +79,27 @@ comment1 = {
       :user => 1,
       :body => "this sentence stinks of stinky shoes",
 }
-
+#courses all hand made
 course1 = {
       :user => 1,
-      :name =>  "wizards",
+      :name =>  "Wizards",
+}
+
+course2 = {
+      :user => 2,
+      :name =>  "Bears",
+}
+course3 = {
+      :user => 3,
+      :name =>  "Bulls",
+}
+course4 = {
+      :user => 4,
+      :name =>  "Wolves",
+}
+course5 = {
+      :user => 5,
+      :name =>  "Blackhawks",
 }
 
 #push individual/outlier example
@@ -91,30 +108,52 @@ enrollments.push enrolltest1
 stories.push story1
 comments.push comment1
 courses.push course1
+courses.push course2
+courses.push course3
+courses.push course4
+courses.push course5
 
 
-# Generated data
+#Generated data
 
+#users
+role = ["Teacher", "Student"]
+usertotal = 25
+1.upto(usertotal-20).each do |id|
+  users.push({
+    :name => Faker::Name.name,
+    :email => Faker::Internet.email,
+    :password_digest => "pablo",
+    :role => "Teacher",
+  })
+end
+1.upto(usertotal-5).each do |id|
+  users.push({
+    :name => Faker::Name.name,
+    :email => Faker::Internet.email,
+    :password_digest => "pablo",
+    :role => "Student",
+  })
+end
 
-# role = ["Teacher", "Student"]
-# usertotal = 50
-# coursetotal = 10
-# 1.upto(usertotal).each do |id|
-#   users.push({
-#     :name => Faker::Name.name,
-#     :email => Faker::Internet.email,
-#     :password_digest => "pablo",
-#     :role => role.sample,
-#   })
-# end
+#enrollments
+1.upto(usertotal).each do |id|
+  enrollments.push({
+    :user => [*5..25].sample,
+    :course => [*1..5].sample,
+  })
+end
 
+#comments
 
-# 1.upto(usertotal).each do |id|
-#   enrollments.push({
-#     :user => usertotal.sample,
-#     :course => coursetotal.sample,
-#   })
-# end
+1.upto(150).each do |id|
+  comments.push({
+    :sentence => [*5..25].sample,
+    :user => [*1..5].sample,
+    :body => [*1..5].sample,
+  })
+end
+
 
 tables = {
     :users => users,
@@ -123,7 +162,6 @@ tables = {
     :comments => comments,
     :courses => courses
 }
-
 
 
 

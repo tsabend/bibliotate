@@ -18,10 +18,10 @@ courses = seed_data[:courses]
 #   User.new(attrs).save(:validate => false)
 # end
 
- # p stories[0][:course_id]
+ p stories[0][:body]
 # User.create(users)
 
 
-Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])
+# Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])
 
 
