@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+gem 'oauth2'
+gem 'dotenv'
+gem 'doorkeeper'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use postgresql as the database for Active Record
