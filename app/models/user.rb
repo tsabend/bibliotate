@@ -9,5 +9,4 @@ class User < ActiveRecord::Base
   def is_teacher?
     self.role == "teacher"
   end
-
 end
