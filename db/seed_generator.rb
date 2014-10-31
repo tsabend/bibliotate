@@ -694,7 +694,7 @@ gender = ["men", "women"]
 number = [*1..55]
 
 usertotal = 25
-1.upto(usertotal-20).each do |id|
+1.upto(5).each do |id|
   users.push({
     :name => Faker::Name.name,
     :email => Faker::Internet.email,
@@ -703,7 +703,7 @@ usertotal = 25
     :role => "teacher",
   })
 end
-1.upto(usertotal-5).each do |id|
+6.upto(25).each do |id|
   users.push({
     :name => Faker::Name.name,
     :email => Faker::Internet.email,
