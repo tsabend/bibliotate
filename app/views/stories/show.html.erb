@@ -1,9 +1,6 @@
-<h1>[INDIVIDUAL STORY]</h1>
-<h2><%= @story.title %></h2>
-<h3><%= @story.author %></h1>
-  <div class="story">
-<% @story.paragraphs.each do |paragraph| %>
-  <p class="paragraph"><%= render partial: 'paragraph', :locals => {:paragraph => paragraph} %></p>
-<% end %>
-  </div>
 
+      <h2 id="story_title"><%= @story.title %></h2>
+      <h3 id="story_title"><%= @story.author %></h1>
+          <% @story.paragraphs.each do |paragraph| %>
+            <p class="paragraph"><%= render partial: 'paragraph', :locals => {:paragraph => paragraph} %></p>
+          <% end %>
