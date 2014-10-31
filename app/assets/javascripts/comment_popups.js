@@ -1,18 +1,43 @@
-var comment_form = '<div class="popup"><div class="dotted"><form><textarea rows="6" name="comment[name]" placeholder="comment"></textarea></div><input id="submit" type="submit" value="Post Comment"><a class="submit_link" href="#">Submit</a></form></div>'
-
-
 $(document).ready(function() {
-
-  $("span").click(function(){
+  $(".sentence").click(function(event){
     var sentence = $(this)
-    sentence.prepend(comment_form)
-    // $(this).prepend(comment_form)
-    // $(this).slide(comment_form)
+    fetchPopup(sentence.data('id'), function(template){
+      sentence.after(template)
+      listenForComment()
+    })
     popupClose()
   })
 
 })
+function listenForComment() {
+  $(".comment_form").submit(function(e){
+    e.preventDefault()
+    console.log($(this).serialize())
+    submitComment($(this).serialize())
+    $(this).parent().remove()
+  })
+}
 
+
+function submitComment(args) {
+  $.ajax({
+    url: '/comments',
+    type: 'POST',
+    data: args
+  })
+  .done(function(template) {
+    console.log("success");
+    console.log(template);
+  })
+
+}
+
+function fetchPopup(id, callback) {
+  $.ajax({
+    url: '/comments/' + id,
+  })
+  .success(callback)
+}
 
 function popupClose() {
   $(document).on('keyup', function(key){
@@ -20,5 +45,4 @@ function popupClose() {
       $('.popup').remove()
     }
   })
-
 }
