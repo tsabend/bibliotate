@@ -40,7 +40,12 @@ class UsersController < ApplicationController
 
     session[:current_user] = @user.id
 
-    render :index
+    redirect_to "/type"
+  end
+
+  def type
+    @user = current_user
+    render :type
   end
 
   def destroy
@@ -50,6 +55,26 @@ class UsersController < ApplicationController
   end
 
   def index
-
   end
+
+  def update
+    current_user.update(role: params[:user][:role])
+    redirect_to '/'
+  end
+
+
 end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
