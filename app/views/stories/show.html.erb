@@ -1,6 +1,7 @@
 <h1>[INDIVIDUAL STORY]</h1>
 <h2><%= @story.title %></h2>
 <h3><%= @story.author %></h1>
-<% @story.sentences.each do |sentence| %>
-<%= sentence.body %>
+<% @story.paragraphs.each do |paragraph| %>
+  <%= render partial: 'paragraph', :locals => {:paragraph => paragraph} %>
 <% end %>
+

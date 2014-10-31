@@ -1,0 +1,3 @@
+<% paragraph.each |sentence| do %>
+  <p class="paragraph"><%= render partial: 'sentence', :locals => {:sentence => sentence} %></p>
+<% end %>
