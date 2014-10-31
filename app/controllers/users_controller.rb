@@ -40,7 +40,7 @@ class UsersController < ApplicationController
 
     session[:current_user] = @user.id
 
-    render :index
+    redirect_to "/type"
   end
 
   def destroy
@@ -49,8 +49,11 @@ class UsersController < ApplicationController
     render :index
   end
 
-    #this will be updated with real user info
-    @user = User.find(1)
+  def user_type
 
   end
+
+    #this will be updated with real user info
+    #@user = User.find(1)
+
 end
