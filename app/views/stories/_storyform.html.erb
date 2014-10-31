@@ -1,0 +1,12 @@
+<h2>Add a story</h2>
+<div class="storycreate">
+<%= form_for(@story,:url=>course_stories_path(@course.id)) do |f| %>
+  <%= f.text_field :author, placeholder: "Author", data: {field: "author"} %><br>
+  <%= f.text_field :title, placeholder: "Title", data: {field: "title"} %><br>
+<textarea name="story_body"rows="4" cols="50">
+Paste your story here!!
+</textarea>
+<br>
+  <%= f.submit %>
+<% end %>
+</div>
