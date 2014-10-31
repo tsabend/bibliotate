@@ -4,10 +4,10 @@ class User < ActiveRecord::Base
   has_many :stories, through: :courses
   has_many :comments
   has_many :notifications
-  def has_notification?
-    self.
-  end
+
+  #returns boolean true or false if user is a teacher
   def is_teacher?
     self.role == "teacher"
   end
+
 end
