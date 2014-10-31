@@ -1,1 +1,1 @@
-<span class="sentence" data-id="<%=sentence.id%>"><%= sentence.body%></span>
+<span class="sentence <% if sentence.commented? %>dotted<% end %>" data-id="<%=sentence.id%>"><%= sentence.body%></span>

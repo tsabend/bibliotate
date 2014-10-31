@@ -1,11 +1,9 @@
-<div class="dotted">
-  <form>
-  <textarea rows="6" name="comment[name]" placeholder="comment">
-</textarea>
-</div>
-<input id="submit" type="submit" value="Post Comment">
-<a data-id="<%= id %>" class="submit_link" href="#">
-  Submit</a>
-</form>
+  <form class="comment_form">
+  <textarea rows="6" name="body" placeholder="comment">
+  </textarea>
+  <input type="hidden" name="sentence_id" value="<%=id%>">
+
+  <input type="submit" value="Post Comment">
+  </form>
 
 
