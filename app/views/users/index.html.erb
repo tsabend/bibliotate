@@ -1,1 +1,8 @@
-<a href="/auth">Sign up</a><br>
+<% if !user_logged_in? %>
+  <a href="/auth">Sign up</a><br>
+<% elsif current_user.is_teacher? %>
+  <%= render partial: '/users/teachers/dashboard' %>
+<% else %>
+  <h1>Student View</h1>
+<% end %>
+

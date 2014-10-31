@@ -50,7 +50,9 @@ class UsersController < ApplicationController
   end
 
   def user_type
+  end
 
+  def index
   end
 
     #this will be updated with real user info
