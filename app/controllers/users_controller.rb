@@ -56,10 +56,10 @@ class UsersController < ApplicationController
 
   def index
   end
-  
+
   def update
-    @user = User.find(session[:current_user].id)
-    @user.update(role: params[:role])
+    current_user.update(role: params[:user][:role])
+    redirect_to '/'
   end
 
 
