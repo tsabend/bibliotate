@@ -1,8 +1,8 @@
 User.create(name: "admin", email: "admin@admin.com", password_digest: "admin", role: "teacher")
 Course.create(user_id: 1, name: "test course")
 Enrollment.create(user_id: 1, course_id: 1)
-Story.create(course_id: 1, title: "test story", author: "test author", body: "test body")
-Paragraph.create(story_id: 1, body: "test sentence")
+Story.create(course_id: 1, title: "test story", author: "test author")
+Paragraph.create(story_id: 1)
 Sentence.create(paragraph_id: 1, body: "test sentence")
 Comment.create(sentence_id: 1, user_id: 1, body: "test comment")
 
@@ -26,3 +26,6 @@ Comment.create(sentence_id: 1, user_id: 1, body: "test comment")
 
 # to find all comments associated with a user:
   # User.find(1).comments
+
+# to find all sentences in a story
+  #

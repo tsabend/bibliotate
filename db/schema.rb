@@ -40,7 +40,6 @@ ActiveRecord::Schema.define(version: 20141031010838) do
 
   create_table "paragraphs", force: true do |t|
     t.integer  "story_id"
-    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -56,7 +55,6 @@ ActiveRecord::Schema.define(version: 20141031010838) do
     t.integer  "course_id"
     t.string   "title"
     t.string   "author"
-    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
