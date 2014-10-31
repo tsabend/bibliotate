@@ -13,3 +13,168 @@
  *= require_tree .
  *= require_self
  */
+body {
+  background-image: url('lightpaperfibers.png');
+    background-repeat: repeat;
+}
+
+header {
+  height: 45px;
+}
+
+#top {
+  margin-top: 0px;
+  /*width: 100%;*/
+
+}
+
+#top_outer {
+  background: #7A6A53;
+  border: 1px solid #7A6A53;
+
+}
+
+#top_inner {
+  border: 1px solid #948C75;
+}
+
+#logo {
+  height: 40px;
+  display: block;
+  float: left;
+}
+
+#logo a {
+  margin: 10px 0 0 10px;
+  text-decoration: none;
+  font-size: 1.6em;
+  color: white;
+  font-family: 'Oleo Script', cursive;
+}
+
+#logo i {
+  margin: 10px 0 0;
+}
+
+#login_box {
+  height: 40px;
+  display: block;
+  float: right;
+}
+
+#login_box a {
+  text-decoration: none;
+  color: white;
+}
+
+#login_box a:hover {
+  text-decoration: underline;
+  color: #7A6A53;
+}
+
+#login_box span {
+  font-size: .8em;
+  margin: 0 5px 20px 0;
+}
+
+#login_box i {
+  margin: 17px 10px 0 2px;
+  font-size: 1.1em;
+}
+
+.border {
+  border: 1px solid #ECF0F1;
+  margin: 3px;
+}
+
+.commented {
+  border-bottom: 1px red dashed;
+}
+
+.outer {
+  margin-top: 12px;
+}
+
+#story_title {
+  font-family: 'Droid Serif', serif;
+  color: #7A6A53;
+  font-size: 3em;
+  font-style: georgia, serif;
+  text-align: center;
+  margin: 50px 0 45px;
+}
+
+main {
+  width: 70%;
+  display: block;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 50px;
+}
+
+main span {
+  color: #7A6A53;
+  line-height: 2em;
+  text-decoration: none;
+  font-size: 1.25em;
+  font-style: georgia, serif;
+}
+
+main span:hover {
+  text-decoration: underline;
+}
+
+
+.popup {
+  position: absolute;
+  /*display: none;*/
+  border: 1px solid rgba(0,0,0,0.15);
+  width: 50%;
+  min-height: 150px;
+  background-color: white;
+  left: 25%;
+}
+
+.popup textarea {
+  width: 95%;
+  border: none;
+  border-style: none;
+  resize: none;
+  outline: none;
+  overflow: auto;
+  /*border: 1px solid rgba(0,0,0,0.1);*/
+  display: block;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.popup input {
+  display: none;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #7A6A53;
+}
+
+.submit_link {
+  color: #7A6A53;
+  font-size: 1em;
+  text-decoration: none;
+  font-style: georgia, serif;
+  display: block;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.submit_link:hover {
+  text-decoration: underline;
+}
+
+.dotted {
+  width: 95%;
+  display: block;
+  margin: auto;
+  border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.
