@@ -14,12 +14,16 @@ stories = seed_data[:stories]
 comments = seed_data[:comments]
 courses = seed_data[:courses]
 
-# users.each do |attrs|
-#   User.new(attrs).save(:validate => false)
-# end
+users.each do |attrs|
+  User.new(attrs).save(:validate => false)
+end
+
+users.each do |attrs|
+  User.new(attrs).save(:validate => false)
+end
 
  p stories[0][:body]
-# User.create(users)
+User.create(users)
 
 
 # Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])
