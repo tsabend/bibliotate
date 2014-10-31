@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'unicorn'
 gem 'oauth2'
 gem 'dotenv'
 gem 'doorkeeper'
