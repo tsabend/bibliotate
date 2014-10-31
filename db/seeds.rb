@@ -23,13 +23,16 @@ enrollments.each do |attrs|
 end
 
 comments.each do |attrs|
-  Comments.new(attrs).save(:validate => false)
+  Comment.new(attrs).save(:validate => false)
 end
 
 courses.each do |attrs|
-  Courses.new(attrs).save(:validate => false)
+  Course.new(attrs).save(:validate => false)
 end
 
 Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])
+
+
+
 
 
