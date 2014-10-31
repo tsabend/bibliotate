@@ -69,7 +69,7 @@ enrolltest1 = {
 
 story1 = {
     :course_id => 1,
-    :titles => "The Tell-Tale Heart",
+    :title => "The Tell-Tale Heart",
     :author => "Edgar Allan Poe",
     :body => thetelltaleheart
 }
@@ -129,7 +129,7 @@ tables = {
 
 yaml = YAML.dump tables
 yaml = "# DON'T EDIT THIS, EDIT seed_generator.rb\n" + yaml
-puts yaml
+# puts yaml
 path = File.join(File.dirname(__FILE__), 'seed_data.yaml')
 File.write path, yaml
 

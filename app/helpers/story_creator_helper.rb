@@ -1,6 +1,6 @@
 require_relative '../config/environment'
 
-module StoryCreator
+module StoryCreatorHelper
   def create(title, author, body, course_id)
   # Create story in database
     story = Story.create(title: title, author: author, course_id: course_id)
