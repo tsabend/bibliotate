@@ -175,6 +175,7 @@ main {
   border-radius: 5px;
   box-shadow: 10px 10px 5px #888888;
   padding: 1%;
+  overflow-y: scroll;
 }
 
 .card ul {
@@ -183,4 +184,9 @@ main {
 
 .card h3 {
   text-align: center;
+}
+
+.student_image {
+  max-width: 50px;
+  max-height: 50px;
 }

@@ -1,5 +1,5 @@
 <ul>
   <% students.each do |student|  %>
-   <li><%= student.name %>. Latest comment: <%= student.comments.last.body %> on <%= student.comments.last.story %></li>
+   <li><img class="student_image" src="<%= student.photo %>"></img> <%= student.name %>. Latest comment: <%= student.comments.last.body %> on <%= student.comments.last.story %></li>
   <% end %>
 </ul>
