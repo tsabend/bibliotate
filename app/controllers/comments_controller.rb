@@ -2,7 +2,7 @@ class CommentsController < ApplicationController
 
   def create
     comment = Comment.new(comment_params)
-    comment.user_id = 1
+    comment.user = current_user
     comment.save
     data = {comment: comment, user: comment.user}
     render :json => data
