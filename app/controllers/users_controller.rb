@@ -11,9 +11,6 @@ class UsersController < ApplicationController
             })
   end
 
-  def index
-  end
-
   def auth
     redirect_to client.auth_code.authorize_url(:redirect_uri => 'http://localhost:3000/callback',:scope => 'https://www.googleapis.com/auth/userinfo.email',:access_type => "offline")
     puts "hit auth: -------------------------------------"
@@ -52,4 +49,8 @@ class UsersController < ApplicationController
     render :index
   end
 
+    #this will be updated with real user info
+    @user = User.find(1)
+
+  end
 end
