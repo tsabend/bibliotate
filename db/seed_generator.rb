@@ -585,6 +585,7 @@ enrollments = []
 stories = []
 comments = []
 courses = []
+notifications = []
 
 # hand written example records
 usertest1 = {
@@ -659,6 +660,14 @@ course5 = {
       :user_id => 5,
       :name =>  "Blackhawks",
 }
+
+notification1 = {
+      :user_id => 2,
+      :notable_type => "Comment",
+      :notable_id => "Comment",
+      :status =>  1,
+}
+
 
 #push individual/outlier example
 users.push usertest1
@@ -773,6 +782,8 @@ end
     :body => sentence,
   })
 end
+
+
 
 tables = {
     :users => users,
