@@ -4,8 +4,10 @@ Rails.application.routes.draw do
   resources :enrollments
   resources :courses do
     resources :stories do
-      resources :sentences do
-        resources :comments
+      resources :paragraphs do
+        resources :sentences do
+          resources :comments
+        end
       end
     end
   end
