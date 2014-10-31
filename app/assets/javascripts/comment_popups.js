@@ -1,17 +1,43 @@
-var comment_form = '<div class="popup"><div class="dotted"><form><textarea rows="6" name="comment[name]" placeholder="comment"></textarea></div><input id="submit" type="submit" value="Post Comment"><a class="submit_link" href="#">Submit</a></form></div>'
-
-
-$(document).ready(function() {
-
-  $("span").click(function(){
+$(document).on('page:change', function() {
+  $(".sentence").click(function(event){
+    $('.popup').remove()
     var sentence = $(this)
-    sentence.prepend(comment_form)
-    // $(this).prepend(comment_form)
-    // $(this).slide(comment_form)
-    popupClose()
+    fetchPopup(sentence.data('id'), function(template){
+      sentence.after(template)
+      listenForComment()
+      popupClose()
+    })
   })
-
 })
+
+// Get comment functions
+function fetchPopup(id, callback) {
+  $.ajax({
+    url: '/comments/' + id,
+  })
+  .success(callback)
+}
+
+// Post route functions
+function listenForComment() {
+  $(".comment_form").submit(function(e){
+    e.preventDefault()
+    submitComment($(this).serialize(), function(data){
+      $('.popup').prev().addClass('commented')
+      $('[data-comment="display"]').append('<li>' + data.user.name + ' says: ' + data.comment.body + '</li>')
+      $('[data-comment="body"]').val('')
+    })
+  })
+}
+
+function submitComment(args, callback) {
+  $.ajax({
+    url: '/comments',
+    type: 'POST',
+    data: args
+  })
+  .done(callback)
+}
 
 
 function popupClose() {
@@ -20,5 +46,4 @@ function popupClose() {
       $('.popup').remove()
     }
   })
-
 }

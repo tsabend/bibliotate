@@ -112,7 +112,7 @@ main {
   margin-bottom: 50px;
 }
 
-main span {
+.sentence {
   color: #7A6A53;
   line-height: 2em;
   text-decoration: none;
@@ -120,8 +120,8 @@ main span {
   font-style: georgia, serif;
 }
 
-main span:hover {
-  text-decoration: underline;
+.sentence:hover {
+  background-color: yellow;
 }
 
 
@@ -130,9 +130,9 @@ main span:hover {
   /*display: none;*/
   border: 1px solid rgba(0,0,0,0.15);
   width: 50%;
-  min-height: 150px;
   background-color: white;
   left: 25%;
+  overflow-y: scroll;
 }
 
 .popup textarea {
@@ -142,18 +142,14 @@ main span:hover {
   resize: none;
   outline: none;
   overflow: auto;
-  /*border: 1px solid rgba(0,0,0,0.1);*/
+  border: 1px solid rgba(0,0,0,0.1);
   display: block;
   margin: auto;
   margin-top: 15px;
 }
 
-.popup input {
-  display: none;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  background-color: #7A6A53;
+.comment_form input {
+  margin-left: 40%;
 }
 
 .submit_link {
@@ -167,14 +163,10 @@ main span:hover {
 }
 
 .submit_link:hover {
-  text-decoration: underline;
+  background-color: grey;
+
 }
 
-.dotted {
-  width: 95%;
-  display: block;
-  margin: auto;
-  border-bottom: 1px dashed rgba(0,0,0,0.1);
-}
 
-.
+
+
