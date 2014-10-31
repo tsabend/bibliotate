@@ -16,6 +16,7 @@ class Story < ActiveRecord::Base
   end
 
   private
+  PARSER = TactfulTokenizer::Model.new
   def self.paragraph_maker(paragraphs, story_id)
     paragraphs.each do |paragraph|
       paragraph_object = Paragraph.create(story_id: story_id)
@@ -25,8 +26,7 @@ class Story < ActiveRecord::Base
   end
 
   def self.parse_to_sentences(paragraph)
-    parser = TactfulTokenizer::Model.new
-    parser.tokenize_text(paragraph)
+    PARSER.tokenize_text(paragraph)
   end
 
   def self.sentence_maker(sentences, paragraph_id)
