@@ -46,4 +46,7 @@ function popupClose() {
       $('.popup').remove()
     }
   })
+  $('[data-comment="remove"]').on('click', function(){
+    $('.popup').remove()
+  })
 }
