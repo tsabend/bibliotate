@@ -1,4 +1,4 @@
 class Story < ActiveRecord::Base
-  has_many :sentences
+  has_many :paragraphs
   belongs_to :course
 end
