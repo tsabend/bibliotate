@@ -1,0 +1,7 @@
+<div class="popup">
+<% @comments.each do |comment| %>
+  <p><%= comment.body %></p>
+  <p><%= comment.id %></p>
+<% end %>
+<%= render partial: 'comment_form',  locals: {id: @sentence_id} %>
+</div>

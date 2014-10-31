@@ -1,18 +1,24 @@
-var comment_form = '<div class="popup"><div class="dotted"><form><textarea rows="6" name="comment[name]" placeholder="comment"></textarea></div><input id="submit" type="submit" value="Post Comment"><a class="submit_link" href="#">Submit</a></form></div>'
-
-
 $(document).ready(function() {
-
-  $("span").click(function(){
+  $("span").click(function(event){
     var sentence = $(this)
-    sentence.prepend(comment_form)
-    // $(this).prepend(comment_form)
-    // $(this).slide(comment_form)
+    fetchPopup(sentence.data('id'), function(template){
+      console.log(template)
+      sentence.prepend(template)
+    })
+
     popupClose()
   })
 
 })
 
+
+function fetchPopup(id, callback) {
+  $.ajax({
+    url: '/comments/' + id,
+  })
+  .success(callback)
+
+}
 
 function popupClose() {
   $(document).on('keyup', function(key){
@@ -20,5 +26,4 @@ function popupClose() {
       $('.popup').remove()
     }
   })
-
 }
