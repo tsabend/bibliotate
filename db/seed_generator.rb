@@ -62,8 +62,8 @@ usertest1 = {
 }
 
 enrolltest1 = {
-    :user => 1,
-    :course => 1,
+    :user_id => 1,
+    :course_id => 1,
 }
 
 story1 = {
@@ -74,30 +74,30 @@ story1 = {
 }
 
 comment0 = {
-      :sentence =>  1,
-      :user => 1,
+      :sentence_id =>  1,
+      :user_id => 1,
       :body => "this sentence stinks of stinky shoes",
 }
 #courses all hand made
 course1 = {
-      :user => 1,
+      :user_id => 1,
       :name =>  "Wizards",
 }
 
 course2 = {
-      :user => 2,
+      :user_id => 2,
       :name =>  "Bears",
 }
 course3 = {
-      :user => 3,
+      :user_id => 3,
       :name =>  "Bulls",
 }
 course4 = {
-      :user => 4,
+      :user_id => 4,
       :name =>  "Wolves",
 }
 course5 = {
-      :user => 5,
+      :user_id => 5,
       :name =>  "Blackhawks",
 }
 
@@ -138,8 +138,8 @@ end
 #enrollments
 1.upto(usertotal).each do |id|
   enrollments.push({
-    :user => [*5..25].sample,
-    :course => [*1..5].sample,
+    :user_id => [*5..25].sample,
+    :course_id => [*1..5].sample,
   })
 end
 
@@ -200,8 +200,8 @@ end
 #comments for the tell tale heart
 @comment_sentences.each do |sentence|
     comments.push({
-    :sentence => [*10..150].sample,
-    :user => [*6..25].sample,
+    :sentence_id => [*10..150].sample,
+    :user_id => [*6..25].sample,
     :body => sentence,
   })
 end
