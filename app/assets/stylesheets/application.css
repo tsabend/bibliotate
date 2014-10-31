@@ -169,9 +169,16 @@ main {
 
 
 .card {
-  width: 32%;
+  width: 30%;
   height: 400px;
-  background-color: yellow;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px #888888;
+  padding: 1%;
+}
+
+.card ul {
+  list-style: none;
 }
 
 .card h3 {
