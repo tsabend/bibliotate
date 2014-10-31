@@ -13,13 +13,16 @@ Comment.create(sentence_id: 1, user_id: 1, body: "test comment")
   # User.find(1).enrollments
 
 # to find stories associated with a course:
-  # Course.find(1).stories.find(1)
+  # Course.find(1).stories.all
+
+# to find a SPECIFIC story associated with a course:
+  # course.find(1).stories.find(1) OR User.find(1).comments.find_by(title: "test title")
 
 # to find all sentences associated with a story:
-  # Course.find(1).stories.find(1).sentences.all
+  # Course.find(1).stories.find(1).paragraphs.find(1).sentences.all
 
 # to find all comments associated with a sentence:
-  # Course.find(1).stories.find(1).sentences.find(1).comments.all
+  # Course.find(1).stories.find(1).paragraphs.find(1).sentences.find(1).comments.all
 
 # to find all comments associated with a user:
   # User.find(1).comments
