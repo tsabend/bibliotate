@@ -2,6 +2,194 @@
 require_relative '../config/environment'
 
 #individual tables
+HarrisonBergeron = <<-eos
+THE YEAR WAS 2081, and everybody was finally equal. They weren't only equal before God and the law. They were equal every which way. Nobody was smarter than anybody else. Nobody was better looking than anybody else. Nobody was stronger or quicker than anybody else. All this equality was due to the 211th, 212th, and 213th Amendments to the Constitution, and to the unceasing vigilance of agents of the United States Handicapper General.
+
+Some things about living still weren't quite right, though. April for instance, still drove people crazy by not being springtime. And it was in that clammy month that the H-G men took George and Hazel Bergeron's fourteen-year-old son, Harrison, away.
+
+It was tragic, all right, but George and Hazel couldn't think about it very hard. Hazel had a perfectly average intelligence, which meant she couldn't think about anything except in short bursts. And George, while his intelligence was way above normal, had a little mental handicap radio in his ear. He was required by law to wear it at all times. It was tuned to a government transmitter. Every twenty seconds or so, the transmitter would send out some sharp noise to keep people like George from taking unfair advantage of their brains.
+
+George and Hazel were watching television. There were tears on Hazel's cheeks, but she'd forgotten for the moment what they were about.
+
+On the television screen were ballerinas.
+
+A buzzer sounded in George's head. His thoughts fled in panic, like bandits from a burglar alarm.
+
+"That was a real pretty dance, that dance they just did," said Hazel.
+
+"Huh" said George.
+
+"That dance-it was nice," said Hazel.
+
+"Yup," said George. He tried to think a little about the ballerinas. They weren't really very good-no better than anybody else would have been, anyway. They were burdened with sashweights and bags of birdshot, and their faces were masked, so that no one, seeing a free and graceful gesture or a pretty face, would feel like something the cat drug in. George was toying with the vague notion that maybe dancers shouldn't be handicapped. But he didn't get very far with it before another noise in his ear radio scattered his thoughts.
+
+George winced. So did two out of the eight ballerinas.
+
+Hazel saw him wince. Having no mental handicap herself, she had to ask George what the latest sound had been.
+
+"Sounded like somebody hitting a milk bottle with a ball peen hammer," said George.
+
+"I'd think it would be real interesting, hearing all the different sounds," said Hazel a little envious. "All the things they think up."
+
+"Um," said George.
+
+"Only, if I was Handicapper General, you know what I would do?" said Hazel. Hazel, as a matter of fact, bore a strong resemblance to the Handicapper General, a woman named Diana Moon Glampers. "If I was Diana Moon Glampers," said Hazel, "I'd have chimes on Sunday-just chimes. Kind of in honor of religion."
+
+"I could think, if it was just chimes," said George.
+
+"Well-maybe make 'em real loud," said Hazel. "I think I'd make a good Handicapper General."
+
+"Good as anybody else," said George.
+
+"Who knows better than I do what normal is?" said Hazel.
+
+"Right," said George. He began to think glimmeringly about his abnormal son who was now in jail, about Harrison, but a twenty-one-gun salute in his head stopped that.
+
+"Boy!" said Hazel, "that was a doozy, wasn't it?"
+
+It was such a doozy that George was white and trembling, and tears stood on the rims of his red eyes. Two of of the eight ballerinas had collapsed to the studio floor, were holding their temples.
+
+"All of a sudden you look so tired," said Hazel. "Why don't you stretch out on the sofa, so's you can rest your handicap bag on the pillows, honeybunch." She was referring to the forty-seven pounds of birdshot in a canvas bag, which was padlocked around George's neck. "Go on and rest the bag for a little while," she said. "I don't care if you're not equal to me for a while."
+
+George weighed the bag with his hands. "I don't mind it," he said. "I don't notice it any more. It's just a part of me."
+
+"You been so tired lately-kind of wore out," said Hazel. "If there was just some way we could make a little hole in the bottom of the bag, and just take out a few of them lead balls. Just a few."
+
+"Two years in prison and two thousand dollars fine for every ball I took out," said George. "I don't call that a bargain."
+
+"If you could just take a few out when you came home from work," said Hazel. "I mean-you don't compete with anybody around here. You just sit around."
+
+"If I tried to get away with it," said George, "then other people'd get away with it-and pretty soon we'd be right back to the dark ages again, with everybody competing against everybody else. You wouldn't like that, would you?"
+
+"I'd hate it," said Hazel.
+
+"There you are," said George. The minute people start cheating on laws, what do you think happens to society?"
+
+If Hazel hadn't been able to come up with an answer to this question, George couldn't have supplied one. A siren was going off in his head.
+
+"Reckon it'd fall all apart," said Hazel.
+
+"What would?" said George blankly.
+
+"Society," said Hazel uncertainly. "Wasn't that what you just said?
+
+"Who knows?" said George.
+
+The television program was suddenly interrupted for a news bulletin. It wasn't clear at first as to what the bulletin was about, since the announcer, like all announcers, had a serious speech impediment. For about half a minute, and in a state of high excitement, the announcer tried to say, "Ladies and Gentlemen."
+
+He finally gave up, handed the bulletin to a ballerina to read.
+
+"That's all right-" Hazel said of the announcer, "he tried. That's the big thing. He tried to do the best he could with what God gave him. He should get a nice raise for trying so hard."
+
+"Ladies and Gentlemen," said the ballerina, reading the bulletin. She must have been extraordinarily beautiful, because the mask she wore was hideous. And it was easy to see that she was the strongest and most graceful of all the dancers, for her handicap bags were as big as those worn by two-hundred pound men.
+
+And she had to apologize at once for her voice, which was a very unfair voice for a woman to use. Her voice was a warm, luminous, timeless melody. "Excuse me-" she said, and she began again, making her voice absolutely uncompetitive.
+
+"Harrison Bergeron, age fourteen," she said in a grackle squawk, "has just escaped from jail, where he was held on suspicion of plotting to overthrow the government. He is a genius and an athlete, is under-handicapped, and should be regarded as extremely dangerous."
+
+A police photograph of Harrison Bergeron was flashed on the screen-upside down, then sideways, upside down again, then right side up. The picture showed the full length of Harrison against a background calibrated in feet and inches. He was exactly seven feet tall.
+
+The rest of Harrison's appearance was Halloween and hardware. Nobody had ever born heavier handicaps. He had outgrown hindrances faster than the H-G men could think them up. Instead of a little ear radio for a mental handicap, he wore a tremendous pair of earphones, and spectacles with thick wavy lenses. The spectacles were intended to make him not only half blind, but to give him whanging headaches besides.
+
+Scrap metal was hung all over him. Ordinarily, there was a certain symmetry, a military neatness to the handicaps issued to strong people, but Harrison looked like a walking junkyard. In the race of life, Harrison carried three hundred pounds.
+
+And to offset his good looks, the H-G men required that he wear at all times a red rubber ball for a nose, keep his eyebrows shaved off, and cover his even white teeth with black caps at snaggle-tooth random.
+
+"If you see this boy," said the ballerina, "do not - I repeat, do not - try to reason with him."
+
+There was the shriek of a door being torn from its hinges.
+
+Screams and barking cries of consternation came from the television set. The photograph of Harrison Bergeron on the screen jumped again and again, as though dancing to the tune of an earthquake.
+
+George Bergeron correctly identified the earthquake, and well he might have - for many was the time his own home had danced to the same crashing tune. "My God-" said George, "that must be Harrison!"
+
+The realization was blasted from his mind instantly by the sound of an automobile collision in his head.
+
+When George could open his eyes again, the photograph of Harrison was gone. A living, breathing Harrison filled the screen.
+
+Clanking, clownish, and huge, Harrison stood - in the center of the studio. The knob of the uprooted studio door was still in his hand. Ballerinas, technicians, musicians, and announcers cowered on their knees before him, expecting to die.
+
+"I am the Emperor!" cried Harrison. "Do you hear? I am the Emperor! Everybody must do what I say at once!" He stamped his foot and the studio shook.
+
+"Even as I stand here" he bellowed, "crippled, hobbled, sickened - I am a greater ruler than any man who ever lived! Now watch me become what I can become!"
+
+Harrison tore the straps of his handicap harness like wet tissue paper, tore straps guaranteed to support five thousand pounds.
+
+Harrison's scrap-iron handicaps crashed to the floor.
+
+Harrison thrust his thumbs under the bar of the padlock that secured his head harness. The bar snapped like celery. Harrison smashed his headphones and spectacles against the wall.
+
+He flung away his rubber-ball nose, revealed a man that would have awed Thor, the god of thunder.
+
+"I shall now select my Empress!" he said, looking down on the cowering people. "Let the first woman who dares rise to her feet claim her mate and her throne!"
+
+A moment passed, and then a ballerina arose, swaying like a willow.
+
+Harrison plucked the mental handicap from her ear, snapped off her physical handicaps with marvelous delicacy. Last of all he removed her mask.
+
+She was blindingly beautiful.
+
+"Now-" said Harrison, taking her hand, "shall we show the people the meaning of the word dance? Music!" he commanded.
+
+The musicians scrambled back into their chairs, and Harrison stripped them of their handicaps, too. "Play your best," he told them, "and I'll make you barons and dukes and earls."
+
+The music began. It was normal at first-cheap, silly, false. But Harrison snatched two musicians from their chairs, waved them like batons as he sang the music as he wanted it played. He slammed them back into their chairs.
+
+The music began again and was much improved.
+
+Harrison and his Empress merely listened to the music for a while-listened gravely, as though synchronizing their heartbeats with it.
+
+They shifted their weights to their toes.
+
+Harrison placed his big hands on the girls tiny waist, letting her sense the weightlessness that would soon be hers.
+
+And then, in an explosion of joy and grace, into the air they sprang!
+
+Not only were the laws of the land abandoned, but the law of gravity and the laws of motion as well.
+
+They reeled, whirled, swiveled, flounced, capered, gamboled, and spun.
+
+They leaped like deer on the moon.
+
+The studio ceiling was thirty feet high, but each leap brought the dancers nearer to it.
+
+It became their obvious intention to kiss the ceiling. They kissed it.
+
+And then, neutraling gravity with love and pure will, they remained suspended in air inches below the ceiling, and they kissed each other for a long, long time.
+
+It was then that Diana Moon Glampers, the Handicapper General, came into the studio with a double-barreled ten-gauge shotgun. She fired twice, and the Emperor and the Empress were dead before they hit the floor.
+
+Diana Moon Glampers loaded the gun again. She aimed it at the musicians and told them they had ten seconds to get their handicaps back on.
+
+It was then that the Bergerons' television tube burned out.
+
+Hazel turned to comment about the blackout to George. But George had gone out into the kitchen for a can of beer.
+
+George came back in with the beer, paused while a handicap signal shook him up. And then he sat down again. "You been crying" he said to Hazel.
+
+"Yup," she said.
+
+"What about?" he said.
+
+"I forget," she said. "Something real sad on television."
+
+"What was it?" he said.
+
+"It's all kind of mixed up in my mind," said Hazel.
+
+"Forget sad things," said George.
+
+"I always do," said Hazel.
+
+"That's my girl," said George. He winced. There was the sound of a rivetting gun in his head.
+
+"Gee - I could tell that one was a doozy," said Hazel.
+
+"You can say that again," said George.
+
+"Gee-" said Hazel, "I could tell that one was a doozy."
+
+eos
 thetelltaleheart = <<-eos
 TRUE! --nervous --very, very dreadfully nervous I had been and am; but why will you say that I am mad? The disease had sharpened my senses --not destroyed --not dulled them. Above all was the sense of hearing acute. I heard all things in the heaven and in the earth. I heard many things in hell. How, then, am I mad? Hearken! and observe how healthily --how calmly I can tell you the whole story.
 
@@ -42,6 +230,355 @@ No doubt I now grew very pale; --but I talked more fluently, and with a heighten
 -THE END-
 eos
 
+aug2026 = <<-eos
+ In the living room the voice-clock sang, Tick-tock, seven o'clock, time to get up, time to
+get up, seven o'clock! as if it were afraid that nobody would. The morning house lay empty. The
+clock ticked on, repeating and repeating its sounds into the emptiness. Seven-nine, breakfast time,
+seven-nine!
+In the kitchen the breakfast stove gave a hissing sigh and ejected from its warm interior
+eight pieces of perfectly browned toast, eight eggs sunnyside up, sixteen slices of bacon, two
+coffees, and two cool glasses of milk.
+"Today is August 4, 2026," said a second voice from the kitchen ceiling, "in the city of
+Allendale, California." It repeated the date three times for memory's sake. "Today is Mr.
+Featherstone's birthday. Today is the anniversary of Tilita's marriage. Insurance is payable, as are
+the water, gas, and light bills."
+Somewhere in the walls, relays clicked, memory tapes glided under electric eyes.
+Eight-one, tick-tock, eight-one o'clock, off to school, off to work, run, run, eight-one! But
+no doors slammed, no carpets took the soft tread of rubber heels. It was raining outside. The
+weather box on the front door sang quietly: "Rain, rain, go away; rubbers, raincoats for today…"
+And the rain tapped on the empty house, echoing.
+Outside, the garage chimed and lifted its door to reveal the waiting car. After a long wait
+the door swung down again.
+At eight-thirty the eggs were shriveled and the toast was like stone. An aluminum wedge
+scraped them into the sink, where hot water whirled them down a metal throat which digested and
+flushed them away to the distant sea. The dirty dishes were dropped into a hot washer and
+emerged twinkling dry.
+Nine-fifteen, sang the clock, time to clean.
+Out of warrens in the wall, tiny robot mice darted. The rooms were acrawl with the small
+cleaning animals, all rubber and metal. They thudded against chairs, whirling their mustached
+runners, kneading the rug nap, sucking gently at hidden dust. Then, like mysterious invaders, they
+popped into their burrows. Their pink electric eyes faded. The house was clean.
+Ten o'clock. The sun came out from behind the rain. The house stood alone in a city of
+rubble and ashes. This was the one house left standing. At night the ruined city gave off a
+radioactive glow which could be seen for miles.
+Ten-fifteen. The garden sprinklers whirled up in golden founts, filling the soft morning air
+with scatterings of brightness. The water pelted windowpanes, running down the charred west
+side where the house had been burned evenly free of its white paint. The entire west face of the
+house was black, save for five places. Here the silhouette in paint of a man mowing a lawn. Here,
+as in a photograph, a woman bent to pick flowers. Still farther over, their images burned on wood
+in one titanic instant, a small boy, hands flung into the air; higher up, the image of a thrown ball,
+and opposite him a girl, hands raised to catch a ball which never came down.
+The five spots of paint—the man, the woman, the children, the ball—remained. The rest
+was a thin charcoaled layer.
+The gentle sprinkler rain filled the garden with falling light.
+eos
+
+allinasummerday= <<-eos
+ "Ready ?"
+ "Ready."
+ "Now ?"
+ "Soon."
+ "Do the scientists really know? Will it
+happen today, will it ?"
+ "Look, look; see for yourself !"
+ The children pressed to each other like so
+many roses, so many weeds, intermixed,
+peering out for a look at the hidden sun.
+ It rained.
+ It had been raining for seven years;
+thousands upon thousands of days
+compounded and filled from one end to the
+other with rain, with the drum and gush of
+water, with the sweet crystal fall of showers
+and the concussion of storms so heavy they
+were tidal waves come over the islands. A
+thousand forests had been crushed under
+the rain and grown up a thousand times to
+be crushed again. And this was the way life
+was forever on the planet Venus, and this
+was the schoolroom of the children of the
+rocket men and women who had come to a
+raining world to set up civilization and live
+out their lives.
+ "It’s stopping, it’s stopping !"
+ "Yes, yes !"
+ Margot stood apart from them, from these
+children who could ever remember a time
+when there wasn’t rain and rain and rain.
+They were all nine years old, and if there
+had been a day, seven years ago, when the
+sun came out for an hour and showed its
+face to the stunned world, they could not
+recall. Sometimes, at night, she heard them
+stir, in remembrance, and she knew they
+were dreaming and remembering gold or a
+yellow crayon or a coin large enough to buy
+the world with. She knew they thought they
+remembered a warmness, like a blushing in
+the face, in the body, in the arms and legs
+and trembling hands. But then they always
+awoke to the tatting drum, the endless
+shaking down of clear bead necklaces upon
+the roof, the walk, the gardens, the forests,
+and their dreams were gone.
+ All day yesterday they had read in class
+about the sun. About how like a lemon it
+was, and how hot. And they had written
+small stories or essays or poems about it:I
+think the sun is a flower,That blooms for just
+one hour. That was Margot’s poem, read
+in a quiet voice in the still classroom while
+the rain was falling outside.
+ "Aw, you didn’t write that!" protested one
+of the boys.
+ "I did," said Margot. "I did."
+ "William!" said the teacher.
+ But that was yesterday. Now the rain was
+slackening, and the children were crushed in
+the great thick windows.
+ Where’s teacher ?"
+ "She’ll be back."
+ "She’d better hurry, we’ll miss it !"
+ They turned on themselves, like a
+feverish wheel, all tumbling spokes. Margot
+stood alone. She was a very frail girl who
+looked as if she had been lost in the rain for
+years and the rain had washed out the blue
+from her eyes and the red from her mouth
+and the yellow from her hair. She was an old
+photograph dusted from an album, whitened
+away, and if she spoke at all her voice would
+be a ghost. Now she stood, separate,
+staring at the rain and the loud wet world
+beyond the huge glass.
+ "What’re you looking at ?" said William.
+ Margot said nothing.
+ "Speak when you’re spoken to."
+ He gave her a shove. But she did not
+move; rather she let herself be moved only
+by him and nothing else. They edged away
+from her, they would not look at her. She felt
+them go away. And this was because she
+would play no games with them in the
+echoing tunnels of the underground city. If
+they tagged her and ran, she stood blinking
+after them and did not follow. When the
+class sang songs about happiness and life
+and games her lips barely moved. Only
+when they sang about the sun and the
+summer did her lips move as she watched
+the drenched windows. And then, of course,
+the biggest crime of all was that she had
+come here only five years ago from Earth,
+and she remembered the sun and the way
+the sun was and the sky was when she was
+four in Ohio. And they, they had been on
+Venus all their lives, and they had been only
+two years old when last the sun came out
+and had long since forgotten the color and
+heat of it and the way it really was.
+ But Margot remembered.
+ "It’s like a penny," she said once, eyes
+closed.
+ "No it’s not!" the children cried.
+ "It’s like a fire," she said, "in the stove."
+ "You’re lying, you don’t remember !" cried
+the children.
+ But she remembered and stood quietly
+apart from all of them and watched the
+patterning windows. And once, a month ago,
+she had refused to shower in the school
+shower rooms, had clutched her hands to
+her ears and over her head, screaming the
+water mustn’t touch her head. So after that,
+dimly, dimly, she sensed it, she was different
+and they knew her difference and kept
+away. There was talk that her father and
+mother were taking her back to Earth next
+year; it seemed vital to her that they do so,
+though it would mean the loss of thousands
+of dollars to her family. And so, the children
+hated her for all these reasons of big and
+little consequence. They hated her pale
+snow face, her waiting silence, her thinness,
+and her possible future.
+ "Get away !" The boy gave her another
+push. "What’re you waiting for?"
+ Then, for the first time, she turned and
+looked at him. And what she was waiting for
+was in her eyes.
+ "Well, don’t wait around here !" cried the
+boy savagely. "You won’t see nothing!"
+ Her lips moved.
+ "Nothing !" he cried. "It was all a joke,
+wasn’t it?" He turned to the other children.
+"Nothing’s happening today. Is it ?"
+ They all blinked at him and then,
+understanding, laughed and shook their
+heads.
+ "Nothing, nothing !"
+ "Oh, but," Margot whispered, her eyes
+helpless. "But this is the day, the scientists
+predict, they say, they know, the sun…"
+ "All a joke !" said the boy, and seized her
+roughly. "Hey, everyone, let’s put her in a
+closet before the teacher comes !"
+ "No," said Margot, falling back.
+ They surged about her, caught her up and
+bore her, protesting, and then pleading, and
+then crying, back into a tunnel, a room, a
+closet, where they slammed and locked the
+door. They stood looking at the door and
+saw it tremble from her beating and throwing
+herself against it. They heard her muffled
+cries. Then, smiling, the turned and went out
+and back down the tunnel, just as the
+teacher arrived.
+ "Ready, children ?" She glanced at her
+watch.
+ "Yes !" said everyone.
+ "Are we all here ?"
+ "Yes !"
+ The rain slacked still more.
+ They crowded to the huge door.
+ The rain stopped.
+ It was as if, in the midst of a film
+concerning an avalanche, a tornado, a
+hurricane, a volcanic eruption, something
+had, first, gone wrong with the sound
+apparatus, thus muffling and finally cutting
+off all noise, all of the blasts and
+repercussions and thunders, and then,
+second, ripped the film from the projector
+and inserted in its place a beautiful tropical
+slide which did not move or tremor. The
+world ground to a standstill. The silence was
+so immense and unbelievable that you felt
+your ears had been stuffed or you had lost
+your hearing altogether. The children put
+a flash.
+ They stood in the doorway of the
+underground for a moment until it was
+raining hard. Then they closed the door and
+heard the gigantic sound of the rain falling in
+tons and avalanches, everywhere and
+forever.
+ "Will it be seven more years ?"
+ "Yes. Seven."
+ Then one of them gave a little cry.
+ "Margot !"
+ "What ?"
+ "She’s still in the closet where we locked
+her."
+ "Margot."
+ They stood as if someone had driven
+them, like so many stakes, into the floor.
+They looked at each other and then looked
+away. They glanced out at the world that
+was raining now and raining and raining
+steadily. They could not meet each other’s
+glances. Their faces were solemn and pale.
+They looked at their hands and feet, their
+faces down.
+ "Margot."
+ One of the girls said, "Well… ?"
+ No one moved.
+ "Go on," whispered the girl.
+ They walked slowly down the hall in the
+sound of cold rain. They turned through the
+doorway to the room in the sound of the
+storm and thunder, lightning on their faces,
+blue and terrible. They walked over to the
+closet door slowly and stood by it.
+ Behind the closet door was only silence.
+ They unlocked the door, even more
+slowly, and let Margot out.
+eos
+
+interlopers = <<-eos
+In a forest of mixed growth somewhere on the eastern spurs of the Karpathians, a man stood one winter night watching and listening, as though he waited for some beast of the woods to come within the range of his vision, and, later, of his rifle. But the game for whose presence he kept so keen an outlook was none that figured in the sportsman's calendar as lawful and proper for the chase; Ulrich von Gradwitz patrolled the dark forest in quest of a human enemy.
+
+     The forest lands of Gradwitz were of wide extent and well stocked with game; the narrow strip of precipitous woodland that lay on its outskirt was not remarkable for the game it harboured or the shooting it afforded, but it was the most jealously guarded of all its owner's territorial possessions. A famous law suit, in the days of his grandfather, had wrested it from the illegal possession of a neighbouring family of petty landowners; the dispossessed party had never acquiesced in the judgment of the Courts, and a long series of poaching affrays and similar scandals had embittered the relationships between the families for three generations. The neighbour feud had grown into a personal one since Ulrich had come to be head of his family; if there was a man in the world whom he detested and wished ill to it was Georg Znaeym, the inheritor of the quarrel and the tireless game-snatcher and raider of the disputed border-forest. The feud might, perhaps, have died down or been compromised if the personal ill-will of the two men had not stood in the way; as boys they had thirsted for one another's blood, as men each prayed that misfortune might fall on the other, and this wind-scourged winter night Ulrich had banded together his foresters to watch the dark forest, not in quest of four-footed quarry, but to keep a look-out for the prowling thieves whom he suspected of being afoot from across the land boundary. The roebuck, which usually kept in the sheltered hollows during a storm-wind, were running like driven things to-night, and there was movement and unrest among the creatures that were wont to sleep through the dark hours. Assuredly there was a disturbing element in the forest, and Ulrich could guess the quarter from whence it came.
+
+     He strayed away by himself from the watchers whom he had placed in ambush on the crest of the hill, and wandered far down the steep slopes amid the wild tangle of undergrowth, peering through the tree trunks and listening through the whistling and skirling of the wind and the restless beating of the branches for sight and sound of the marauders. If only on this wild night, in this dark, lone spot, he might come across Georg Znaeym, man to man, with none to witness - that was the wish that was uppermost in his thoughts. And as he stepped round the trunk of a huge beech he came face to face with the man he sought.
+
+     The two enemies stood glaring at one another for a long silent moment. Each had a rifle in his hand, each had hate in his heart and murder uppermost in his mind. The chance had come to give full play to the passions of a lifetime. But a man who has been brought up under the code of a restraining civilisation cannot easily nerve himself to shoot down his neighbour in cold blood and without word spoken, except for an offence against his hearth and honour. And before the moment of hesitation had given way to action a deed of Nature's own violence overwhelmed them both. A fierce shriek of the storm had been answered by a splitting crash over their heads, and ere they could leap aside a mass of falling beech tree had thundered down on them. Ulrich von Gradwitz found himself stretched on the ground, one arm numb beneath him and the other held almost as helplessly in a tight tangle of forked branches, while both legs were pinned beneath the fallen mass. His heavy shooting-boots had saved his feet from being crushed to pieces, but if his fractures were not as serious as they might have been, at least it was evident that he could not move from his present position till some one came to release him. The descending twig had slashed the skin of his face, and he had to wink away some drops of blood from his eyelashes before he could take in a general view of the disaster. At his side, so near that under ordinary circumstances he could almost have touched him, lay Georg Znaeym, alive and struggling, but obviously as helplessly pinioned down as himself. All round them lay a thick- strewn wreckage of splintered branches and broken twigs.
+
+     Relief at being alive and exasperation at his captive plight brought a strange medley of pious thank-offerings and sharp curses to Ulrich's lips. Georg, who was early blinded with the blood which trickled across his eyes, stopped his struggling for a moment to listen, and then gave a short, snarling laugh.
+
+     "So you're not killed, as you ought to be, but you're caught, anyway," he cried; "caught fast. Ho, what a jest, Ulrich von Gradwitz snared in his stolen forest. There's real justice for you!"
+
+     And he laughed again, mockingly and savagely.
+
+     "I'm caught in my own forest-land," retorted Ulrich. "When my men come to release us you will wish, perhaps, that you were in a better plight than caught poaching on a neighbour's land, shame on you."
+
+     Georg was silent for a moment; then he answered quietly:
+
+     "Are you sure that your men will find much to release? I have men, too, in the forest to-night, close behind me, and THEY will be here first and do the releasing. When they drag me out from under these damned branches it won't need much clumsiness on their part to roll this mass of trunk right over on the top of you. Your men will find you dead under a fallen beech tree. For form's sake I shall send my condolences to your family."
+
+     "It is a useful hint," said Ulrich fiercely. "My men had orders to follow in ten minutes time, seven of which must have gone by already, and when they get me out - I will remember the hint. Only as you will have met your death poaching on my lands I don't think I can decently send any message of condolence to your family."
+
+     "Good," snarled Georg, "good. We fight this quarrel out to the death, you and I and our foresters, with no cursed interlopers to come between us. Death and damnation to you, Ulrich von Gradwitz."
+
+     "The same to you, Georg Znaeym, forest-thief, game-snatcher."
+
+     Both men spoke with the bitterness of possible defeat before them, for each knew that it might be long before his men would seek him out or find him; it was a bare matter of chance which party would arrive first on the scene.
+
+     Both had now given up the useless struggle to free themselves from the mass of wood that held them down; Ulrich limited his endeavours to an effort to bring his one partially free arm near enough to his outer coat-pocket to draw out his wine-flask. Even when he had accomplished that operation it was long before he could manage the unscrewing of the stopper or get any of the liquid down his throat. But what a Heaven-sent draught it seemed! It was an open winter, and little snow had fallen as yet, hence the captives suffered less from the cold than might have been the case at that season of the year; nevertheless, the wine was warming and reviving to the wounded man, and he looked across with something like a throb of pity to where his enemy lay, just keeping the groans of pain and weariness from crossing his lips.
+
+     "Could you reach this flask if I threw it over to you?" asked Ulrich suddenly; "there is good wine in it, and one may as well be as comfortable as one can. Let us drink, even if to-night one of us dies."
+
+     "No, I can scarcely see anything; there is so much blood caked round my eyes," said Georg, "and in any case I don't drink wine with an enemy."
+
+     Ulrich was silent for a few minutes, and lay listening to the weary screeching of the wind. An idea was slowly forming and growing in his brain, an idea that gained strength every time that he looked across at the man who was fighting so grimly against pain and exhaustion. In the pain and languor that Ulrich himself was feeling the old fierce hatred seemed to be dying down.
+
+     "Neighbour," he said presently, "do as you please if your men come first. It was a fair compact. But as for me, I've changed my mind. If my men are the first to come you shall be the first to be helped, as though you were my guest. We have quarrelled like devils all our lives over this stupid strip of forest, where the trees can't even stand upright in a breath of wind. Lying here to-night thinking I've come to think we've been rather fools; there are better things in life than getting the better of a boundary dispute. Neighbour, if you will help me to bury the old quarrel I - I will ask you to be my friend."
+
+     Georg Znaeym was silent for so long that Ulrich thought, perhaps, he had fainted with the pain of his injuries. Then he spoke slowly and in jerks.
+
+     "How the whole region would stare and gabble if we rode into the market-square together. No one living can remember seeing a Znaeym and a von Gradwitz talking to one another in friendship. And what peace there would be among the forester folk if we ended our feud to-night. And if we choose to make peace among our people there is none other to interfere, no interlopers from outside ... You would come and keep the Sylvester night beneath my roof, and I would come and feast on some high day at your castle ... I would never fire a shot on your land, save when you invited me as a guest; and you should come and shoot with me down in the marshes where the wildfowl are. In all the countryside there are none that could hinder if we willed to make peace. I never thought to have wanted to do other than hate you all my life, but I think I have changed my mind about things too, this last half-hour. And you offered me your wineflask ... Ulrich von Gradwitz, I will be your friend."
+
+     For a space both men were silent, turning over in their minds the wonderful changes that this dramatic reconciliation would bring about. In the cold, gloomy forest, with the wind tearing in fitful gusts through the naked branches and whistling round the tree-trunks, they lay and waited for the help that would now bring release and succour to both parties. And each prayed a private prayer that his men might be the first to arrive, so that he might be the first to show honourable attention to the enemy that had become a friend.
+
+     Presently, as the wind dropped for a moment, Ulrich broke silence.
+
+     "Let's shout for help," he said; he said; "in this lull our voices may carry a little way."
+
+     "They won't carry far through the trees and undergrowth," said Georg, "but we can try. Together, then."
+
+     The two raised their voices in a prolonged hunting call.
+
+     "Together again," said Ulrich a few minutes later, after listening in vain for an answering halloo.
+
+     "I heard nothing but the pestilential wind," said Georg hoarsely.
+
+     There was silence again for some minutes, and then Ulrich gave a joyful cry.
+
+     "I can see figures coming through the wood. They are following in the way I came down the hillside."
+
+     Both men raised their voices in as loud a shout as they could muster.
+
+     "They hear us! They've stopped. Now they see us. They're running down the hill towards us," cried Ulrich.
+
+     "How many of them are there?" asked Georg.
+
+     "I can't see distinctly," said Ulrich; "nine or ten,"
+
+     "Then they are yours," said Georg; "I had only seven out with me."
+
+     "They are making all the speed they can, brave lads," said Ulrich gladly.
+
+     "Are they your men?" asked Georg. "Are they your men?" he repeated impatiently as Ulrich did not answer.
+
+     "No," said Ulrich with a laugh, the idiotic chattering laugh of a man unstrung with hideous fear.
+
+     "Who are they?" asked Georg quickly, straining his eyes to see what the other would gladly not have seen.
+
+     "Wolves."
+
+     eos
+
+
 
 users = []
 enrollments = []
@@ -67,6 +604,31 @@ story1 = {
     :title => "The Tell-Tale Heart",
     :author => "Edgar Allan Poe",
     :body => thetelltaleheart
+}
+
+story2 = {
+    :course_id => 2,
+    :title => "Harrison Bergeron",
+    :author => "Kurt Vonnegut Jr.",
+    :body => HarrisonBergeron
+}
+story3 = {
+    :course_id => 3,
+    :title => "August 2026: There Will Come Soft Rains",
+    :author => "Ray Bradbury",
+    :body => aug2026
+}
+story4 = {
+    :course_id => 4,
+    :title => "All Summer in a Day",
+    :author => "Ray Bradbury",
+    :body => allinasummerday
+}
+story5 = {
+    :course_id => 5,
+    :title => "The Interlopers",
+    :author => "Saki",
+    :body => interlopers
 }
 
 comment0 = {
@@ -101,6 +663,10 @@ course5 = {
 users.push usertest1
 enrollments.push enrolltest1
 stories.push story1
+stories.push story2
+stories.push story3
+stories.push story4
+stories.push story5
 comments.push comment0
 courses.push course1
 courses.push course2
