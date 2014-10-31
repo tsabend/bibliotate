@@ -1,11 +1,13 @@
 Rails.application.routes.draw do
-  root "stories#index"
+  root "courses#index"
   resources :users
   resources :enrollments
-  resources :classes do
+  resources :courses do
     resources :stories do
-      resources :sentences do
-        resources :comments
+      resources :paragraphs do
+        resources :sentences do
+          resources :comments
+        end
       end
     end
   end

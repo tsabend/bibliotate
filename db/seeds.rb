@@ -23,6 +23,3 @@ User.create(users)
 # StoryCreator::create(stories)
 
 
-
-
-
