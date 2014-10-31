@@ -46,6 +46,5 @@ RSpec.describe Story, :type => :model do
     it 'requires course' do
       should validate_presence_of(:title)
     end
-
   end
 end
