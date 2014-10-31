@@ -1,2 +1,0 @@
-class SentencesController < ApplicationController
-end
