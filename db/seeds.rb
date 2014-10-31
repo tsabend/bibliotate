@@ -6,6 +6,11 @@ Paragraph.create(story_id: 1)
 Sentence.create(paragraph_id: 1, body: "test sentence")
 Comment.create(sentence_id: 1, user_id: 1, body: "test comment")
 
+# test to see if different sentences are generated for different stories
+  # Story.create(course_id: 1, title: "alex rocks", author: "alex ung")
+  # Paragraph.create(story_id: 3)
+  # Sentence.create(paragraph_id: 3, body: "does this show up on every single post?")
+
 # to find user courses:
   # User.find(1).courses
 
