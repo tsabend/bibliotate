@@ -63,6 +63,7 @@ ActiveRecord::Schema.define(version: 20141031010838) do
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "photo"
     t.string   "role",            default: "student"
     t.datetime "created_at"
     t.datetime "updated_at"
