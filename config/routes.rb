@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  use_doorkeeper
   root "courses#index"
   resources :users
   resources :enrollments
