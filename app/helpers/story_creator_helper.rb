@@ -1,4 +1,4 @@
-require_relative '../config/environment'
+# require_relative '../config/environment'
 
 module StoryCreatorHelper
   def create(title, author, body, course_id)

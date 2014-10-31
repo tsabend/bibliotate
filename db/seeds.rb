@@ -1,7 +1,7 @@
 require 'yaml'
 # require 'rails_helper'
 # include StoryCreatorHelper
-require_relative '../config/environment'
+# require_relative '../config/environment'
 # require File.expand_path('../../app/helpers/story_creator_helper.rb',__FILE__)
 # include StoryCreator
 
@@ -18,8 +18,10 @@ courses = seed_data[:courses]
 #   User.new(attrs).save(:validate => false)
 # end
 
- p stories[0][:author]
-User.create(users)
-# StoryCreator::create(stories)
+ # p stories[0][:course_id]
+# User.create(users)
+
+
+Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])
 
 
