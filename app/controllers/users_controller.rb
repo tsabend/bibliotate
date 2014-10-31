@@ -49,8 +49,7 @@ class UsersController < ApplicationController
     render :index
   end
 
-    #this will be updated with real user info
-    @user = User.find(1)
+  def index
 
   end
 end
