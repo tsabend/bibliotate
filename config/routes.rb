@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   root 'users#index'
   get '/auth', :to => 'users#auth'
   get '/callback', :to => 'users#callback'
-  get '/type', :to => 'users#user_type'
+  get '/type', :to => 'users#type'
 
   resources :users
   resources :enrollments
