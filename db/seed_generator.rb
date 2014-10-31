@@ -1,5 +1,4 @@
 #job to be done => sample records for app
-
 require_relative '../config/environment'
 
 #individual tables
@@ -69,52 +68,143 @@ enrolltest1 = {
 
 story1 = {
     :course_id => 1,
-    :titles => "The Tell-Tale Heart",
+    :title => "The Tell-Tale Heart",
     :author => "Edgar Allan Poe",
     :body => thetelltaleheart
 }
 
-comment1 = {
+comment0 = {
       :sentence =>  1,
       :user => 1,
       :body => "this sentence stinks of stinky shoes",
 }
-
+#courses all hand made
 course1 = {
       :user => 1,
-      :name =>  "wizards",
+      :name =>  "Wizards",
+}
+
+course2 = {
+      :user => 2,
+      :name =>  "Bears",
+}
+course3 = {
+      :user => 3,
+      :name =>  "Bulls",
+}
+course4 = {
+      :user => 4,
+      :name =>  "Wolves",
+}
+course5 = {
+      :user => 5,
+      :name =>  "Blackhawks",
 }
 
 #push individual/outlier example
 users.push usertest1
 enrollments.push enrolltest1
 stories.push story1
-comments.push comment1
+comments.push comment0
 courses.push course1
+courses.push course2
+courses.push course3
+courses.push course4
+courses.push course5
 
 
-# Generated data
+#Generated data
+
+#users
+role = ["Teacher", "Student"]
+usertotal = 25
+1.upto(usertotal-20).each do |id|
+  users.push({
+    :name => Faker::Name.name,
+    :email => Faker::Internet.email,
+    :password_digest => "pablo",
+    :role => "Teacher",
+  })
+end
+1.upto(usertotal-5).each do |id|
+  users.push({
+    :name => Faker::Name.name,
+    :email => Faker::Internet.email,
+    :password_digest => "pablo",
+    :role => "Student",
+  })
+end
+
+#enrollments
+1.upto(usertotal).each do |id|
+  enrollments.push({
+    :user => [*5..25].sample,
+    :course => [*1..5].sample,
+  })
+end
+
+#comments
 
 
-# role = ["Teacher", "Student"]
-# usertotal = 50
-# coursetotal = 10
-# 1.upto(usertotal).each do |id|
-#   users.push({
-#     :name => Faker::Name.name,
-#     :email => Faker::Internet.email,
-#     :password_digest => "pablo",
-#     :role => role.sample,
-#   })
-# end
+comment1 = <<-eos
+I second this. The New York School of Poets also included Kenneth Koch, Frank O'Hara, and John Ashbery. These are pretty big names that definitely are still impacting young poets today. Ashbery won a Pulitzer and has, over time, won most of the American poetry prizes.
+More recently, Stephen Dunn, Louise Gluck, W. D. Snodgrass, are all pretty big names. (And personal favorites of mine.) They're not as clearly affiliated with a school, but I personally believe that we're too close to them to really categorize them. Dunn and Gluck both won Pulitzers and both books are of course fantastic; "Different Hours" for Dunn and "The Wild Iris" for Gluck. Paul Muldoon and Dana Goia are big right now. I'm not a personal fan of Goia but both draw heavily on formal styles and rhyme.
+Slam poetry is of course a big thing now. I'm not as well-versed there. Not to pun, or anything...If anything I would tell you to start by looking up some Rives videos online. (Pronounced "reeves.")
+I think we're moving towards a lot of multi-culturalism in poetry and using poetry to speak to personal stories of race, gender, and sexuality. Examples of poets who I think do this who are "hot" right now include Terance Hayes, whose book Lighthead I think deserved a Pulitzer, Danez Smith (who is hot and "up and coming" off the presses right now, edits at Muzzle Magazine, recently featured in Poetry magazine as well as others - btw Hayes guest-edited a really great issue of Ploughshares) and Tracy K Smith who I do believe recently won a Pulitzer.
+Not to say the Pulizter isn't the only poetry prize in the world but I guess I do pick up poetry books when I see they've won them.
+We're also seeing trauma and war poets. Bob Hicok taught at VSU (still does) during the school shooting and wrote about it a lot in his book "Words for Empty, Words for Full." Brian Turner writes about being a vet in his two books "Here Bullet" and "Phantom Noise."
+C. K. Williams is another big name although I lent someone his book and never got it back so I can't speak to it so much.
+OP, consider that the briefest overview I can give you of the biggest (mostly) AMERICAN names in poetry in the past 50 years.
+eos
 
+comment2 = <<-eos
+ I feel like consuming literary analysis is only possible when the audience all agrees to hold certain foundational principles regarding linguistics, aesthetics, politics, etc., and what keeps me off /r/books is the absolute hostility towards those principles that the average person seems to have. Even the most evacuated pure New Criticism requires that the reader believes texts are meaningful, and how often do we get the "blue curtains are blue curtains" rant on reddit.
+  eos
 
-# 1.upto(usertotal).each do |id|
-#   enrollments.push({
-#     :user => usertotal.sample,
-#     :course => coursetotal.sample,
-#   })
-# end
+  comment3 = <<-eos
+  Since literary theory tends to have a fairly open definition of what constitutes a 'text', movies, television shows, and other types of media in general could bring in a bigger audience. While some may dismiss anything nearing cultural studies, multimodal texts such as films can have just as much depth and possibility of interpretation as literature does. People have already done this with shows such as Breaking Bad, I'm certain an online journal covering media like that would be popular.
+  eos
+
+comment4 = <<-eos
+That is an interesting question. I think its safe to say that what Lord Henry finds alluring in Dorian is physical, or what we would consider to be "outward," appearance. Harry reminds us early in the book that Dorian has the sort of beauty that need not be explained.
+But I think the beauty that Harry are referring to here goes beyond what we might consider to me mere outward, physical pleasantness. Or, to put it more accurately, that outward, physical pleasantness itself represents the highest form of intellectual, aesthetic, and philosophical experience in his view. It might be easier to understand this idea if we can cast aside the notion that Henry is simply being vein or shallow. To Harry, outward appearance is paradoxically dives deepest into the truth of life. As Wilde writes in the Preface to the 1891 edition: "All art is at once surface and symbol. Those who go beneath the surface do so at their peril." This is one of the key ideas of late 19th century English Aestheticism of the sort that Walter Pater prescribes in The Renaissance: Studies in Art and Poetry (A book Wilde described as the "golden book") and that is represented in Huysmans's Au Rebours (The novel that most likely provided the inspiration for Dorian's "yellow book").
+eos
+
+comment5 = <<-eos
+Wilde is definitely interested in this idea, but it goes back. The man who stands outside of traditional morals is, obviously, important to Nietzsche, but it was also a key problem for the Romantics: see Wordsworth's The Borderers, Blake's revolutionary texts, and especially Shelley's dramas and radical stuff. Wilde was obviously very influenced by the Romantics (at least one of Lord Henry's speeches start as quotations from Keats's letters and follows it up with a Wildean epigram; somebody in the novel mentions Wordsworth's "The Idiot Boy") and in Shelley in particular. So this sentiment could have popped up in any of those places, particularly in something like Shelley's The Cenci or Prometheus Unbound (incidentally, I think Wilde was in the audience for the first stage performance of The Cenci in...like...1886 or thereabouts).
+eos
+
+comment6 = <<-eos
+ So I can't be overly helpful, because I am not aware of any relationship between Hemingway and any actual anarchists, and the only time I can think in his writing that he mentions them are in For Whom The Bell Tolls. And this probably isn't what you want to hear, but he had a pretty low opinion of them.
+It would have been better for the town if they had thrown over twenty or thirty of the drunkards, especially those of the red-and-black scarves, and if we ever have another revolution I believe they should be destroyed at the start. But then we did not know this.
+We know he is referencing anarchists specifically because red and black were the colors of the CNT-AIT, an anarchist group that was organized strongly in Barcelona and Catalonia, but probably less so elsewhere.
+Basically his protagonist characters make the argument that the anarchists were a hindrance to the cause of fighting off fascism, which should serve as no surprise, as the ideas behind anarchism don't really lend themselves to well regimented combat units. In fact, the CNT did not allow anyone who was military, police or an employer be a member, so they probably had a huge handicap when it came down to fighting.
+Here is something I found arguing that Hemingway was oversimplifying the situation. The author argues that the CNT were actually key to early revolutionary success and at least made an effort to be organized. Maybe Hemingway's quote references only rural anarchists and shouldn't be compared to CNT activity?
+Lastly, and I don't mean to be preachy, but regardless of your political views, you are probably not an anarchist, especially if you are pursuing higher education. Unless you are attending The University of Mogadishu and majoring in preventing the development of a central government, you are probably a capitalist with alternative political views. In any event, I hope this helped.
+eos
+
+@comment_sentences = []
+parser = TactfulTokenizer::Model.new
+def sentence_pusher(array_of_sentences)
+  array_of_sentences.each do |sentence|
+    @comment_sentences.push sentence
+  end
+  @comment_sentences
+end
+ sentence_pusher(parser.tokenize_text(comment1))
+ sentence_pusher(parser.tokenize_text(comment2))
+ sentence_pusher(parser.tokenize_text(comment3))
+ sentence_pusher(parser.tokenize_text(comment4))
+ sentence_pusher(parser.tokenize_text(comment5))
+ sentence_pusher(parser.tokenize_text(comment6))
+#comments for the tell tale heart
+@comment_sentences.each do |sentence|
+    comments.push({
+    :sentence => [*10..150].sample,
+    :user => [*6..25].sample,
+    :body => sentence,
+  })
+end
 
 tables = {
     :users => users,
@@ -124,12 +214,8 @@ tables = {
     :courses => courses
 }
 
-
-
-
 yaml = YAML.dump tables
 yaml = "# DON'T EDIT THIS, EDIT seed_generator.rb\n" + yaml
-puts yaml
+# puts yaml
 path = File.join(File.dirname(__FILE__), 'seed_data.yaml')
 File.write path, yaml
-

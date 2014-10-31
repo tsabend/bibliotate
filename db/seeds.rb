@@ -1,36 +1,35 @@
-User.create(name: "admin", email: "admin@admin.com", password_digest: "admin", role: "teacher")
-Course.create(user_id: 1, name: "test course")
-Enrollment.create(user_id: 1, course_id: 1)
-Story.create(course_id: 1, title: "test story", author: "test author")
-Paragraph.create(story_id: 1)
-Sentence.create(paragraph_id: 1, body: "test sentence")
-Comment.create(sentence_id: 1, user_id: 1, body: "test comment")
+require 'yaml'
+# require 'rails_helper'
+# include StoryCreatorHelper
+# require_relative '../config/environment'
+# require File.expand_path('../../app/helpers/story_creator_helper.rb',__FILE__)
+# include StoryCreator
 
-# test to see if different sentences are generated for different stories
-  # Story.create(course_id: 1, title: "alex rocks", author: "alex ung")
-  # Paragraph.create(story_id: 3)
-  # Sentence.create(paragraph_id: 3, body: "does this show up on every single post?")
+path = 'db/seed_data.yaml'
+seed_data = YAML.load File.read path
 
-# to find user courses:
-  # User.find(1).courses
+users = seed_data[:users]
+enrollments = seed_data[:enrollments]
+stories = seed_data[:stories]
+comments = seed_data[:comments]
+courses = seed_data[:courses]
 
-# to find user enrollments:
-  # User.find(1).enrollments
+users.each do |attrs|
+  User.new(attrs).save(:validate => false)
+end
 
-# to find stories associated with a course:
-  # Course.find(1).stories.all
+enrollments.each do |attrs|
+  Enrollment.new(attrs).save(:validate => false)
+end
 
-# to find a SPECIFIC story associated with a course:
-  # course.find(1).stories.find(1) OR User.find(1).comments.find_by(title: "test title")
+comments.each do |attrs|
+  Comments.new(attrs).save(:validate => false)
+end
 
-# to find all sentences associated with a story:
-  # Course.find(1).stories.find(1).paragraphs.find(1).sentences.all
+courses.each do |attrs|
+  Courses.new(attrs).save(:validate => false)
+end
 
-# to find all comments associated with a sentence:
-  # Course.find(1).stories.find(1).paragraphs.find(1).sentences.find(1).comments.all
+Story.make(stories[0][:title], stories[0][:author], stories[0][:body], stories[0][:course_id])
 
-# to find all comments associated with a user:
-  # User.find(1).comments
 
-# to find all sentences in a story
-  # User.find(1).stories.find(1).sentences
