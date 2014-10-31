@@ -54,6 +54,9 @@ class UsersController < ApplicationController
     render :index
   end
 
+  def user_type
+  end
+
   def index
   end
 
