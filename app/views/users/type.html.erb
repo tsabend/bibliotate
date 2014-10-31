@@ -1,0 +1,27 @@
+<h1>User type</h1>
+<div id="user_type">
+  <%= form_for @user, method: :patch do |f| %>
+
+  <div>
+    <%= f.label :teacher %>
+    <%= f.radio_button :role, 'teacher' %>
+  </div>
+
+  <div>
+    <%= f.label :student %>
+    <%= f.radio_button :role, 'student' %>
+  </div>
+
+  <div>
+    <%= f.submit "Submit Your Status" %>
+  </div>
+
+  <% end %>
+</div>
+
+
+
+
+
+
+
