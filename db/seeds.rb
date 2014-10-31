@@ -19,7 +19,7 @@ users.each do |attrs|
 end
 
 enrollments.each do |attrs|
-  Enrollments.new(attrs).save(:validate => false)
+  Enrollment.new(attrs).save(:validate => false)
 end
 
 comments.each do |attrs|
