@@ -54,9 +54,9 @@ class UsersController < ApplicationController
     render :index
   end
 
-  # def user_type
-  # end
-
+  def index
+  end
+  
   def update
     @user = User.find(session[:current_user].id)
     @user.update(role: params[:role])
