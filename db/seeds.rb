@@ -28,4 +28,4 @@ Comment.create(sentence_id: 1, user_id: 1, body: "test comment")
   # User.find(1).comments
 
 # to find all sentences in a story
-  #
+  # User.find(1).stories.find(1).sentences
