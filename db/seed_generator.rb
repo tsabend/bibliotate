@@ -591,6 +591,7 @@ usertest1 = {
       :name => "pablo",
       :email => "pablo@rox.always",
       :password_digest => "pablo",
+      :photo => "https://scontent-a-sjc.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10672243_10203261369791947_986035253996343461_n.jpg?oh=8ff2c42f0671e7eeb1a0a7abcf861120&oe=54AC85C5",
       :role => "teacher",
 }
 
@@ -679,12 +680,16 @@ courses.push course5
 
 #users
 role = ["Teacher", "Student"]
+gender = ["men", "women"]
+number = [*1..55]
+
 usertotal = 25
 1.upto(usertotal-20).each do |id|
   users.push({
     :name => Faker::Name.name,
     :email => Faker::Internet.email,
     :password_digest => "pablo",
+    :photo => "http://randomuser.me/g/portraits/#{gender.sample}/#{number.sample}.jpg",
     :role => "Teacher",
   })
 end
@@ -693,6 +698,7 @@ end
     :name => Faker::Name.name,
     :email => Faker::Internet.email,
     :password_digest => "pablo",
+    :photo => "http://randomuser.me/g/portraits/#{gender.sample}/#{number.sample}.jpg",
     :role => "Student",
   })
 end
