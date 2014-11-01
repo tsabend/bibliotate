@@ -192,6 +192,7 @@ main {
 .profile {
   height: 600px;
   margin-left: 30%;
+  width: 50%;
 }
 
 .card ul {
