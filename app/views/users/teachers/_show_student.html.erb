@@ -1,0 +1,11 @@
+<div class="card profile">
+  <h1><%= @user.name %></h1>
+  <img class="profile_pic" src="<%= @user.photo  %>">
+  <ul>
+    <li><%= @user.email  %></li>
+    <li><%= @user.role  %></li>
+    <li><%= @user.comments.last.body  %></li>
+    <li><%= @user.name  %>'s Stories:</li>
+    <%= render partial: '/users/teachers/all_stories', locals: {stories: @user.stories}  %>
+  </ul>
+</div>
