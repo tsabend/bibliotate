@@ -210,3 +210,13 @@ main {
   max-width: 250px;
   max-height: 250px;
 }
+
+.nav-name {
+  float: right;
+  color: white;
+}
+
+#nav-teacher {
+  float: right;
+  color: white;
+}
