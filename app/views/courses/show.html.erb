@@ -1,6 +1,6 @@
 <h1><%= @course.name %> [COURSE NAME GOES HERE]</h1>
 
 <% @stories.each do |story| %>
-<h3><a href="<%=@course.id%>/stories/<%=story.id%>"><%= story.title %></a></h3>
+<h3><a href="/stories/<%=story.id%>"><%= story.title %></a></h3>
 <%= story.author %><br>
 <% end %>

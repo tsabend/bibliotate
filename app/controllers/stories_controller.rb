@@ -24,3 +24,6 @@ class StoriesController < ApplicationController
     end
   end
 end
+
+
+

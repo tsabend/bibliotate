@@ -4,7 +4,7 @@
    <%= link_to 'Delete account', user_path(current_user), method: 'delete' %>
   <%= render partial: '/users/teachers/dashboard' %>
 <% else %>
-  <!-- <h1>Student View</h1> -->
-  <%= render partial: '/users/students/dashboard' %>
+  <h1>Student View</h1>
+  <%= render partial: '/users/students/student_dashboard' %>
 <% end %>
 
