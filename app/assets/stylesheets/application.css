@@ -177,6 +177,9 @@ main {
 
 .hover-text {
   color: black;
+  margin: 2px 0 0 -4px;
+  padding: 0 0 0 0;
+  position: absolute;
 }
 
 .card {
