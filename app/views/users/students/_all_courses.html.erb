@@ -3,8 +3,8 @@
 <div class="card">
 <h3><%= course.name %></h3>
 <% course.stories.each do |story| %>
-<p><%= story.title %></p>
+
+<%= link_to "#{story.title}", story %>
 <% end %>
 </div>
 <% end %>
-
