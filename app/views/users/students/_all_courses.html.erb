@@ -1,0 +1,6 @@
+<% current_user.enrollments.each do |enrollment| %>
+  <div class="card">
+    <h3><%= enrollment.course.name %></h3>
+    <%= render partial: '/users/students/all_students', locals: {students: enrollment.course.users}  %>
+  </div>
+<% end %>

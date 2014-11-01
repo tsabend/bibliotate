@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor'
+gem 'unicorn'
 gem 'oauth2'
 gem 'dotenv'
 gem 'doorkeeper'
@@ -41,7 +43,6 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 gem 'faker', '~> 1.4.3'
 gem 'pry'
-group :test do
   gem 'shoulda-matchers', require: false
   gem 'rspec-rails'
   gem 'factory_girl_rails'
@@ -50,4 +51,3 @@ end
 
 group :development do
   gem 'byebug'
-end
