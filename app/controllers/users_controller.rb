@@ -44,9 +44,8 @@ class UsersController < ApplicationController
     #Using the Information Google Sent Back Look for or create the User
     previous_size = User.all.size
     @user = User.find_or_create_by(email: user_info["email"])
-    @user.update(name: user_info[:name] , email: user_info["email"], photo: user_info["picture"], oauthtoken: access_token.token)
+    @user.update(name: user_info[:name] , email: user_info["email"], photo: user_info["picture"], oauthtoken: access_token.token, oauthrefresh: access_token.refresh_token)
     session[:user_id] = @user.id
-
     # If this is a newly created user, let them assign their type. Else render homepage.
     if previous_size < User.all.size
       redirect_to "/type"
@@ -61,12 +60,11 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    byebug
     user_token = current_user.oauthtoken
-    byebug
     current_user.destroy
-    redirect_to "https://accounts.google.com/o/oauth2/revoke?token={#{user_token}}"
     session.clear
+    # This line should goto google and remove our privlidges.
+    # redirect_to 'https://accounts.google.com/o/oauth2/revoke?token={#{user_token}}'
     redirect_to '/'
   end
 

@@ -74,10 +74,11 @@ ActiveRecord::Schema.define(version: 20141101171958) do
     t.string   "name"
     t.string   "email"
     t.string   "photo"
-    t.string   "role",       default: "student"
+    t.string   "role",         default: "student"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "oauthtoken"
+    t.string   "oauthrefresh"
   end
 
 end
