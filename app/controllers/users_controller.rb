@@ -32,7 +32,6 @@ class UsersController < ApplicationController
 
   def auth
     redirect_to client.auth_code.authorize_url(:redirect_uri => 'http://localhost:3000/callback',:scope => 'https://www.googleapis.com/auth/userinfo.email',:access_type => "offline")
-    puts "hit auth: -------------------------------------"
   end
 
   def callback
@@ -42,11 +41,10 @@ class UsersController < ApplicationController
     response = access_token.get('https://www.googleapis.com/oauth2/v1/userinfo?alt=json')
     #Gets the Info Specifically About the signed in User
     user_info = JSON.parse(response.body)
-
     #Using the Information Google Sent Back Look for or create the User
     previous_size = User.all.size
-    @user = User.find_or_create_by(name: user_info["name"])
-    @user.update(email: user_info["email"], photo: user_info["picture"])
+    @user = User.find_or_create_by(email: user_info["email"])
+    @user.update(name: user_info[:name] , email: user_info["email"], photo: user_info["picture"], oauthtoken: access_token.token)
     session[:user_id] = @user.id
 
     # If this is a newly created user, let them assign their type. Else render homepage.
@@ -63,9 +61,13 @@ class UsersController < ApplicationController
   end
 
   def destroy
-    @user = session[:current_user]
-    @user.destroy
-    render :index
+    byebug
+    user_token = current_user.oauthtoken
+    byebug
+    current_user.destroy
+    redirect_to "https://accounts.google.com/o/oauth2/revoke?token={#{user_token}}"
+    session.clear
+    redirect_to '/'
   end
 
 end

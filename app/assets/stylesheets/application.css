@@ -69,7 +69,8 @@ header {
 
 #login_box a:hover {
   text-decoration: underline;
-  color: #7A6A53;
+  /*This needs a different color*/
+  color: yellow;
 }
 
 #login_box span {
