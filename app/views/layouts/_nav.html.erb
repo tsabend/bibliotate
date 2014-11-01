@@ -15,11 +15,28 @@
             <span><i class="fa fa-book"></i>Bibliotate</span>
           </a>
         </section>
-        <section id="login_box">
-          <a href="">
-            <span>Login With <i class="fa fa-google-plus"></i></span>
-          </a>
-        </section>
+        <% if current_user == nil %>
+          <section id="login_box">
+            <a href="">
+              <span>Login With <i class="fa fa-google-plus"></i></span>
+            </a>
+          </section>
+        <% elsif current_user.role == "teacher" %>
+          <section class="nav-name">
+            Hello, <%= current_user.name %>
+          </section>
+          <section id="nav-teacher">
+            <a href="courses/new">
+              Create Course
+            </a>
+          </section>
+        <% else %>
+          <section class="nav-name">
+            Hello, <%= current_user.name %>
+          </section>
+          <section id="nav-student">
+          </section>
+        <% end %>
       </header>
     </section>
   </section>
