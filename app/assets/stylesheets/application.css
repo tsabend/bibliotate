@@ -75,6 +75,7 @@ header {
 .border {
   border: 1px solid #ECF0F1;
   margin: 3px;
+  overflow: auto;
 }
 
 .commented {
@@ -171,14 +172,21 @@ main {
   position: absolute;
 }
 
+.row {
+
+}
+
 .card {
-  width: 30%;
+  width: 29%;
   height: 400px;
   background-color: white;
   border-radius: 5px;
   box-shadow: 10px 10px 5px #888888;
   padding: 1%;
+  margin: 1%;
+  margin-bottom: 10%;
   overflow-y: scroll;
+  float: left;
 }
 
 .profile {
@@ -252,10 +260,21 @@ main {
   margin-left: 35%;
 }
 
-
-
-
-
 .newstorybutton {
   margin-left: 35%;
 width: 30%; /*basic styles*/ width: 250px; height: 50px; color: white; background-color: #d46d45; text-align: center; font-size: 30px; line-height: 50px; /*gradient styles*/ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d46d45), to(#b1432a)); background: -moz-linear-gradient(19% 75% 90deg,#b1432a, #d46d45); /*border styles*/ border-top: solid 2px #e28d79; border-bottom: solid 1px #51281f; border-right: solid 1px #d46d45; border-left: solid 1px #d46d45; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; } .newstorybutton p { font-size: 25px; line-height: 50px; font-family: ‘Trebuchet MS’, sans-serif; } a { text-decoration: none; color: fff; } .newstorybutton:hover { background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b1432a), to(#d46d45)); background: -moz-linear-gradient(19% 75% 90deg,#d46d45, #b1432a); border-top: solid 2px #b1432a; border-bottom: solid 1px #e28d79; }
+
+.nav-name {
+  float: right;
+  color: white;
+}
+
+#nav-teacher {
+  float: right;
+  color: white;
+}
+#splash {
+  font-size: 50em;
+  color: #7A6A53;
+
+}
