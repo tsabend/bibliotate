@@ -193,6 +193,9 @@ main {
   list-style: none;
 }
 
+.card h1 {
+  text-align: center;
+}
 .card h3 {
   text-align: center;
 }
