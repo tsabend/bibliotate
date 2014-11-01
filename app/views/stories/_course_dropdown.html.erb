@@ -1,0 +1,7 @@
+
+<select name="course_id">
+  <option value=""></option>
+  <% courses.each do |course| %>
+  <option value=<%=course.id%>><%=course.name%></option>
+  <% end %>
+</select>

@@ -591,15 +591,14 @@ notifications = []
 usertest1 = {
       :name => "pablo",
       :email => "pablo@rox.always",
-      :password_digest => "pablo",
       :photo => "https://scontent-a-sjc.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10672243_10203261369791947_986035253996343461_n.jpg?oh=8ff2c42f0671e7eeb1a0a7abcf861120&oe=54AC85C5",
       :role => "teacher",
 }
 
-enrolltest1 = {
-    :user_id => 1,
-    :course_id => 1,
-}
+# enrolltest1 = {
+#     :user_id => 1,
+#     :course_id => 1,
+# }
 
 story1 = {
     :course_id => 1,
@@ -671,7 +670,7 @@ notification1 = {
 
 #push individual/outlier example
 users.push usertest1
-enrollments.push enrolltest1
+# enrollments.push enrolltest1
 stories.push story1
 stories.push story2
 stories.push story3
@@ -698,7 +697,6 @@ usertotal = 25
   users.push({
     :name => Faker::Name.name,
     :email => Faker::Internet.email,
-    :password_digest => "pablo",
     :photo => "http://randomuser.me/g/portraits/#{gender.sample}/#{number.sample}.jpg",
     :role => "teacher",
   })
@@ -707,7 +705,6 @@ end
   users.push({
     :name => Faker::Name.name,
     :email => Faker::Internet.email,
-    :password_digest => "pablo",
     :photo => "http://randomuser.me/g/portraits/#{gender.sample}/#{number.sample}.jpg",
     :role => "student",
   })
@@ -722,7 +719,6 @@ end
 end
 
 #comments
-
 
 comment1 = <<-eos
 I second this. The New York School of Poets also included Kenneth Koch, Frank O'Hara, and John Ashbery. These are pretty big names that definitely are still impacting young poets today. Ashbery won a Pulitzer and has, over time, won most of the American poetry prizes.

@@ -7,10 +7,14 @@
             <span><i class="fa fa-book"></i>Bibliotate</span>
           </a>
         </section>
+
         <% if current_user == nil %>
-          <section id="login_box">
-            <a href="">
-              <span>Login With <i class="fa fa-google-plus"></i></span>
+         <section id="login_box">
+            <a href="/auth">
+              <span>Signup<i class="fa fa-google-plus"></i></span>
+            </a>
+            <a href="/auth">
+              <span>Login<i class="fa fa-google-plus"></i></span>
             </a>
           </section>
         <% elsif current_user.role == "teacher" %>
@@ -20,13 +24,24 @@
           <section id="nav-teacher">
             <%= link_to "Create Course", new_course_path %>
           </section>
+          <section id="login_box">
+            <%= link_to  logout_path, :method => 'post' do %>
+              <span>Logout<i class="fa fa-google-plus"></i></span>
+            <% end  %>
+          </section>
         <% else %>
           <section class="nav-name">
             Hello, <%= current_user.name %>
           </section>
           <section id="nav-student">
           </section>
+          <section id="login_box">
+            <%= link_to  logout_path, :method => 'post' do %>
+              <span>Logout<i class="fa fa-google-plus"></i></span>
+            <% end  %>
+          </section>
         <% end %>
+
       </header>
     </section>
   </section>
