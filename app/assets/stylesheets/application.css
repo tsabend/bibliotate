@@ -1,15 +1,4 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
  *= require_tree .
  *= require_self
  */
@@ -218,3 +207,55 @@ main {
   max-width: 250px;
   max-height: 250px;
 }
+
+.new_story{
+
+
+}
+
+.story_create h2 {
+  font-size: 1em;
+  font-color:red;
+}
+#story_author{
+  text-align: center;
+  margin: 0;
+  width: 30%;
+  height: 5%;
+  margin: 1%;
+  margin-left: 35%;
+  height: 20px;
+  font-size: 1em
+}
+
+#story_title{
+  text-align: center;
+  width: 30%;
+  height: 20px;
+  margin: 1%;
+  margin-left: 35%;
+  font-size: 1em
+}
+.new_story_body{
+  text-align: center;
+  width: 100%;
+  height: 5%;
+  margin: 1%;
+  font-size: 1em
+}
+
+.coursedropdown {
+   text-align: center;
+  width: 30%;
+  height: 5%;
+  margin: 1%;
+  margin-left: 35%;
+}
+
+.newstorybutton {
+width: 250px; height: 50px; color: #fff; background-color: #125182; text-align: center; font-size: 30px; line-height: 50px; /*gradient styles*/ background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #125182), color-stop(.5, #1269ab), color-stop(.51, #004375), to(#00345b)); background: -moz-linear-gradient(top, #125182, #1269ab 50%, #004375 51%, #00345b); /*border styles*/ -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; -moz-box-shadow:inset 0 0 10px #000000; -webkit-box-shadow:inset 0 0 10px #000000; box-shadow:inset 0 0 10px #000000; }
+}
+.newstorybutton p:hover { text-shadow: 0px 0px 3px #888;}
+.newstorybutton p:hover { text-shadow: 0px 0px 3px #888;}
+ .newstorybutton:hover { -moz-box-shadow:inset 0 0 50px #000000; -webkit-box-shadow:inset 0 0 50px #000000; box-shadow:inset 0 0 50px #000000; }
+ .newstorybutton p { font-size: 30px; line-height: 50px; font-family: “HelveticaNeue-Light”, “Helvetica Neue Light”, “Helvetica Neue”, Helvetica, Arial, “Lucida Grande”, sans-serif; font-weight: 300; text-shadow: 0px 0px 3px #555; } a { text-decoration: none; color: fff; }
