@@ -36,30 +36,25 @@ class UsersController < ApplicationController
   end
 
   def callback
-    puts "hit callback: -------------------------------------"
     #Gets the Access Token for the User Signed In and Stores it
     access_token = client.auth_code.get_token(params[:code], :redirect_uri => 'http://localhost:3000/callback')
-    puts "access token: -------------------------------------"
-    puts access_token
-
     #Stores all the Information that Google Sends Back In Variable For Later Use
     response = access_token.get('https://www.googleapis.com/oauth2/v1/userinfo?alt=json')
-
     #Gets the Info Specifically About the signed in User
     user_info = JSON.parse(response.body)
-    puts "user_info: -------------------------------------"
-    puts user_info
 
     #Using the Information Google Sent Back Look for or create the User
+    previous_size = User.all.size
     @user = User.find_or_create_by(name: user_info["name"])
     @user.update(email: user_info["email"], photo: user_info["picture"])
-    user_info = JSON.parse(response.body)
-    puts "@user: -------------------------------------"
-    puts @user.id
+    session[:user_id] = @user.id
 
-    session[:current_user] = @user.id
-
-    redirect_to "/type"
+    # If this is a newly created user, let them assign their type. Else render homepage.
+    if previous_size < User.all.size
+      redirect_to "/type"
+    else
+      redirect_to '/'
+    end
   end
 
   def type
