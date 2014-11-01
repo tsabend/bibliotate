@@ -15,6 +15,7 @@ class Story < ActiveRecord::Base
     paragraphs.reject! {|line| line.empty?}
   # Make paragraphs
     self.paragraph_maker(paragraphs, story.id)
+    story
   end
 
   private
