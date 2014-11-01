@@ -69,7 +69,8 @@ header {
 
 #login_box a:hover {
   text-decoration: underline;
-  color: #7A6A53;
+  /*This needs a different color*/
+  color: yellow;
 }
 
 #login_box span {
@@ -118,6 +119,7 @@ main {
   text-decoration: none;
   font-size: 1.25em;
   font-style: georgia, serif;
+  cursor: crosshair;
 }
 
 .sentence:hover {
@@ -126,13 +128,19 @@ main {
 
 
 .popup {
-  position: absolute;
+  /*position: absolute;*/
   /*display: none;*/
   border: 1px solid rgba(0,0,0,0.15);
-  width: 50%;
+  /*width: 50%;*/
   background-color: white;
-  left: 25%;
+  /*left: 25%;*/
   overflow-y: scroll;
+  position: fixed;
+  top: 7%;
+  left: 80%;
+  width: 20%;
+  height: 800px;
+
 }
 
 .popup textarea {
@@ -167,6 +175,12 @@ main {
 
 }
 
+.hover-text {
+  color: black;
+  margin: 2px 0 0 -4px;
+  padding: 0 0 0 0;
+  position: absolute;
+}
 
 .card {
   width: 30%;
@@ -178,10 +192,18 @@ main {
   overflow-y: scroll;
 }
 
+.profile {
+  height: 600px;
+  margin-left: 30%;
+}
+
 .card ul {
   list-style: none;
 }
 
+.card h1 {
+  text-align: center;
+}
 .card h3 {
   text-align: center;
 }
@@ -189,4 +211,10 @@ main {
 .student_image {
   max-width: 50px;
   max-height: 50px;
+}
+
+.profile_pic {
+  margin-left: 20%;
+  max-width: 250px;
+  max-height: 250px;
 }

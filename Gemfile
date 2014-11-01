@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor'
+gem 'unicorn'
 gem 'oauth2'
 gem 'dotenv'
 gem 'doorkeeper'
@@ -46,5 +48,8 @@ group :test do
   gem 'rspec-rails'
   gem 'factory_girl_rails'
   gem 'tactful_tokenizer'
+end
+
+group :development do
   gem 'byebug'
 end

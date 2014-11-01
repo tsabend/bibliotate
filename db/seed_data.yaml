@@ -3,186 +3,160 @@
 :users:
 - :name: pablo
   :email: pablo@rox.always
-  :password_digest: pablo
   :photo: https://scontent-a-sjc.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10672243_10203261369791947_986035253996343461_n.jpg?oh=8ff2c42f0671e7eeb1a0a7abcf861120&oe=54AC85C5
   :role: teacher
-- :name: Pearline Koepp
-  :email: jewel@vandervort.biz
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/men/10.jpg
+- :name: Winona Mante
+  :email: murphy.carter@connelly.com
+  :photo: http://randomuser.me/g/portraits/women/50.jpg
   :role: teacher
-- :name: Miss Colt Lemke
-  :email: alana@durgan.name
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/32.jpg
+- :name: Cassidy Borer
+  :email: olaf@hand.org
+  :photo: http://randomuser.me/g/portraits/women/33.jpg
   :role: teacher
-- :name: Nils Tromp
-  :email: emory.little@kundelang.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/2.jpg
+- :name: Thad Wehner DDS
+  :email: rey_reinger@skilescarroll.org
+  :photo: http://randomuser.me/g/portraits/men/53.jpg
   :role: teacher
-- :name: Ms. Clement Bernhard
-  :email: leie_wolff@schowalter.info
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/men/17.jpg
+- :name: Lenora Jaskolski PhD
+  :email: helen_legros@gleason.info
+  :photo: http://randomuser.me/g/portraits/women/45.jpg
   :role: teacher
-- :name: Yesenia Howe
-  :email: jamel.lockman@corkery.info
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/men/6.jpg
+- :name: Mariano West
+  :email: alexandro.johnston@wehner.com
+  :photo: http://randomuser.me/g/portraits/women/51.jpg
   :role: teacher
-- :name: Larue Mayer
-  :email: conner.hirthe@kautzer.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/14.jpg
+- :name: Betty Rodriguez IV
+  :email: woodrow@dare.com
+  :photo: http://randomuser.me/g/portraits/women/54.jpg
   :role: student
-- :name: Elisha Schneider
-  :email: moriah@mayert.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/15.jpg
+- :name: Miss Elissa Kerluke
+  :email: jodie.spinka@wintheiserlind.name
+  :photo: http://randomuser.me/g/portraits/women/5.jpg
   :role: student
-- :name: Wyatt Hand
-  :email: axel_purdy@weinat.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/46.jpg
-  :role: student
-- :name: Tavares Kris
-  :email: mustafa_kuphal@hamill.info
-  :password_digest: pablo
+- :name: Ludwig Halvorson
+  :email: erika.jones@beer.org
   :photo: http://randomuser.me/g/portraits/men/11.jpg
   :role: student
-- :name: Mr. Lane Halvorson
-  :email: krystel_oconner@thiel.info
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/6.jpg
+- :name: Syble Wisoky DDS
+  :email: bernadine@mcglynn.info
+  :photo: http://randomuser.me/g/portraits/men/13.jpg
   :role: student
-- :name: Janiya Buckridge
-  :email: jamaal@conn.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/men/39.jpg
+- :name: Mrs. Federico Beer
+  :email: stevie@crist.biz
+  :photo: http://randomuser.me/g/portraits/women/12.jpg
   :role: student
-- :name: Ms. Austyn Kemmer
-  :email: taya_muller@torphy.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/31.jpg
+- :name: Mrs. Hellen Franecki
+  :email: karelle_waters@bauch.info
+  :photo: http://randomuser.me/g/portraits/men/26.jpg
   :role: student
-- :name: Kadin Klocko
-  :email: jermey.hahn@dietrich.biz
-  :password_digest: pablo
+- :name: Titus Luettgen
+  :email: arne@cartwright.org
+  :photo: http://randomuser.me/g/portraits/women/53.jpg
+  :role: student
+- :name: Addie Zemlak
+  :email: demetris@ondricka.com
+  :photo: http://randomuser.me/g/portraits/men/1.jpg
+  :role: student
+- :name: Christ Haley
+  :email: justice@grant.net
   :photo: http://randomuser.me/g/portraits/women/20.jpg
   :role: student
-- :name: Haleigh Bode DDS
-  :email: bernie.ruecker@littel.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/men/32.jpg
+- :name: Alfredo Cremin
+  :email: kenya@mraz.biz
+  :photo: http://randomuser.me/g/portraits/women/7.jpg
   :role: student
-- :name: Vito Hammes
-  :email: otilia@stanton.biz
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/6.jpg
+- :name: Tamara Nikolaus
+  :email: robin@jenkins.org
+  :photo: http://randomuser.me/g/portraits/men/37.jpg
   :role: student
-- :name: Francisca Wiegand
-  :email: cierra@wardrempel.biz
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/men/39.jpg
+- :name: Jaleel Kuhic
+  :email: lela@okeefe.biz
+  :photo: http://randomuser.me/g/portraits/women/2.jpg
   :role: student
-- :name: Madaline Dickens III
-  :email: annette@blickhintz.info
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/8.jpg
+- :name: Conner Bartoletti
+  :email: adeline@cainwolf.net
+  :photo: http://randomuser.me/g/portraits/women/11.jpg
   :role: student
-- :name: Nikko Welch
-  :email: terrence.daugherty@kirlincasper.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/23.jpg
+- :name: Colt Blanda
+  :email: tanya_kutch@ryan.net
+  :photo: http://randomuser.me/g/portraits/women/11.jpg
   :role: student
-- :name: Joey Gorczany V
-  :email: natasha@fahey.org
-  :password_digest: pablo
+- :name: Mr. George Turner
+  :email: dorothy_lynch@robertseffertz.org
+  :photo: http://randomuser.me/g/portraits/men/13.jpg
+  :role: student
+- :name: Lexus Legros
+  :email: abraham_gleason@runolfon.info
+  :photo: http://randomuser.me/g/portraits/women/11.jpg
+  :role: student
+- :name: Brad Deckow
+  :email: victor@keeling.com
+  :photo: http://randomuser.me/g/portraits/women/48.jpg
+  :role: student
+- :name: Blair Thiel
+  :email: norberto@boyer.org
+  :photo: http://randomuser.me/g/portraits/women/49.jpg
+  :role: student
+- :name: Whitney Nikolaus
+  :email: sincere@gerhold.biz
+  :photo: http://randomuser.me/g/portraits/men/54.jpg
+  :role: student
+- :name: Khalil Emard
+  :email: aracely@monahankuhn.info
   :photo: http://randomuser.me/g/portraits/men/49.jpg
-  :role: student
-- :name: Alford Bergnaum
-  :email: greta.terry@emmerich.info
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/36.jpg
-  :role: student
-- :name: Gaetano Kohler
-  :email: thea_ruel@brakus.info
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/15.jpg
-  :role: student
-- :name: Belle Kerluke
-  :email: layla.greenfelder@green.org
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/men/35.jpg
-  :role: student
-- :name: Marcel Terry
-  :email: phyllis_terry@hoeger.name
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/38.jpg
-  :role: student
-- :name: Alexie Leuschke I
-  :email: martina@rodriguez.info
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/15.jpg
-  :role: student
-- :name: Kim Larson
-  :email: cordell_reilly@satterfieldcollier.info
-  :password_digest: pablo
-  :photo: http://randomuser.me/g/portraits/women/10.jpg
   :role: student
 :enrollments:
 - :user_id: 1
   :course_id: 1
-- :user_id: 18
-  :course_id: 1
-- :user_id: 23
-  :course_id: 5
-- :user_id: 25
-  :course_id: 1
-- :user_id: 10
-  :course_id: 3
-- :user_id: 18
-  :course_id: 1
-- :user_id: 12
-  :course_id: 3
-- :user_id: 12
-  :course_id: 1
-- :user_id: 9
-  :course_id: 2
-- :user_id: 12
-  :course_id: 4
-- :user_id: 14
-  :course_id: 3
-- :user_id: 11
-  :course_id: 4
-- :user_id: 9
-  :course_id: 2
-- :user_id: 15
-  :course_id: 4
-- :user_id: 9
-  :course_id: 5
-- :user_id: 11
-  :course_id: 3
-- :user_id: 14
-  :course_id: 1
-- :user_id: 25
-  :course_id: 2
-- :user_id: 14
-  :course_id: 4
-- :user_id: 21
-  :course_id: 2
-- :user_id: 18
-  :course_id: 4
 - :user_id: 8
   :course_id: 2
-- :user_id: 23
+- :user_id: 18
+  :course_id: 1
+- :user_id: 18
   :course_id: 5
-- :user_id: 7
+- :user_id: 24
+  :course_id: 2
+- :user_id: 13
+  :course_id: 4
+- :user_id: 12
+  :course_id: 4
+- :user_id: 16
+  :course_id: 4
+- :user_id: 25
+  :course_id: 4
+- :user_id: 22
+  :course_id: 4
+- :user_id: 18
   :course_id: 3
+- :user_id: 11
+  :course_id: 2
+- :user_id: 14
+  :course_id: 3
+- :user_id: 21
+  :course_id: 4
+- :user_id: 23
+  :course_id: 4
+- :user_id: 20
+  :course_id: 1
 - :user_id: 17
-  :course_id: 5
+  :course_id: 1
+- :user_id: 13
+  :course_id: 3
+- :user_id: 12
+  :course_id: 4
+- :user_id: 14
+  :course_id: 4
+- :user_id: 6
+  :course_id: 2
 - :user_id: 10
+  :course_id: 2
+- :user_id: 18
+  :course_id: 2
+- :user_id: 5
+  :course_id: 1
+- :user_id: 24
+  :course_id: 3
+- :user_id: 22
   :course_id: 5
 :stories:
 - :course_id: 1
@@ -771,235 +745,235 @@
 - :sentence_id: 1
   :user_id: 1
   :body: this sentence stinks of stinky shoes
-- :sentence_id: 100
-  :user_id: 10
+- :sentence_id: 96
+  :user_id: 12
   :body: I second this.
-- :sentence_id: 150
-  :user_id: 10
+- :sentence_id: 123
+  :user_id: 21
   :body: The New York School of Poets also included Kenneth Koch, Frank O'Hara, and
     John Ashbery.
-- :sentence_id: 134
-  :user_id: 7
+- :sentence_id: 146
+  :user_id: 19
   :body: These are pretty big names that definitely are still impacting young poets
     today.
-- :sentence_id: 107
-  :user_id: 11
+- :sentence_id: 82
+  :user_id: 20
   :body: Ashbery won a Pulitzer and has, over time, won most of the American poetry
     prizes.
-- :sentence_id: 14
+- :sentence_id: 20
   :user_id: 24
   :body: More recently, Stephen Dunn, Louise Gluck, W. D. Snodgrass, are all pretty
     big names.
-- :sentence_id: 18
-  :user_id: 7
+- :sentence_id: 77
+  :user_id: 16
   :body: (And personal favorites of mine.)
-- :sentence_id: 83
-  :user_id: 14
+- :sentence_id: 113
+  :user_id: 9
   :body: They're not as clearly affiliated with a school, but I personally believe
     that we're too close to them to really categorize them.
-- :sentence_id: 33
-  :user_id: 8
+- :sentence_id: 41
+  :user_id: 24
   :body: Dunn and Gluck both won Pulitzers and both books are of course fantastic;
     "Different Hours" for Dunn and "The Wild Iris" for Gluck.
-- :sentence_id: 21
-  :user_id: 14
+- :sentence_id: 31
+  :user_id: 25
   :body: Paul Muldoon and Dana Goia are big right now.
-- :sentence_id: 83
-  :user_id: 24
+- :sentence_id: 51
+  :user_id: 14
   :body: I'm not a personal fan of Goia but both draw heavily on formal styles and
     rhyme.
-- :sentence_id: 66
-  :user_id: 16
+- :sentence_id: 52
+  :user_id: 9
   :body: Slam poetry is of course a big thing now.
-- :sentence_id: 148
-  :user_id: 19
+- :sentence_id: 98
+  :user_id: 13
   :body: I'm not as well-versed there.
-- :sentence_id: 112
-  :user_id: 7
+- :sentence_id: 35
+  :user_id: 22
   :body: Not to pun, or anything...If anything I would tell you to start by looking
     up some Rives videos online.
-- :sentence_id: 125
-  :user_id: 14
+- :sentence_id: 114
+  :user_id: 23
   :body: (Pronounced "reeves.")
-- :sentence_id: 81
-  :user_id: 22
+- :sentence_id: 111
+  :user_id: 17
   :body: I think we're moving towards a lot of multi-culturalism in poetry and using
     poetry to speak to personal stories of race, gender, and sexuality.
-- :sentence_id: 98
-  :user_id: 24
+- :sentence_id: 114
+  :user_id: 9
   :body: Examples of poets who I think do this who are "hot" right now include Terance
     Hayes, whose book Lighthead I think deserved a Pulitzer, Danez Smith (who is hot
     and "up and coming" off the presses right now, edits at Muzzle Magazine, recently
     featured in Poetry magazine as well as others - btw Hayes guest-edited a really
     great issue of Ploughshares) and Tracy K Smith who I do believe recently won a
     Pulitzer.
-- :sentence_id: 84
-  :user_id: 22
+- :sentence_id: 38
+  :user_id: 23
   :body: Not to say the Pulizter isn't the only poetry prize in the world but I guess
     I do pick up poetry books when I see they've won them.
-- :sentence_id: 65
-  :user_id: 22
+- :sentence_id: 112
+  :user_id: 19
   :body: We're also seeing trauma and war poets.
-- :sentence_id: 27
-  :user_id: 11
+- :sentence_id: 69
+  :user_id: 7
   :body: Bob Hicok taught at VSU (still does) during the school shooting and wrote
     about it a lot in his book "Words for Empty, Words for Full."
-- :sentence_id: 17
-  :user_id: 23
+- :sentence_id: 108
+  :user_id: 14
   :body: Brian Turner writes about being a vet in his two books "Here Bullet" and
     "Phantom Noise."
-- :sentence_id: 23
+- :sentence_id: 91
   :user_id: 24
   :body: C. K. Williams is another big name although I lent someone his book and never
     got it back so I can't speak to it so much.
-- :sentence_id: 11
-  :user_id: 15
+- :sentence_id: 34
+  :user_id: 23
   :body: OP, consider that the briefest overview I can give you of the biggest (mostly)
     AMERICAN names in poetry in the past 50 years.
-- :sentence_id: 103
-  :user_id: 11
+- :sentence_id: 142
+  :user_id: 22
   :body: I feel like consuming literary analysis is only possible when the audience
     all agrees to hold certain foundational principles regarding linguistics, aesthetics,
     politics, etc., and what keeps me off /r/books is the absolute hostility towards
     those principles that the average person seems to have.
-- :sentence_id: 26
-  :user_id: 6
+- :sentence_id: 13
+  :user_id: 9
   :body: Even the most evacuated pure New Criticism requires that the reader believes
     texts are meaningful, and how often do we get the "blue curtains are blue curtains"
     rant on reddit.
-- :sentence_id: 76
-  :user_id: 6
+- :sentence_id: 65
+  :user_id: 19
   :body: Since literary theory tends to have a fairly open definition of what constitutes
     a 'text', movies, television shows, and other types of media in general could
     bring in a bigger audience.
-- :sentence_id: 109
-  :user_id: 13
+- :sentence_id: 49
+  :user_id: 6
   :body: While some may dismiss anything nearing cultural studies, multimodal texts
     such as films can have just as much depth and possibility of interpretation as
     literature does.
-- :sentence_id: 68
-  :user_id: 7
+- :sentence_id: 129
+  :user_id: 11
   :body: People have already done this with shows such as Breaking Bad, I'm certain
     an online journal covering media like that would be popular.
+- :sentence_id: 131
+  :user_id: 12
+  :body: That is an interesting question.
 - :sentence_id: 52
   :user_id: 24
-  :body: That is an interesting question.
-- :sentence_id: 132
-  :user_id: 6
   :body: I think its safe to say that what Lord Henry finds alluring in Dorian is
     physical, or what we would consider to be "outward," appearance.
-- :sentence_id: 98
-  :user_id: 11
+- :sentence_id: 103
+  :user_id: 13
   :body: Harry reminds us early in the book that Dorian has the sort of beauty that
     need not be explained.
-- :sentence_id: 95
+- :sentence_id: 96
   :user_id: 7
   :body: But I think the beauty that Harry are referring to here goes beyond what
     we might consider to me mere outward, physical pleasantness.
-- :sentence_id: 32
-  :user_id: 10
+- :sentence_id: 111
+  :user_id: 21
   :body: Or, to put it more accurately, that outward, physical pleasantness itself
     represents the highest form of intellectual, aesthetic, and philosophical experience
     in his view.
-- :sentence_id: 72
-  :user_id: 25
+- :sentence_id: 57
+  :user_id: 15
   :body: It might be easier to understand this idea if we can cast aside the notion
     that Henry is simply being vein or shallow.
-- :sentence_id: 74
-  :user_id: 11
+- :sentence_id: 109
+  :user_id: 7
   :body: To Harry, outward appearance is paradoxically dives deepest into the truth
     of life.
-- :sentence_id: 43
-  :user_id: 17
+- :sentence_id: 61
+  :user_id: 16
   :body: 'As Wilde writes in the Preface to the 1891 edition: "All art is at once
     surface and symbol.'
-- :sentence_id: 58
-  :user_id: 19
+- :sentence_id: 91
+  :user_id: 18
   :body: Those who go beneath the surface do so at their peril."
-- :sentence_id: 79
-  :user_id: 12
+- :sentence_id: 131
+  :user_id: 19
   :body: 'This is one of the key ideas of late 19th century English Aestheticism of
     the sort that Walter Pater prescribes in The Renaissance: Studies in Art and Poetry
     (A book Wilde described as the "golden book") and that is represented in Huysmans''s
     Au Rebours (The novel that most likely provided the inspiration for Dorian''s
     "yellow book").'
-- :sentence_id: 62
-  :user_id: 6
+- :sentence_id: 17
+  :user_id: 17
   :body: Wilde is definitely interested in this idea, but it goes back.
-- :sentence_id: 70
-  :user_id: 16
+- :sentence_id: 140
+  :user_id: 12
   :body: 'The man who stands outside of traditional morals is, obviously, important
     to Nietzsche, but it was also a key problem for the Romantics: see Wordsworth''s
     The Borderers, Blake''s revolutionary texts, and especially Shelley''s dramas
     and radical stuff.'
-- :sentence_id: 112
-  :user_id: 22
+- :sentence_id: 11
+  :user_id: 16
   :body: Wilde was obviously very influenced by the Romantics (at least one of Lord
     Henry's speeches start as quotations from Keats's letters and follows it up with
     a Wildean epigram; somebody in the novel mentions Wordsworth's "The Idiot Boy")
     and in Shelley in particular.
-- :sentence_id: 148
-  :user_id: 12
+- :sentence_id: 82
+  :user_id: 6
   :body: So this sentiment could have popped up in any of those places, particularly
     in something like Shelley's The Cenci or Prometheus Unbound (incidentally, I think
     Wilde was in the audience for the first stage performance of The Cenci in...like...1886
     or thereabouts).
-- :sentence_id: 50
-  :user_id: 8
+- :sentence_id: 146
+  :user_id: 12
   :body: So I can't be overly helpful, because I am not aware of any relationship
     between Hemingway and any actual anarchists, and the only time I can think in
     his writing that he mentions them are in For Whom The Bell Tolls.
-- :sentence_id: 117
-  :user_id: 17
+- :sentence_id: 15
+  :user_id: 21
   :body: And this probably isn't what you want to hear, but he had a pretty low opinion
     of them.
-- :sentence_id: 71
-  :user_id: 20
+- :sentence_id: 66
+  :user_id: 16
   :body: It would have been better for the town if they had thrown over twenty or
     thirty of the drunkards, especially those of the red-and-black scarves, and if
     we ever have another revolution I believe they should be destroyed at the start.
-- :sentence_id: 128
-  :user_id: 8
+- :sentence_id: 78
+  :user_id: 18
   :body: But then we did not know this.
-- :sentence_id: 114
-  :user_id: 10
+- :sentence_id: 93
+  :user_id: 13
   :body: We know he is referencing anarchists specifically because red and black were
     the colors of the CNT-AIT, an anarchist group that was organized strongly in Barcelona
     and Catalonia, but probably less so elsewhere.
-- :sentence_id: 130
-  :user_id: 8
+- :sentence_id: 134
+  :user_id: 11
   :body: Basically his protagonist characters make the argument that the anarchists
     were a hindrance to the cause of fighting off fascism, which should serve as no
     surprise, as the ideas behind anarchism don't really lend themselves to well regimented
     combat units.
-- :sentence_id: 32
-  :user_id: 15
+- :sentence_id: 49
+  :user_id: 17
   :body: In fact, the CNT did not allow anyone who was military, police or an employer
     be a member, so they probably had a huge handicap when it came down to fighting.
-- :sentence_id: 139
-  :user_id: 6
+- :sentence_id: 75
+  :user_id: 20
   :body: Here is something I found arguing that Hemingway was oversimplifying the
     situation.
-- :sentence_id: 117
-  :user_id: 24
+- :sentence_id: 18
+  :user_id: 20
   :body: The author argues that the CNT were actually key to early revolutionary success
     and at least made an effort to be organized.
-- :sentence_id: 149
-  :user_id: 22
+- :sentence_id: 138
+  :user_id: 8
   :body: Maybe Hemingway's quote references only rural anarchists and shouldn't be
     compared to CNT activity?
-- :sentence_id: 103
-  :user_id: 12
+- :sentence_id: 22
+  :user_id: 22
   :body: Lastly, and I don't mean to be preachy, but regardless of your political
     views, you are probably not an anarchist, especially if you are pursuing higher
     education.
-- :sentence_id: 102
-  :user_id: 21
+- :sentence_id: 82
+  :user_id: 14
   :body: Unless you are attending The University of Mogadishu and majoring in preventing
     the development of a central government, you are probably a capitalist with alternative
     political views.
-- :sentence_id: 109
-  :user_id: 11
+- :sentence_id: 142
+  :user_id: 8
   :body: In any event, I hope this helped.
 :courses:
 - :user_id: 1
@@ -1018,62 +992,62 @@
   :noteable_id: 3
   :status: 1
 - :user_id: 1
-  :noteable_id: 18
-  :noteable_type: comment
-- :user_id: 4
-  :noteable_id: 14
-  :noteable_type: enrollment
-- :user_id: 4
-  :noteable_id: 21
-  :noteable_type: comment
-- :user_id: 5
-  :noteable_id: 10
+  :noteable_id: 16
   :noteable_type: enrollment
 - :user_id: 2
-  :noteable_id: 19
+  :noteable_id: 8
   :noteable_type: comment
-- :user_id: 1
+- :user_id: 4
   :noteable_id: 7
   :noteable_type: enrollment
-- :user_id: 3
-  :noteable_id: 1
+- :user_id: 5
+  :noteable_id: 5
   :noteable_type: enrollment
-- :user_id: 4
-  :noteable_id: 25
+- :user_id: 1
+  :noteable_id: 20
   :noteable_type: comment
 - :user_id: 1
+  :noteable_id: 3
+  :noteable_type: comment
+- :user_id: 5
   :noteable_id: 25
+  :noteable_type: comment
+- :user_id: 5
+  :noteable_id: 21
+  :noteable_type: comment
+- :user_id: 1
+  :noteable_id: 20
+  :noteable_type: comment
+- :user_id: 1
+  :noteable_id: 20
   :noteable_type: enrollment
+- :user_id: 3
+  :noteable_id: 7
+  :noteable_type: enrollment
+- :user_id: 5
+  :noteable_id: 16
+  :noteable_type: comment
+- :user_id: 3
+  :noteable_id: 4
+  :noteable_type: comment
+- :user_id: 3
+  :noteable_id: 22
+  :noteable_type: enrollment
+- :user_id: 4
+  :noteable_id: 1
+  :noteable_type: comment
 - :user_id: 3
   :noteable_id: 23
   :noteable_type: comment
-- :user_id: 5
-  :noteable_id: 9
-  :noteable_type: comment
-- :user_id: 5
-  :noteable_id: 12
-  :noteable_type: enrollment
-- :user_id: 4
-  :noteable_id: 11
-  :noteable_type: comment
-- :user_id: 1
-  :noteable_id: 5
-  :noteable_type: comment
-- :user_id: 3
-  :noteable_id: 25
-  :noteable_type: enrollment
 - :user_id: 2
-  :noteable_id: 7
+  :noteable_id: 13
   :noteable_type: comment
-- :user_id: 5
-  :noteable_id: 3
-  :noteable_type: enrollment
-- :user_id: 5
+- :user_id: 4
   :noteable_id: 21
   :noteable_type: enrollment
-- :user_id: 5
+- :user_id: 4
+  :noteable_id: 1
+  :noteable_type: enrollment
+- :user_id: 4
   :noteable_id: 22
   :noteable_type: comment
-- :user_id: 1
-  :noteable_id: 12
-  :noteable_type: enrollment
