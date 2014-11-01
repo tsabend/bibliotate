@@ -2,6 +2,10 @@ class StoriesController < ApplicationController
   def index
   end
 
+  def show
+    @story = Story.find(params[:id])
+  end
+
   def new
     @course = Course.find(params[:course_id])
     @story = Story.new
