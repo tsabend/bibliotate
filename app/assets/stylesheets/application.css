@@ -227,7 +227,18 @@ main {
   max-height: 250px;
 }
 
+
+.nav-name {
+  float: right;
+  color: white;
+}
+
+#nav-teacher {
+  float: right;
+  color: white;
+
 #splash {
   font-size: 50em;
   color: #7A6A53;
+
 }
