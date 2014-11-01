@@ -1,7 +1,7 @@
 class CreateStories < ActiveRecord::Migration
   def change
     create_table :stories do |t|
-      t.belongs_to :course
+      t.references :course
       t.string :title
       t.string :author
 

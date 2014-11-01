@@ -1,8 +1,8 @@
 class CreateComments < ActiveRecord::Migration
   def change
     create_table :comments do |t|
-      t.belongs_to :sentence
-      t.belongs_to :user
+      t.references :sentence
+      t.references :user
       t.text :body
 
       t.timestamps
