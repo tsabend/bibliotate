@@ -26,9 +26,7 @@
             Hello, <%= current_user.name %>
           </section>
           <section id="nav-teacher">
-            <a href="courses/new">
-              Create Course
-            </a>
+            <%= link_to "Create Course", new_course_path %>
           </section>
         <% else %>
           <section class="nav-name">

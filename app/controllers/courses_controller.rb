@@ -15,7 +15,7 @@ class CoursesController < ApplicationController
   def create
     @course = Course.new(course_params)
     @course.save
-      redirect_to index_path
+    redirect_to '/'
   end
 
   def destroy

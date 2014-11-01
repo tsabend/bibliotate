@@ -1,6 +1,6 @@
 <div id="course-form-container">
 
-  <%= form_for :course, url: new_course_path do |f| %>
+  <%= form_for :course, url: courses_path, method: :post do |f| %>
 
     <div>
       <%= f.label :name %>
