@@ -1,0 +1,7 @@
+<ul>
+    <% students.each do |student|  %>
+      <% if student.comments.last.body %>
+      <li><%= student.name %>. Latest comment: <%= student.comments.last.body %> on <%= student.comments.last.created_at %></li>
+      <% end %>
+    <% end %>
+</ul>
