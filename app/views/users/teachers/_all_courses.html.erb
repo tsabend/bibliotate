@@ -1,5 +1,4 @@
-  <%= current_user.courses.size %>
-<% current_user.courses.each do |course| %>
+<% current_user.taught_courses.each do |course| %>
   <div class="card">
     <h3><%= course.name %></h3>
     <%= link_to "Delete this course", course_path(id: course.id), method: :delete %>
