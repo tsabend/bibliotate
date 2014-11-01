@@ -4,8 +4,7 @@
   <%= f.text_field :author, placeholder: "Author", data: {field: "author"} %><br>
   <%= f.text_field :title, placeholder: "Title", data: {field: "title"} %><br>
   <%= render partial: 'course_dropdown', :locals => {:courses => @courses } %><br>
-<textarea class="new_story_body" name="story_body"rows="50" cols="100">
-Paste your story here!!
+<textarea placeholder="Paste your story here" class="new_story_body" name="story_body"rows="50" cols="100">
 </textarea>
 <br>
   <%= button_tag(type: "submit", :class => "newstorybutton") {content_tag(:strong, "Learnding!" )}%>
