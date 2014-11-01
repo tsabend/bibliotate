@@ -1,13 +1,12 @@
-<h2>Add a story</h2>
 <div class="storycreate">
+<h2>Add a story</h2>
 <%= form_for(@story) do |f| %>
   <%= f.text_field :author, placeholder: "Author", data: {field: "author"} %><br>
   <%= f.text_field :title, placeholder: "Title", data: {field: "title"} %><br>
-<%= render partial: 'course_dropdown', :locals => {:courses => @courses } %><br>
-<textarea name="story_body"rows="4" cols="50">
-Paste your story here!!
+  <%= render partial: 'course_dropdown', :locals => {:courses => @courses } %><br>
+<textarea placeholder="Paste your story here" class="new_story_body" name="story_body"rows="50" cols="100">
 </textarea>
 <br>
-  <%= f.submit %>
+  <%= button_tag(type: "submit", :class => "newstorybutton") {content_tag(:strong, "Learnding!" )}%>
 <% end %>
 </div>
