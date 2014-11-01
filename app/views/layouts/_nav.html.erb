@@ -10,13 +10,16 @@
         <% if user_logged_in? %>
           <section id="login_box">
           <%= link_to  logout_path, :method => 'post' do %>
-            <span>Logout <i class="fa fa-google-plus"></i></span>
+            <span>Logout<i class="fa fa-google-plus"></i></span>
           <% end  %>
           </section>
         <% else %>
           <section id="login_box">
             <a href="/auth">
-              <span>Login With <i class="fa fa-google-plus"></i></span>
+              <span>Signup<i class="fa fa-google-plus"></i></span>
+            </a>
+            <a href="/auth">
+              <span>Login<i class="fa fa-google-plus"></i></span>
             </a>
           </section>
         <% end %>
