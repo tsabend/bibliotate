@@ -1,0 +1,16 @@
+<div id="course-form-container">
+
+  <%= form_for :course, url: new_course_path do |f| %>
+
+    <div>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </div>
+
+    <div>
+      <%= f.submit "Create Course" %>
+    </div>
+
+  <% end %>
+
+</div>
