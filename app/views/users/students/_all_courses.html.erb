@@ -1,5 +1,5 @@
 
-<% current_user.courses.each do |course| %>
+<% current_user.enrolled_courses.each do |course| %>
 <div class="card">
 <h3><%= course.name %></h3>
 <% course.stories.each do |story| %>
