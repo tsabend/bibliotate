@@ -119,6 +119,7 @@ main {
   text-decoration: none;
   font-size: 1.25em;
   font-style: georgia, serif;
+  cursor: crosshair;
 }
 
 .sentence:hover {
@@ -174,6 +175,12 @@ main {
 
 }
 
+.hover-text {
+  color: black;
+  margin: 2px 0 0 -4px;
+  padding: 0 0 0 0;
+  position: absolute;
+}
 
 .card {
   width: 30%;

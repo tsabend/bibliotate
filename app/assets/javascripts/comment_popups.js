@@ -1,4 +1,12 @@
 $(document).on('page:change', function() {
+  $(".sentence").hover(function(){
+    var sentence_number = $(this).data("id") - $(".sentence:first").data("id") + 1
+    console.log(sentence_number)
+    $(this).after('<sup class="hover-text">' + sentence_number + '</sup>')
+  }, function(){
+    $('.hover-text').remove();
+  })
+
   $(".sentence").click(function(event){
     $('.popup').remove()
     var sentence = $(this)
