@@ -184,10 +184,18 @@ main {
   overflow-y: scroll;
 }
 
+.profile {
+  height: 600px;
+  margin-left: 30%;
+}
+
 .card ul {
   list-style: none;
 }
 
+.card h1 {
+  text-align: center;
+}
 .card h3 {
   text-align: center;
 }
@@ -195,4 +203,10 @@ main {
 .student_image {
   max-width: 50px;
   max-height: 50px;
+}
+
+.profile_pic {
+  margin-left: 20%;
+  max-width: 250px;
+  max-height: 250px;
 }

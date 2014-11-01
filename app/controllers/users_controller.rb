@@ -1,5 +1,24 @@
 class UsersController < ApplicationController
 
+  def index
+  end
+
+  def show
+    @user = User.find(params[:id])
+  end
+
+  def update
+    current_user.update(role: params[:user][:role])
+    redirect_to '/'
+  end
+
+
+
+
+
+
+# Oauth/Signup routes
+
   CLIENT_ID = "336184733554-fpkrdqv8iis7hfifcoq6rq2b4ln3kn4c.apps.googleusercontent.com"
   CLIENT_SECRET = "_MYiDzimywN_PUPp-2VyWuXM"
 
@@ -54,27 +73,4 @@ class UsersController < ApplicationController
     render :index
   end
 
-  def index
-  end
-
-  def update
-    current_user.update(role: params[:user][:role])
-    redirect_to '/'
-  end
-
-
 end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
