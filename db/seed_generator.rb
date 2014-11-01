@@ -595,10 +595,10 @@ usertest1 = {
       :role => "teacher",
 }
 
-enrolltest1 = {
-    :user_id => 1,
-    :course_id => 1,
-}
+# enrolltest1 = {
+#     :user_id => 1,
+#     :course_id => 1,
+# }
 
 story1 = {
     :course_id => 1,
@@ -670,7 +670,7 @@ notification1 = {
 
 #push individual/outlier example
 users.push usertest1
-enrollments.push enrolltest1
+# enrollments.push enrolltest1
 stories.push story1
 stories.push story2
 stories.push story3
