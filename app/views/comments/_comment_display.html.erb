@@ -3,7 +3,7 @@
   <button data-comment="remove">X</button>
   <ul data-comment="display">
     <% @comments.each do |comment| %>
-      <li><%= comment.user.name %> says:
+      <li><img class="student_image" src="<%=comment.user.photo%>"><%= comment.user.name %> says:
       <%= comment.body %></li>
     <% end %>
   </ul>
