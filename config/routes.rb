@@ -10,5 +10,5 @@ Rails.application.routes.draw do
   resources :enrollments
   resources :comments
   resources :courses
-    resources :stories
+  resources :stories
 end
