@@ -218,3 +218,8 @@ main {
   max-width: 250px;
   max-height: 250px;
 }
+
+#splash {
+  font-size: 50em;
+  color: #7A6A53;
+}
