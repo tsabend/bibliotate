@@ -1,11 +1,3 @@
-
-
-
-
-
-
-
-
 <section id="top" class="container" class="container-fluid">
   <section class="border outer" id="top_outer">
     <section class="border inner" id="top_inner">
@@ -15,11 +7,20 @@
             <span><i class="fa fa-book"></i>Bibliotate</span>
           </a>
         </section>
-        <section id="login_box">
-          <a href="">
-            <span>Login With <i class="fa fa-google-plus"></i></span>
-          </a>
-        </section>
+        <% if user_logged_in? %>
+          <section id="login_box">
+          <%= link_to  logout_path, :method => 'post' do %>
+            <span>Logout <i class="fa fa-google-plus"></i></span>
+          <% end  %>
+          </section>
+        <% else %>
+          <section id="login_box">
+            <a href="/auth">
+              <span>Login With <i class="fa fa-google-plus"></i></span>
+            </a>
+          </section>
+        <% end %>
+
       </header>
     </section>
   </section>

@@ -1,6 +1,7 @@
 <% if !user_logged_in? %>
   <a href="/auth">Sign up</a><br>
 <% elsif current_user.is_teacher? %>
+   <%= link_to 'Delete account', user_path(current_user), method: 'delete' %>
   <%= render partial: '/users/teachers/dashboard' %>
 <% else %>
   <!-- <h1>Student View</h1> -->
