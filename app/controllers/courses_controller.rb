@@ -7,4 +7,29 @@ class CoursesController < ApplicationController
     @course = Course.find(params[:id])
     @stories = @course.stories
   end
+
+  def new
+    @course = Course.new
+  end
+
+  def create
+    @course = Course.new(course_params)
+    @course.save
+      redirect_to index_path
+  end
+
+  def destroy
+    @course = Course.find(params[:id])
+    @course.destroy
+
+    render :delete
+  end
+
+  private
+
+  def course_params
+    params.require(:course).permit([:user_id, :name])
+  end
+
+
 end
