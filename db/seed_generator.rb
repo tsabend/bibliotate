@@ -720,7 +720,6 @@ end
 
 #comments
 
-
 comment1 = <<-eos
 I second this. The New York School of Poets also included Kenneth Koch, Frank O'Hara, and John Ashbery. These are pretty big names that definitely are still impacting young poets today. Ashbery won a Pulitzer and has, over time, won most of the American poetry prizes.
 More recently, Stephen Dunn, Louise Gluck, W. D. Snodgrass, are all pretty big names. (And personal favorites of mine.) They're not as clearly affiliated with a school, but I personally believe that we're too close to them to really categorize them. Dunn and Gluck both won Pulitzers and both books are of course fantastic; "Different Hours" for Dunn and "The Wild Iris" for Gluck. Paul Muldoon and Dana Goia are big right now. I'm not a personal fan of Goia but both draw heavily on formal styles and rhyme.
