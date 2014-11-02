@@ -1,1 +1,0 @@
-hastag_spec.rb
