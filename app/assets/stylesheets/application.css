@@ -16,7 +16,9 @@ body {
 }
 
 main {
-  width: 50%;
+  font-family: 'Source Serif Pro', serif;
+  color: #5D5050;
+  width: 70%;
   display: block;
   margin: auto;
   margin-top: 45px;
@@ -153,7 +155,7 @@ header {
   border-bottom: 1px red dashed;
 }
 
-.outer {
+/*.outer {
   border: 4px solid rgba(223,165,149,0.08);
   border-radius: 4px;
 }
@@ -162,22 +164,52 @@ header {
   border: 3px solid rgba(175,192,190,0.1);
   border-radius: 2px;
   margin: 3px;
+}*/
+
+
+#story_author {
+  font-family: 'Source Serif Pro', serif;
+  color: #5D5050;
+  text-align: center;
+  margin: 0;
+  width: 30%;
+  height: 5%;
+  margin: 1%;
+  margin-left: 35%;
+  height: 20px;
+  font-size: 1em
 }
 
 #story_title {
-  font-family: 'Droid Serif', serif;
-  color: #7A6A53;
-  font-size: 3em;
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #5D5050;
   font-style: georgia, serif;
   text-align: center;
-  margin: 50px 0 45px;
+  margin: 55px 0 20px;
+}
+
+#story_info {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Droid Serif', serif;
+  color: #769995;
+  margin: 0 0 35px;
+}
+
+#author {
+  color: #cc6b58;
+}
+
+.paragraph {
+  margin: 0 0 30px;
 }
 
 .sentence {
-  color: #7A6A53;
   line-height: 2em;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.4em;
   font-style: georgia, serif;
   cursor: crosshair;
 }
@@ -185,7 +217,6 @@ header {
 .sentence:hover {
   background-color: yellow;
 }
-
 
 .popup {
   border: 1px solid rgba(0,0,0,0.15);
@@ -283,25 +314,7 @@ header {
   font-size: 1em;
   font-color:red;
 }
-#story_author{
-  text-align: center;
-  margin: 0;
-  width: 30%;
-  height: 5%;
-  margin: 1%;
-  margin-left: 35%;
-  height: 20px;
-  font-size: 1em
-}
 
-#story_title{
-  text-align: center;
-  width: 30%;
-  height: 20px;
-  margin: 1%;
-  margin-left: 35%;
-  font-size: 1em
-}
 .new_story_body{
   width: 100%;
   height: 5%;
