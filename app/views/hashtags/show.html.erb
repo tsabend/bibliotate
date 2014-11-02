@@ -4,7 +4,9 @@
 <ul>
 	<li><img class="student_image" src="<%= tag.user.photo %>">
 	<%= tag.user.name %> commented on 
-		<%= tag.comment.story %> and said: 
-		<%= tag.comment.body %></li>
+		<%= link_to "#{tag.comment.story.title}", story_path(tag.comment.story) %>
+		 and said: 
+		<li><%= render partial: '/comments/hashtag_rendering', locals: {body: tag.comment.body} %></li>
+	</li>
 </ul>
 <% end %>
