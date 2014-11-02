@@ -1,4 +1,4 @@
 <% stories.each do |story| %>
 <%= link_to "#{story.title}", story_path(story) %>
-<%= link_to "Delete", story_path(story), :method => :delete, data: {confirm: 'NOTICE: All comments associated with this story will be lost. Are you sure? '}%>
+<%= button_to "Delete", story_path(story), :method => :delete, data: {confirm: 'nbNOTICE: All comments associated with this story will be lost. Are you sure? '}%>
 <% end %>
