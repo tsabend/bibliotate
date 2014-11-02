@@ -11,12 +11,17 @@ RSpec.describe User, :type => :model do
     end
 
     it 'has_many courses' do
-      should have_many(:courses)
+      should have_many(:enrolled_courses)
     end
 
-    it 'has_many stories' do
-      should have_many(:stories)
+    it 'has_many comments' do
+      should have_many(:comments)
     end
+
+    it 'has_many notifications' do
+      should have_many(:notifications)
+    end
+
   end
 
   describe "roles" do
