@@ -1,7 +1,7 @@
 <div id="enrollment-form-container">
 
 <h1>Enroll in a course</h1>
-  <% form_for :enrollment, url: enrollments_path, method: :post do |f| %>
+  <%= form_for :enrollment, url: enrollments_path, method: :post do |f| %>
 
 <!--   <form action="/enrollments" method="post">
     <%# @courses.each do |course| %>
@@ -13,8 +13,12 @@
     <div>
       <% @courses.each do |course| %>
         <%= f.label :course, "#{course.name}" %>
-        <%= f.radio_button :course, "#{course.name}", data: {field: "course"} %>
+        <%= f.radio_button :course, "#{course.name}", data: {field: "course"} %><br>
       <% end %>
+    </div>
+
+    <div>
+      <%= f.submit "Select Course" %>
     </div>
 
     <% end %>
