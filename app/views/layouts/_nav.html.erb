@@ -1,6 +1,5 @@
-<section id="top" class="container" class="container-fluid">
-  <section class="border outer" id="top_outer">
-    <section class="border inner" id="top_inner">
+<section id="top">
+
       <header>
         <section id="logo">
           <a href="/">
@@ -9,48 +8,59 @@
         </section>
 
         <% if current_user == nil %>
-         <section id="login_box">
+
+          <section id="login_box">
             <a href="/auth">
-              <span>Signup<i class="fa fa-google-plus"></i></span>
+              <section id="google_plus"><i class="fa fa-google-plus"></i></section>
             </a>
-            <a href="/auth">
-              <span>Login<i class="fa fa-google-plus"></i></span>
-            </a>
+            <span id="login_with_text">Login With</span>
           </section>
+
         <% elsif current_user.role == "teacher" %>
-          <section class="nav-name">
-            Hello, <%= link_to "#{current_user.name}", user_path(current_user) %>
-
-          </section>
-          <section class="nav-add-story">
-            | <a href="/stories/new">Add a new story &nbsp;&nbsp;</a>
-          </section>
-          <section id="nav-teacher">
-            <%= link_to "Create Course", new_course_path %>
-          </section>
 
 
           <section id="login_box">
             <%= link_to  logout_path, :method => 'post' do %>
-              <span>Logout<i class="fa fa-google-plus"></i></span>
+              <section id="google_plus"><i class="fa fa-google-plus"></i></section>
             <% end  %>
+            <span id="login_with_text">Logout With</span>
           </section>
+
+          <section id="nav-name">
+            <span id="hello_user">Hello: </span>
+            <%= link_to "#{current_user.name}", user_path(current_user) %>
+          </section>
+
+          <section id="nav-add-story" class="nav_buttons">
+            <a href="/stories/new"><span id="book_icon" class="entypo-book-open"></span></a>
+          </section>
+
+          <section id="nav-teacher" class="nav_buttons">
+            <a href="/courses/new"><span id="book_icon" class="entypo-doc-text"></span></i></a>
+          </section>
+
+
+
         <% else %>
-          <section class="nav-name">
-            Hello, <%= link_to "#{current_user.name}", user_path(current_user) %>
-          </section>
-          <section id="nav-student">
-            <%= link_to "Join a Course", new_enrollment_path %>
-          </section>
+
           <section id="login_box">
             <%= link_to  logout_path, :method => 'post' do %>
-              <span>Logout<i class="fa fa-google-plus"></i></span>
+              <section id="google_plus"><i class="fa fa-google-plus"></i></section>
             <% end  %>
+            <span id="login_with_text">Logout With</span>
           </section>
+
+          <section id="nav-name">
+            <span id="hello_user">Hello: </span>
+            <%= link_to "#{current_user.name}", user_path(current_user) %>
+          </section>
+
+          <section id="nav-student" class="nav_buttons">
+            <a href="/enrollments/new"><span id="book_icon" class="entypo-doc-text"></span></i></a>
+          </section>
+
         <% end %>
 
       </header>
-    </section>
-  </section>
 </section>
 
