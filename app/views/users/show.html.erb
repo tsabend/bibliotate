@@ -2,5 +2,5 @@
   <a href="/auth">Sign up</a><br>
 <% else %>
   <%= render partial: '/users/teachers/show_student' %>
-
+  <%= link_to 'Delete account', user_path(current_user), method: 'delete' %>
 <% end %>
