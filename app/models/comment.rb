@@ -6,7 +6,7 @@ class Comment < ActiveRecord::Base
   has_many :notifications, as: :noteable
   has_many :hashtags
   def story
-    self.sentence.paragraph.story.title
+    self.sentence.paragraph.story
   end
 
   def hashtag_extractor
@@ -18,7 +18,7 @@ class Comment < ActiveRecord::Base
 	def process_hashtags
     tags = hashtag_extractor
     tags.map do |tag|
-	    Hashtag.create(tag: tag, user: current_user, comment: comment)
+	    Hashtag.create(tag: tag, user: self.user, comment: self)
     end
 	end
 
