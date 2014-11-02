@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
 
   has_many :comments
   has_many :notifications
+  has_many :hashtags
+
 # For if they are a teacher
   def taught_courses
     if is_teacher?
