@@ -15,7 +15,7 @@ class EnrollmentsController < ApplicationController
     @courses = Course.all
     @enrollment = Enrollment.new(enrollment_params)
     @enrollment.user_id = current_user.id
-    @enrollment.course_id = params[:course]
+    @enrollment.course_id = Course.find_by(name: params[:enrollment][:course]).id
     @enrollment.save
     redirect_to '/'
   end
