@@ -6,7 +6,7 @@
     <div>
       <% @courses.each do |course| %>
         <%= f.label :course, "#{course.name}" %>
-        <%= f.radio_button :course, "#{course.name}", value: "##{course.id}" %><br>
+        <%= f.radio_button :course, "#{course.name}" %><br>
       <% end %>
     </div>
 
