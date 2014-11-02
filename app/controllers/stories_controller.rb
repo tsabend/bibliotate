@@ -16,13 +16,12 @@ class StoriesController < ApplicationController
     if params[:story][:author] == ""
       params[:story][:author] = "Unknown"
     end
-    @story = Story.make(params[:story][:title],params[:story][:author],params[:story_body],params[:course_id])
-    if @story.valid?
-      redirect_to @story
-    else
-      flash[:messages] = @story.errors.full_messages
+    if params[:course_id] == "" || params[:story][:title] == ""
+      flash[:messages] = "Please be sure your story has a title and a course"
       redirect_to new_story_path
     end
+    @story = Story.make(params[:story][:title],params[:story][:author],params[:story_body],params[:course_id])
+    redirect_to @story
   end
 
   def destroy
