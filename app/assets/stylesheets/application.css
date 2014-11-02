@@ -1,4 +1,6 @@
-
+*= require_self
+*= require normalize-rails
+*= require_tree .
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
