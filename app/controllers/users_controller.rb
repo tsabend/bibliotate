@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
 
   def index
+
   end
 
   def show
@@ -11,10 +12,6 @@ class UsersController < ApplicationController
     current_user.update(role: params[:user][:role])
     redirect_to '/'
   end
-
-
-
-
 
 
 # Oauth/Signup routes
