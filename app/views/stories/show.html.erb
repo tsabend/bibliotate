@@ -5,6 +5,10 @@
 	<span id="date">1845</span>
 </section>
 
-<% @story.paragraphs.each do |paragraph| %>
-  <p class="paragraph"><%= render partial: 'paragraph', locals: {paragraph: paragraph} %></p>
-<% end %>
+    <% @story.paragraphs.each do |paragraph| %>
+      <p class="paragraph"><%= render partial: 'paragraph', locals: {paragraph: paragraph} %></p>
+    <% end %>
+
+<%= render partial: 'comments_feed', locals: {story: @story} %>
+
+<%= render partial: 'most_commented', locals: {story: @story} %>
