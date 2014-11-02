@@ -1,7 +1,6 @@
 $(document).on('page:change', function() {
   $(".sentence").hover(function(){
     var sentence_number = $(this).data("id") - $(".sentence:first").data("id") + 1
-    console.log(sentence_number)
     $(this).after('<sup class="hover-text">' + sentence_number + '</sup>')
   }, function(){
     $('.hover-text').remove();
@@ -31,9 +30,7 @@ function listenForComment() {
   $(".comment_form").submit(function(e){
     e.preventDefault()
     submitComment($(this).serialize(), function(data){
-      $('.popup').prev().addClass('commented')
-      $('[data-comment="display"]').append('<li><img class="student_image" src="' + data.user.photo + '">' + data.user.name + ' says: ' + data.comment.body + '</li>')
-      $('[data-comment="body"]').val('')
+      $('.popup').html(data)
     })
   })
 }

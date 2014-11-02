@@ -4,7 +4,7 @@
   <ul data-comment="display">
     <% @comments.each do |comment| %>
       <li><img class="student_image" src="<%=comment.user.photo%>"><%= comment.user.name %> says:
-      <%= comment.body %></li>
+      <li><%= render partial: 'hashtag_rendering', locals: {body: comment.body} %></li>
     <% end %>
   </ul>
   <%= render partial: 'comment_form',  locals: {id: @sentence_id} %>
