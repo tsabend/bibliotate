@@ -9,6 +9,10 @@ class Comment < ActiveRecord::Base
     self.sentence.paragraph.story
   end
 
+  def story_sentence
+    self.sentence.id - self.story.sentences.first.id + 1
+  end
+
   def hashtag_extractor
     words = self.body.split(" ")
     hashtags = words.select {|word| word.chars.first == "#" }
