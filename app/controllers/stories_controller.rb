@@ -19,6 +19,7 @@ class StoriesController < ApplicationController
     if params[:course_id] == "" || params[:story][:title] == ""
       flash[:messages] = "Please be sure your story has a title and a course"
       redirect_to new_story_path
+#      flash[:messages] = @story.errors.full_messages <<-- uses validation messages from activerecord
     end
     @story = Story.make(params[:story][:title],params[:story][:author],params[:story_body],params[:course_id])
     redirect_to @story

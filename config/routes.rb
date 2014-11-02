@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get '/callback', :to => 'users#callback'
   get '/type', :to => 'users#type'
   post "/logout" => "sessions#destroy"
+  post "/notifications" => "notifications#destroy"
   resources :users
   resources :enrollments
   resources :comments

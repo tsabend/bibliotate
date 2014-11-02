@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
     comment = Comment.new(comment_params)
     comment.user = current_user
     comment.save
+    Notification.create(noteable_id: comment.id, noteable_type: "comment", user_id: Sentence.find(params[:sentence_id]).paragraph.story.course.user_id)
     data = {comment: comment, user: comment.user}
     render :json => data
   end

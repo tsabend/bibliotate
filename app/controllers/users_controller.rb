@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
 
   def index
-
+    @notifications = Notification.where(status:true, user_id:current_user)
   end
 
   def show

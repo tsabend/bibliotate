@@ -17,6 +17,7 @@ class EnrollmentsController < ApplicationController
     @enrollment.user_id = current_user.id
     @enrollment.course_id = Course.find_by(name: params[:enrollment][:course]).id
     @enrollment.save
+    Notification.create(noteable_id: @enrollment.id, noteable_type: "enrollment", user_id: @enrollment.course.user_id)
     redirect_to '/'
   end
 
@@ -27,3 +28,5 @@ class EnrollmentsController < ApplicationController
   end
 
 end
+
+#<Notification id: nil, status: true, noteable_id: nil, noteable_type: nil, user_id: nil, created_at: nil, updated_at: nil>
