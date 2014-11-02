@@ -3,13 +3,6 @@
 <h1>Enroll in a course</h1>
   <%= form_for :enrollment, url: enrollments_path, method: :post do |f| %>
 
-<!--   <form action="/enrollments" method="post">
-    <%# @courses.each do |course| %>
-      <input type="radio" name="course" value="<%#= course.id %>"><%#= course.name %><br>
-      <%# end %>
-      <input type="submit" value="Enter a course">
-  </form> -->
-
     <div>
       <% @courses.each do |course| %>
         <%= f.label :course, "#{course.name}" %>
