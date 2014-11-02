@@ -4,11 +4,9 @@ class CommentsController < ApplicationController
     comment = Comment.new(comment_params)
     comment.user = current_user
     comment.save
-    tags = comment.hashtags
-    # Create hashtags:
-
-    data = {comment: comment, user: comment.user}
-    render :json => data
+    
+    @comments = Comment.where(sentence_id: comment_params[:sentence_id])
+    render partial: 'comment_display'
   end
 
   def show
