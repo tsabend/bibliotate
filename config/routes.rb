@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   resources :comments
   resources :courses
   resources :stories
+  resources :hashtags
 end
