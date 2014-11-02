@@ -17,7 +17,6 @@ class StoriesController < ApplicationController
       params[:story][:author] = "Unknown"
     end
     params[:story_body] = sanitize(params[:story_body])
-    binding.pry
 
     @story = Story.make(params[:story][:title],params[:story][:author],params[:story_body],params[:course_id])
     if @story.valid?
@@ -27,5 +26,12 @@ class StoriesController < ApplicationController
       redirect_to new_story_path
     end
   end
+
+  def destroy
+    Story.destroy(params[:id])
+    redirect_to '/'
+    # redirect_to user_path
+  end
+
 end
 
