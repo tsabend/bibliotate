@@ -16,7 +16,7 @@ class StoriesController < ApplicationController
     if params[:story][:author] == ""
       params[:story][:author] = "Unknown"
     end
-    params[:story_body] = sanitize(params[:story_body])
+    # params[:story_body] = sanitize(params[:story_body])
 
     @story = Story.make(params[:story][:title],params[:story][:author],params[:story_body],params[:course_id])
     if @story.valid?

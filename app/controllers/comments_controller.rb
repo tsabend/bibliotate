@@ -4,6 +4,9 @@ class CommentsController < ApplicationController
     comment = Comment.new(comment_params)
     comment.user = current_user
     comment.save
+    tags = comment.hashtags
+    # Create hashtags:
+
     data = {comment: comment, user: comment.user}
     render :json => data
   end

@@ -1,0 +1,10 @@
+<h1>Recent uses of: <%= @hashtags.first.tag %></h1>
+
+<% @hashtags.each do |tag| %>
+<ul>
+	<li><img class="student_image" src="<%= tag.user.photo %>">
+	<%= tag.user.name %> commented on 
+		<%= tag.comment.story %> and said: 
+		<%= tag.comment.body %></li>
+</ul>
+<% end %>
