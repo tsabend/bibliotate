@@ -4,3 +4,5 @@
     <% @story.paragraphs.each do |paragraph| %>
       <p class="paragraph"><%= render partial: 'paragraph', locals: {paragraph: paragraph} %></p>
     <% end %>
+
+<%= render partial: 'comments_feed', locals: {story: @story} %>
