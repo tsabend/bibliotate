@@ -30,5 +30,10 @@ class StoriesController < ApplicationController
     redirect_to '/'
   end
 
+  def commentsfeed
+    @story = Story.find(params[:id])
+    render partial: 'comments_feed'
+  end
+
 end
 

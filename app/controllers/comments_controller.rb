@@ -5,8 +5,8 @@ class CommentsController < ApplicationController
     comment.user = current_user
     comment.save
     Notification.create(noteable_id: comment.id, noteable_type: "comment", user_id: Sentence.find(params[:sentence_id]).paragraph.story.course.user_id)
-    data = {comment: comment, user: comment.user}
-    render :json => data
+    @comments = Comment.where(sentence_id: comment_params[:sentence_id])
+    render partial: 'comment_display'
   end
 
   def show

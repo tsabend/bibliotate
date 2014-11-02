@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/auth', :to => 'users#auth'
   get '/callback', :to => 'users#callback'
   get '/type', :to => 'users#type'
+  get '/stories/:id/commentsfeed/', :to => 'stories#commentsfeed'
   post "/logout" => "sessions#destroy"
   post "/notifications" => "notifications#destroy"
   resources :users
@@ -12,4 +13,5 @@ Rails.application.routes.draw do
   resources :comments
   resources :courses
   resources :stories
+  resources :hashtags
 end

@@ -1,7 +1,4 @@
-/*
- *= require_tree .
- *= require_self
- */
+
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
@@ -9,14 +6,23 @@
   font-family: 'entypo', sans-serif;
 }
 
+
+/* PAGE BODY --------------------------------- */
+
 body {
   background-image: url('lightpaperfibers.png');
   background-repeat: repeat;
-  margin: 0;
 }
 
+.container-fluid {
+  padding: 0 10px 10px;
+}
+
+
+/* NAVIGATION PARTIAL --------------------------------- */
+
 header {
-  height: 45px;
+  height: 50px;
   background: #5D5050;
 }
 
@@ -27,7 +33,7 @@ header {
 
 #logo {
   height: 40px;
-  margin: 2px 0 0;
+  margin: 7px 0 0;
   display: block;
   color: #AFC0BE;
   float: left;
@@ -36,7 +42,7 @@ header {
 #logo a {
   margin: 10px 0 0 10px;
   text-decoration: none;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: #AFC0BE;
   font-family: 'Pacifico', cursive;
 }
@@ -64,7 +70,7 @@ header {
 
 #login_box i {
   margin: 10px 0 0 4px;
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 #login_with_text {
@@ -72,18 +78,18 @@ header {
   display: block;
   float: right;
   color: #AFC0BE;
-  font-size: .8em;
+  font-size: 1em;
   font-family: georgia, serif;
   height: 30px;
-  margin: 15px 5px 0 0;
+  margin: 16px 6px 0 0;
 }
 
 #google_plus {
   display: block;
   float: right;
-  margin: 7px 10px 0 0;
-  height: 30px;
-  width: 30px;
+  margin: 8px 11px 0 0;
+  height: 33px;
+  width: 33px;
   border-radius: 3px;
   background: #EC7962;
 }
@@ -129,54 +135,89 @@ header {
   margin: 13px 10px 0 0;
 }
 
-.border {
-  border: 1px solid #ECF0F1;
-  margin: 3px;
-  overflow: auto;
-}
 
-.commented {
-  border-bottom: 1px red dashed;
-}
 
-/*.outer {
-  margin-top: 12px;
-}*/
 
-.outer {
-  border: 3px solid rgba(223,165,149,0.08);
-  border-radius: 3px;
-  margin: 10px;
-}
 
-.inner {
-  border: 2px solid rgba(175,192,190,0.1);
-  border-radius: 2px;
-  margin: 3px;
-}
 
-#story_title {
-  font-family: 'Droid Serif', serif;
-  color: #7A6A53;
-  font-size: 3em;
-  font-style: georgia, serif;
-  text-align: center;
-  margin: 50px 0 45px;
-}
+
+
+
 
 main {
-  width: 50%;
+  font-family: 'Source Serif Pro', serif;
+  color: #5D5050;
+  width: 80%;
   display: block;
   margin: auto;
   margin-top: 45px;
   margin-bottom: 50px;
 }
 
+.outer {
+  border: 4px solid rgba(223,165,149,0.08);
+  border-radius: 4px;
+}
+
+.inner {
+  border: 3px solid rgba(175,192,190,0.1);
+  border-radius: 2px;
+  margin: 3px;
+  overflow: auto;
+}
+
+
+
+.commented {
+  border-bottom: 1px red dashed;
+}
+
+
+/* STORY PAGE --------------------------------- */
+
+#story_author {
+  font-family: 'Source Serif Pro', serif;
+  color: #5D5050;
+  text-align: center;
+  margin: 0;
+  width: 30%;
+  height: 5%;
+  margin: 1%;
+  margin-left: 35%;
+  height: 20px;
+  font-size: 1em
+}
+
+#story_title {
+  font-family: 'Source Serif Pro', serif;
+  font-weight: 700;
+  font-size: 3.5em;
+  color: #5D5050;
+  font-style: georgia, serif;
+  text-align: center;
+  margin: 55px 0 20px;
+}
+
+#author {
+  color: #cc6b58;
+}
+
+#story_info {
+  text-align: center;
+  font-size: 1.3em;
+  font-family: 'Droid Serif', serif;
+  color: #769995;
+  margin: 0 0 40px;
+}
+
+.paragraph {
+  margin: 0 8% 30px;
+}
+
 .sentence {
-  color: #7A6A53;
   line-height: 2em;
   text-decoration: none;
-  font-size: 1.25em;
+  font-size: 1.4em;
   font-style: georgia, serif;
   cursor: crosshair;
 }
@@ -185,14 +226,9 @@ main {
   background-color: yellow;
 }
 
-
 .popup {
-  /*position: absolute;*/
-  /*display: none;*/
   border: 1px solid rgba(0,0,0,0.15);
-  /*width: 50%;*/
   background-color: white;
-  /*left: 25%;*/
   overflow-y: scroll;
   position: fixed;
   top: 7%;
@@ -241,22 +277,6 @@ main {
   position: absolute;
 }
 
-.row {
-
-}
-
-.card {
-  width: 29%;
-  height: 400px;
-  background-color: white;
-  border-radius: 5px;
-  box-shadow: 10px 10px 5px #888888;
-  padding: 1%;
-  margin: 1%;
-  margin-bottom: 10%;
-  overflow-y: scroll;
-  float: left;
-}
 
 .profile {
   height: 600px;
@@ -264,29 +284,13 @@ main {
   width: 50%;
 }
 
-.card ul {
-  list-style: none;
-}
 
-.card h1 {
-  text-align: center;
-}
-.card h3 {
-  text-align: center;
-}
 
 .student_image {
   max-width: 50px;
   max-height: 50px;
 }
 
-.profile_pic {
-  margin-left: 20%;
-  max-width: 250px;
-  max-height: 250px;
-}
-
-.new_story{
 
 
 }
@@ -318,6 +322,12 @@ main {
    font-family: georgia, serif;
   font-size: 1em
 }
+=======
+.story_create h2 {
+  font-size: 1em;
+  font-color:red;
+}
+
 .new_story_body{
   width: 100%;
   height: 5%;
@@ -338,15 +348,102 @@ main {
 .newstorybutton {
    font-family: georgia, serif;
   margin-left: 35%;
-width: 30%; /*basic styles*/ width: 250px; height: 50px; color: white; background-color: #d46d45; text-align: center; font-size: 30px; line-height: 50px; /*gradient styles*/ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d46d45), to(#b1432a)); background: -moz-linear-gradient(19% 75% 90deg,#b1432a, #d46d45); /*border styles*/ border-top: solid 2px #e28d79; border-bottom: solid 1px #51281f; border-right: solid 1px #d46d45; border-left: solid 1px #d46d45; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; } .newstorybutton p { font-size: 25px; line-height: 50px; font-family: ‘Trebuchet MS’, sans-serif; } a { text-decoration: none; color: fff; } .newstorybutton:hover { background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b1432a), to(#d46d45)); background: -moz-linear-gradient(19% 75% 90deg,#d46d45, #b1432a); border-top: solid 2px #b1432a; border-bottom: solid 1px #e28d79; }
+  width: 30%; /*basic styles*/ width: 250px; height: 50px; color: white; background-color: #d46d45; text-align: center; font-size: 30px; line-height: 50px; /*gradient styles*/ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d46d45), to(#b1432a)); background: -moz-linear-gradient(19% 75% 90deg,#b1432a, #d46d45); /*border styles*/ border-top: solid 2px #e28d79; border-bottom: solid 1px #51281f; border-right: solid 1px #d46d45; border-left: solid 1px #d46d45; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; } .newstorybutton p { font-size: 25px; line-height: 50px; font-family: ‘Trebuchet MS’, sans-serif; } a { text-decoration: none; color: fff; } .newstorybutton:hover { background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b1432a), to(#d46d45)); background: -moz-linear-gradient(19% 75% 90deg,#d46d45, #b1432a); border-top: solid 2px #b1432a; border-bottom: solid 1px #e28d79; }
 
-
+/* SPLASH PAGE --------------------------------- */
 
 #splash {
   font-size: 45em;
   text-align: center;
   color: #5D5050;
+}
 
+
+/* USER INDEX PAGE --------------------------------- */
+
+#my_enrollments {
+  text-align: center;
+}
+
+
+/* CARDS PARTIALS --------------------------------- */
+
+.course_icon {
+  margin: 0 5px 0 0;
+}
+
+.card {
+  width: 33%;
+  height: 400px;
+  background-color: white;
+  border: 2px solid rgba(175,192,190,0.1);
+  border-radius: 4px;
+  padding: 1%;
+  margin: 40px 0 ;
+  margin-bottom: 10%;
+  box-shadow: 0px 2px 67px #555;
+  float: left;
+  /*overflow-y: scroll;*/
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card h1 {
+  text-align: center;
+}
+.card h3 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.story_links {
+  color: #EC7962;
+  font-size: 1.25em;
+  margin: 0 0 0 25px;
+}
+.story_links a {
+  color: #EC7962;
+  font-size: 1em;
+}
+
+.comments {
+  float: right;
+  margin: 0 20px 0 0;
+  color: #AFC0BE;
+}
+
+
+
+/* PROFILE PAGE --------------------------------- */
+
+#profile_header {
+  text-align: center;
+}
+
+.card_profile {
+  width: 100%;
+  background-color: white;
+  border: 2px solid rgba(175,192,190,0.1);
+  border-radius: 4px;
+  padding: 1%;
+  margin: 40px 0 ;
+  margin-bottom: 10%;
+  box-shadow: 0px 2px 67px #999;
+  float: left;
+  overflow: auto;
+}
+
+.profile_pic {
+  max-width: 250px;
+  max-height: 250px;
+  display: block;
+  margin: auto;
+}
+
+#profile_username {
+  text-align: center;
 }
 
 
@@ -387,3 +484,27 @@ ul li ul li {
     line-height: 40px;
     height: 40px;
 }
+#user_information {
+  text-align: center;
+  margin: 10px 0;
+  overflow: auto;
+}
+
+#user_information li {
+  text-align: center;
+  list-style-type: none;
+  font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

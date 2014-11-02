@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141101171958) do
+ActiveRecord::Schema.define(version: 20141102181815) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -37,6 +37,17 @@ ActiveRecord::Schema.define(version: 20141101171958) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "hashtags", force: true do |t|
+    t.string   "tag"
+    t.integer  "user_id"
+    t.integer  "comment_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "hashtags", ["comment_id"], name: "index_hashtags_on_comment_id", using: :btree
+  add_index "hashtags", ["user_id"], name: "index_hashtags_on_user_id", using: :btree
 
   create_table "notifications", force: true do |t|
     t.boolean  "status",        default: true
