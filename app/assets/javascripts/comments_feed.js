@@ -5,9 +5,9 @@ $(document).on('page:change', function() {
 
 function listenForComments() {
 	setInterval(function() {
-		var storyId = $("[data-story]").data('story')
+		var storyId = $("[data-card='commentsfeed']").data('story')
 		fetchComments(storyId, function(template) {
-			$("[data-story]").replaceWith(template)
+			$("[data-card='commentsfeed']").replaceWith(template)
 		})
 	}, 10000)
 }
