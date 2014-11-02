@@ -32,7 +32,7 @@ function listenForComment() {
     e.preventDefault()
     submitComment($(this).serialize(), function(data){
       $('.popup').prev().addClass('commented')
-      $('[data-comment="display"]').append('<li>' + data.user.name + ' says: ' + data.comment.body + '</li>')
+      $('[data-comment="display"]').append('<li><img class="student_image" src="' + data.user.photo + '">' + data.user.name + ' says: ' + data.comment.body + '</li>')
       $('[data-comment="body"]').val('')
     })
   })

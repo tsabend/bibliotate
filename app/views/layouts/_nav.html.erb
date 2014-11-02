@@ -7,20 +7,45 @@
             <span><i class="fa fa-book"></i>Bibliotate</span>
           </a>
         </section>
-        <% if user_logged_in? %>
-          <section id="login_box">
-          <%= link_to  logout_path, :method => 'post' do %>
-            <span>Logout<i class="fa fa-google-plus"></i></span>
-          <% end  %>
-          </section>
-        <% else %>
-          <section id="login_box">
+
+        <% if current_user == nil %>
+         <section id="login_box">
             <a href="/auth">
               <span>Signup<i class="fa fa-google-plus"></i></span>
             </a>
             <a href="/auth">
               <span>Login<i class="fa fa-google-plus"></i></span>
             </a>
+          </section>
+        <% elsif current_user.role == "teacher" %>
+          <section class="nav-name">
+            Hello, <%= link_to "#{current_user.name}", user_path(current_user) %>
+
+          </section>
+          <section class="nav-add-story">
+            | <a href="/stories/new">Add a new story &nbsp;&nbsp;</a>
+          </section>
+          <section id="nav-teacher">
+            <%= link_to "Create Course", new_course_path %>
+          </section>
+
+
+          <section id="login_box">
+            <%= link_to  logout_path, :method => 'post' do %>
+              <span>Logout<i class="fa fa-google-plus"></i></span>
+            <% end  %>
+          </section>
+        <% else %>
+          <section class="nav-name">
+            Hello, <%= link_to "#{current_user.name}", user_path(current_user) %>
+          </section>
+          <section id="nav-student">
+            <%= link_to "Join a Course", new_enrollment_path %>
+          </section>
+          <section id="login_box">
+            <%= link_to  logout_path, :method => 'post' do %>
+              <span>Logout<i class="fa fa-google-plus"></i></span>
+            <% end  %>
           </section>
         <% end %>
 
