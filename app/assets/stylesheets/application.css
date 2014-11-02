@@ -2,53 +2,54 @@
  *= require_tree .
  *= require_self
  */
+
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+  
 body {
   background-image: url('lightpaperfibers.png');
-    background-repeat: repeat;
+  background-repeat: repeat;
+  margin: 0;
 }
 
 header {
   height: 45px;
+  background: #5D5050;
 }
 
 #top {
-  margin-top: 0px;
-  /*width: 100%;*/
-
-}
-
-#top_outer {
-  background: #7A6A53;
-  border: 1px solid #7A6A53;
-
-}
-
-#top_inner {
-  border: 1px solid #948C75;
+  width: 100%;
+  
 }
 
 #logo {
   height: 40px;
+  margin: 2px 0 0;
   display: block;
+  color: #AFC0BE;
   float: left;
 }
 
 #logo a {
   margin: 10px 0 0 10px;
   text-decoration: none;
-  font-size: 1.6em;
-  color: white;
-  font-family: 'Oleo Script', cursive;
+  font-size: 1.5em;
+  color: #AFC0BE;
+  font-family: 'Pacifico', cursive;
 }
 
 #logo i {
-  margin: 10px 0 0;
+  margin: 0 -2px 0 0;
+  font-size: 1em;
 }
 
 #login_box {
-  height: 40px;
   display: block;
   float: right;
+  color: white;
 }
 
 #login_box a {
@@ -58,18 +59,74 @@ header {
 
 #login_box a:hover {
   text-decoration: underline;
-  /*This needs a different color*/
-  color: yellow;
-}
-
-#login_box span {
-  font-size: .8em;
-  margin: 0 5px 20px 0;
+  color: #7A6A53;
 }
 
 #login_box i {
-  margin: 17px 10px 0 2px;
-  font-size: 1.1em;
+  margin: 10px 0 0 4px;
+  font-size: 1em;
+}
+
+#login_with_text {
+  width: auto;
+  display: block;
+  float: right;
+  color: #AFC0BE;
+  font-size: .8em;
+  font-family: georgia, serif;
+  height: 30px;
+  margin: 15px 5px 0 0;
+}
+
+#google_plus {
+  display: block;
+  float: right;
+  margin: 7px 10px 0 0;
+  height: 30px;
+  width: 30px;
+  border-radius: 3px;
+  background: #EC7962;
+}
+
+#hello_user {
+  color: #AFC0BE;
+  font-size: .8em;
+  font-family: georgia, serif;  
+}
+
+#nav-name {
+  float: right;
+  margin: 13px 10px 0 0;
+}
+
+#nav-name a {
+  color: #EC7962;
+}
+
+#nav-teacher {
+  color: #AFC0BE;
+  float: right;
+  color: white;
+}
+
+#nav-student {
+  color: #AFC0BE;
+  float: right;
+  color: white;
+}
+
+#nav-add-story {
+  color: #AFC0BE;
+  float: right;
+  color: white;
+}
+
+#nav-teacher a, #nav-student a, #nav-add-story a {
+  color: #AFC0BE;
+}
+
+.nav_buttons {
+  margin: 13px 10px 0 0;
 }
 
 .border {
@@ -82,8 +139,20 @@ header {
   border-bottom: 1px red dashed;
 }
 
-.outer {
+/*.outer {
   margin-top: 12px;
+}*/
+
+.outer {
+  border: 3px solid rgba(223,165,149,0.08);
+  border-radius: 3px;
+  margin: 10px;
+}
+
+.inner {
+  border: 2px solid rgba(175,192,190,0.1);
+  border-radius: 2px;
+  margin: 3px;
 }
 
 #story_title {
@@ -264,23 +333,11 @@ main {
   margin-left: 35%;
 width: 30%; /*basic styles*/ width: 250px; height: 50px; color: white; background-color: #d46d45; text-align: center; font-size: 30px; line-height: 50px; /*gradient styles*/ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d46d45), to(#b1432a)); background: -moz-linear-gradient(19% 75% 90deg,#b1432a, #d46d45); /*border styles*/ border-top: solid 2px #e28d79; border-bottom: solid 1px #51281f; border-right: solid 1px #d46d45; border-left: solid 1px #d46d45; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; } .newstorybutton p { font-size: 25px; line-height: 50px; font-family: ‘Trebuchet MS’, sans-serif; } a { text-decoration: none; color: fff; } .newstorybutton:hover { background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b1432a), to(#d46d45)); background: -moz-linear-gradient(19% 75% 90deg,#d46d45, #b1432a); border-top: solid 2px #b1432a; border-bottom: solid 1px #e28d79; }
 
-.nav-name {
-  float: right;
-  color: white;
-}
 
-#nav-teacher {
-  float: right;
-  color: white;
-}
-
-.nav-add-story {
-  float: right;
-  color: white;
-}
 
 #splash {
-  font-size: 50em;
-  color: #7A6A53;
+  font-size: 45em;
+  text-align: center;
+  color: #5D5050;
 
 }
