@@ -273,6 +273,12 @@ width: 30%; /*basic styles*/ width: 250px; height: 50px; color: white; backgroun
   float: right;
   color: white;
 }
+
+.nav-add-story {
+  float: right;
+  color: white;
+}
+
 #splash {
   font-size: 50em;
   color: #7A6A53;
