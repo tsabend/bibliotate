@@ -29,9 +29,19 @@ class StoriesController < ApplicationController
     redirect_to '/'
   end
 
-  def commentsfeed
+  def comments_feed
     @story = Story.find(params[:id])
     render partial: 'comments_feed'
+  end
+
+  def most_commented
+    @story = Story.find(params[:id])
+    render partial: 'most_commented'
+  end
+
+  def active_users
+    @story = Story.find(params[:id])
+    render partial: 'active_users'
   end
 
 end
