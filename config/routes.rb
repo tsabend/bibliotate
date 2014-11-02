@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get '/stories/:id/mostcommented/', :to => 'stories#most_commented'
   get '/stories/:id/activeusers/', :to => 'stories#active_users'
   post "/logout" => "sessions#destroy"
+  post "/notifications" => "notifications#destroy"
   resources :users
   resources :enrollments
   resources :comments
