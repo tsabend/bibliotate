@@ -9,6 +9,8 @@ class EnrollmentsController < ApplicationController
 
   def create
     @enrollment = Enrollment.new(enrollment_params)
+    @enrollment.save
+    redirect_to '/'
   end
 
   private
