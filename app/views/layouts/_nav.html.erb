@@ -40,7 +40,7 @@
             Hello, <%= link_to "#{current_user.name}", user_path(current_user) %>
           </section>
           <section id="nav-student">
-            <a href="enrollments/new">Join a Course</a>
+            <%= link_to "Join a Course", new_enrollment_path %>
           </section>
           <section id="login_box">
             <%= link_to  logout_path, :method => 'post' do %>
