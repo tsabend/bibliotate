@@ -1,3 +1,9 @@
 
-<p id="message"><%= flash[:messages] %></p>
-<% flash[:messages] = "" %>
+<% if flash[:messages].class == Array %>
+  <% flash[:messages].each do |message|%>
+      <p id="message"><%=  message  %></p>
+    <% end %>
+  <% else %>
+      <p id="message"><%=  flash[:messages]  %></p>
+<% end %>
+  <% flash[:messages] = "" %>

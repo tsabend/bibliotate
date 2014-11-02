@@ -3,5 +3,6 @@
     <h3><%= course.name %></h3>
     <%= link_to "Delete this course", course_path(id: course.id), method: :delete %>
     <%= render partial: '/users/teachers/all_students', locals: {students: course.users}  %>
+    <%= render partial: '/users/teachers/all_stories',  locals: {stories: course.stories} %>
   </div>
 <% end %>

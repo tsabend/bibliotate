@@ -12,8 +12,6 @@ class User < ActiveRecord::Base
     end
   end
 
-
-
   #returns boolean true or false if user is a teacher
   def is_teacher?
     self.role.downcase == "teacher"
