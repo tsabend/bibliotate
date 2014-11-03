@@ -125,7 +125,7 @@ header {
   color: white;
 }
 
-#nav-add-story {
+#nav-add-story, #nav-view-hashtags{
   margin: 16px 10px 0 0;
   color: #AFC0BE;
   float: right;
@@ -136,6 +136,7 @@ header {
 #nav-add-story a, #nav-view-hashtags a {
   color: #AFC0BE;
 }
+
 
 .nav_buttons {
   margin: 13px 10px 0 0;
@@ -487,10 +488,12 @@ ul {
 
 .comment_display {
   max-height: 300px;
-  overflow-y:scroll; 
+  overflow-y:scroll;
 }
 
-
+#videoplayer{
+  width: 100%
+}
 
 
 

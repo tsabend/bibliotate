@@ -1,7 +1,7 @@
 <% if !user_logged_in? %>
-	<section id="splash_section">
-  	<i class="fa fa-book" id="splash"></i>
-  </section>
+ <video loop="loop" preload="auto"  id='videoplayer' style='width:100%' autoplay muted>
+   <source src="assets/splash.mov" type="video/mp4">
+  </video>
 <% elsif current_user.is_teacher? %>
   <%= render partial: '/users/teachers/dashboard' %>
 <% else %>
