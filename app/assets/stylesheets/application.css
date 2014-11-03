@@ -363,20 +363,6 @@ main {
   color: #5D5050;
 }
 
-.splashimage{
-  height: 900px;
-  width: 100%;
-  margin: 0px;
-}
-
-#splash_page_icon {
-  width: 100%;
-  text-align: center;
-}
-
-#splash_page_icon i {
-  text-align: center;
-}
 
 
 /* USER INDEX PAGE --------------------------------- */

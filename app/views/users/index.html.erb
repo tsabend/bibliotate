@@ -1,7 +1,11 @@
 <% if !user_logged_in? %>
-<h1 id="headline">Bibliotate</h1>
+	<%= render partial: '/users/splash' %>
 <% elsif current_user.is_teacher? %>
   <%= render partial: '/users/teachers/dashboard' %>
 <% else %>
   <%= render partial: '/users/students/student_dashboard' %>
 <% end %>
+
+
+
+
