@@ -385,7 +385,7 @@ main {
   margin-bottom: 10%;
   box-shadow: 0px 2px 67px #555;
   float: left;
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
 }
 
 .card ul {
