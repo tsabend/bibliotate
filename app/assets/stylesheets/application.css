@@ -452,9 +452,10 @@ main {
   float: right;
   margin: 13px 10px 0 0;
   list-style-type: none;
+  color:#AFC0BE;
 }
 .dropdown-menu{
-  left: -1500%;
+  left: -100%;
 }
 .dropdown ul li{
   float: left;
