@@ -589,7 +589,7 @@ notifications = []
 
 # hand written example records
 usertest1 = {
-      :name => "pablo",
+      :name => "Pablo",
       :email => "pablo@rox.always",
       :photo => "https://scontent-a-sjc.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10672243_10203261369791947_986035253996343461_n.jpg?oh=8ff2c42f0671e7eeb1a0a7abcf861120&oe=54AC85C5",
       :role => "teacher",
