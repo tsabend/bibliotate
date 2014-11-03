@@ -10,6 +10,10 @@ class EnrollmentsController < ApplicationController
     @enrollment = Enrollment.new
     @courses = Course.all
   end
+  def destroy
+    @enrollment = Enrollment.new
+    @courses = Course.all
+  end
 
   def create
     @courses = Course.all
