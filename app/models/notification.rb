@@ -22,9 +22,9 @@ class Notification < ActiveRecord::Base
 
   def is_about?
     if self.noteable_type == "comment"
-      Comment.find(self.noteable_id).sentence.paragraph.story.title
+      Comment.find(self.noteable_id).sentence.paragraph.story
     else
-      Course.find(Enrollment.find(self.noteable_id).course_id).name
+      Course.find(Enrollment.find(self.noteable_id).course_id)
     end
   end
 
