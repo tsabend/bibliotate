@@ -1,6 +1,7 @@
 <% if !user_logged_in? %>
-	<section id="splash_section">
-  	<i class="fa fa-book" id="splash"></i>
+<h1 id="headline">Bibliotate</h1>
+	<section id="splash_section" >
+  	<%= image_tag("students.jpg",:class => "splashimage")%>
   </section>
 <% elsif current_user.is_teacher? %>
   <%= render partial: '/users/teachers/dashboard' %>

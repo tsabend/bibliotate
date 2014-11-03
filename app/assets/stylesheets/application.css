@@ -125,7 +125,7 @@ header {
   color: white;
 }
 
-#nav-add-story {
+#nav-add-story, #nav-view-hashtags{
   margin: 16px 10px 0 0;
   color: #AFC0BE;
   float: right;
@@ -137,6 +137,7 @@ header {
   color: #AFC0BE;
 }
 
+
 #nav-view-hashtags {
   margin: 16px 10px 0 0;
   display: block;
@@ -147,11 +148,6 @@ header {
   display: block;
   float: right;
 }
-
-
-<section id="nav-view-hashtags" class="nav_buttons">
-            <a href="/hashtags">Trending </a>
-          </section>
 
 .nav_buttons {
   margin: 13px 10px 0 0;
@@ -353,6 +349,7 @@ main {
 #splash_section {
   width: 100%;
   text-align: center;
+
 }
 
 #splash {
@@ -360,7 +357,11 @@ main {
   color: #5D5050;
 }
 
-
+.splashimage{
+  height: 900px;
+  width: 100%;
+  margin: 0px;
+}
 
 /* USER INDEX PAGE --------------------------------- */
 
@@ -508,10 +509,17 @@ ul {
 
 .comment_display {
   max-height: 300px;
-  overflow-y:scroll; 
+  overflow-y:scroll;
 }
 
-
+/*#videoplayer{
+  width: 100%
+}*/
+#headline {
+  text-align: center;
+  margin:0;
+  padding:0;
+}
 
 
 
