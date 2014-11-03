@@ -137,6 +137,22 @@ header {
   color: #AFC0BE;
 }
 
+#nav-view-hashtags {
+  margin: 16px 10px 0 0;
+  display: block;
+  float: right;
+}
+
+#notification_partial {
+  display: block;
+  float: right;
+}
+
+
+<section id="nav-view-hashtags" class="nav_buttons">
+            <a href="/hashtags">Trending </a>
+          </section>
+
 .nav_buttons {
   margin: 13px 10px 0 0;
 }
@@ -434,13 +450,18 @@ main {
 #profile_username {
   text-align: center;
 }
+
+
+
 /*pertains to notification box*/
-.dropdown {
-  float: right;
+
+.dropdown {   /*The issue with the nav space is here*/
+  float: right; 
   margin: 10px 10px 0 0;
   list-style-type: none;
   color:#AFC0BE;
 }
+
 .dropdown-menu{
   left: -100%;
 }
