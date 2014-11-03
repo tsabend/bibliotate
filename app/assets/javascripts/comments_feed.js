@@ -16,6 +16,7 @@ function ajaxInteveral(dataCard) {
 	setInterval(function(){
 		fetchPartial(dataCard, storyId, function(template){
 			$("[data-card='" + dataCard + "']").replaceWith(template)
+			openComment()
 		})
 	}, 10000)
 }
@@ -25,5 +26,5 @@ function fetchPartial(url, id, callback) {
 	$.ajax({
 	    url: '/stories/' + id + '/' + url,
 	  })
-	  .success(callback)	
+	  .success(callback)
 }
