@@ -1,2 +1,2 @@
-  <li><img class="student_image" src="<%=comment.user.photo%>"><%= comment.user.name %> says:
+  <li><img class="student_image img-circle" src="<%=comment.user.photo%>"><%= comment.user.name %> says:
   <%= render partial: '/comments/hashtag_rendering', locals: {body: comment.body} %></li>
