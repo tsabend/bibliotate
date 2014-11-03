@@ -1,7 +1,9 @@
 $(document).on('page:change', function() {
-	listenForRecentComments()
-	listenForMostCommented()
-	listenForActiveUsers
+	if( $('[data-card]').length > 0) {
+		listenForRecentComments()
+		listenForMostCommented()
+		listenForActiveUsers
+	}
 })
 
 
