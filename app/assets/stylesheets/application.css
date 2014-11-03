@@ -447,45 +447,21 @@ main {
 #profile_username {
   text-align: center;
 }
-
-
 /*pertains to notification box*/
-.notification {
+.dropdown {
   float: right;
   margin: 13px 10px 0 0;
+  list-style-type: none;
+}
+.dropdown-menu{
+  left: -1500%;
+}
+.dropdown ul li{
+  float: left;
+  margin-right:600px;
+  list-style-type: none;
 }
 
-ul, li, a {
-    margin: 0;
-    padding: 0;
-}
-li {
-    list-style: none;
-}
-
-ul > li {
-    float: left;
-}
-ul > li a {
-    color: black;
-    line-height: 40px;
-    height:40px;
-    display:block;
-    padding:0px 10px;
-}
-ul li a:hover {
-    background: brown;
-}
-ul li ul {
-    display: none;
-    position: absolute;
-    background: #333333;
-}
-ul li ul li {
-    float: none;
-    line-height: 40px;
-    height: 40px;
-}
 #user_information {
   text-align: center;
   margin: 10px 0;

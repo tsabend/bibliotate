@@ -17,10 +17,7 @@
           </section>
 
         <% elsif current_user.role == "teacher" %>
-          <% if current_user.notifications.where(status:true).length >= 1%>
-            <%= render partial: "users/notification", :locals => {:notifications => current_user.notifications.where(status:true)} %>
-          <% end %>
-
+            <%= render partial: "users/notification", :locals => {:notifications => current_user.notifications.limit(5).order(created_at: :desc)} %>
           <section id="login_box">
             <%= link_to  logout_path, :method => 'post' do %>
               <section id="google_plus"><i class="fa fa-google-plus"></i></section>
