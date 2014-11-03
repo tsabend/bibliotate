@@ -1,19 +1,28 @@
 $(document).on('page:change', function() {
 	if( $('[data-card=commentsfeed]').length > 0) {
-		ajaxInteveral('commentsfeed')
+		var id = ajaxInterval('commentsfeed')
+	}
+	else {
+		clearInterval(id)
 	}
 	if( $('[data-card=mostcommented]').length > 0) {
-		ajaxInteveral('mostcommented')
+		var id2 = ajaxInterval('mostcommented')
+	}
+	else {
+		clearInterval(id2)
 	}
 	if( $('[data-card=activeusers]').length > 0) {
-		ajaxInteveral('activeusers')
+		var id3 = ajaxInterval('activeusers')
+	}
+	else {
+		clearInterval(id3)
 	}
 })
 
 // Data card should be the URL and value of the data-card attribute
-function ajaxInteveral(dataCard) {
+function ajaxInterval(dataCard) {
 	var storyId = $("[data-card='" + dataCard + "']").data('story')
-	setInterval(function(){
+	return setInterval(function(){
 		fetchPartial(dataCard, storyId, function(template){
 			$("[data-card='" + dataCard + "']").replaceWith(template)
 			openComment()

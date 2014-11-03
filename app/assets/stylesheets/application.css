@@ -1,6 +1,6 @@
-*= require_self
+/**= require_self
 *= require normalize-rails
-*= require_tree .
+*= require_tree*/
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
@@ -305,8 +305,10 @@ main {
   font-size: 2em;
    font-family: georgia, serif;
    text-align: center;
-  margin-left: %35;
+  margin-left: 35%;
+
 }
+
 #story_author{
   text-align: center;
   margin: 0;
