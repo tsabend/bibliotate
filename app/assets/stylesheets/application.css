@@ -98,26 +98,39 @@ header {
 
 #hello_user {
   color: #AFC0BE;
-  font-size: .8em;
-  font-family: georgia, serif;
+  font-size: 1em;
+  /*font-family: georgia, serif;*/
 }
 
 #nav-name {
   float: right;
-  margin: 13px 10px 0 0;
+  margin: 16px 10px 0 0;
 }
 
 #nav-name a {
   color: #EC7962;
 }
 
-#nav-teacher, #nav-student,
-#nav-add-story, #nav-view-hashtags  {
+#nav-teacher {
+  margin: 16px 10px 0 0;
   color: #AFC0BE;
   float: right;
   color: white;
 }
 
+#nav-student {
+  margin: 16px 10px 0 0;
+  color: #AFC0BE;
+  float: right;
+  color: white;
+}
+
+#nav-add-story {
+  margin: 16px 10px 0 0;
+  color: #AFC0BE;
+  float: right;
+  color: white;
+}
 
 #nav-teacher a, #nav-student a,
 #nav-add-story a, #nav-view-hashtags a {
@@ -451,6 +464,7 @@ main {
 
 #newnotify{
   color:#EC7961;
+  font-size: 1em;
 }
 .removestudent{
   float:right;
