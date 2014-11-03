@@ -450,7 +450,7 @@ main {
 /*pertains to notification box*/
 .dropdown {
   float: right;
-  margin: 13px 10px 0 0;
+  margin: 10px 10px 0 0;
   list-style-type: none;
   color:#AFC0BE;
 }
@@ -476,6 +476,12 @@ main {
 }
 
 
+#newnotify{
+  color:#EC7961;
+}
+.removestudent{
+  float:right;
+}
 
 
 
