@@ -8,6 +8,8 @@ $(document).on('page:change', function() {
       popupClose()
     })
   })
+
+
 })
 
 // Get comment functions

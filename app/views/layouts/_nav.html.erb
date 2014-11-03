@@ -25,21 +25,27 @@
             <span id="login_with_text">Logout With</span>
           </section>
 
+            <%= render partial: "users/notification", :locals => {:notifications => current_user.notifications.limit(5).order(created_at: :desc)} %>
+
           <section id="nav-name">
-            <span id="hello_user">Hello: </span>
+            <span id="hello_user">  Hello: </span>
             <%= link_to "#{current_user.name}", user_path(current_user) %>
           </section>
 
+
           <section id="nav-add-story" class="nav_buttons">
-            <a href="/stories/new">Story+<span id="book_icon" class="entypo-book-open"></span></a>
+            <a href="/stories/new">Story+ <span id="book_icon" class="entypo-book-open"></span></a>
           </section>
 
           <section id="nav-teacher" class="nav_buttons">
-            <a href="/courses/new">Course+<span id="book_icon" class="entypo-doc-text"></span></i></a>
+            <a href="/courses/new">Course+ <span id="course_icon" class="entypo-doc-text"></span></i></a>
           </section>
 
+          <section id="nav-view-hashtags" class="nav_buttons">
+            <a href="/hashtags">Trending <span id="book_icon" class="entypo-book-open"></span></a>
+          </section>
 
-            <%= render partial: "users/notification", :locals => {:notifications => current_user.notifications.limit(5).order(created_at: :desc)} %>
+ 
 
         <% else %>
 
@@ -57,6 +63,10 @@
 
           <section id="nav-student" class="nav_buttons">
             <a href="/enrollments/new">Enroll+<span id="book_icon" class="entypo-doc-text"></span></a>
+          </section>
+
+          <section id="nav-view-hashtags" class="nav_buttons">
+            <a href="/hashtags">Trending <span id="book_icon" class="entypo-book-open"></span></a>
           </section>
 
         <% end %>

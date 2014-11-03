@@ -3,7 +3,10 @@
 	<ul>
 	<% @story.most_commented.each do |sentence| %>
 		<li>
-			<a href="#<%= sentence.story_sentence %>">
+			<a 
+				data-story="<%= sentence.paragraph.story.id %>"
+			  	data-sentence-link="<%= sentence.story_sentence%>" 
+			  	href="/stories/<%= sentence.paragraph.story.id %>/#<%=sentence.story_sentence%>">
 				Sentence: 
 				<%= sentence.story_sentence %>
 			</a>.

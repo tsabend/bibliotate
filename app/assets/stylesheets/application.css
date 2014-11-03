@@ -111,40 +111,22 @@ header {
   color: #EC7962;
 }
 
-#nav-teacher {
+#nav-teacher, #nav-student,
+#nav-add-story, #nav-view-hashtags  {
   color: #AFC0BE;
   float: right;
   color: white;
 }
 
-#nav-student {
-  color: #AFC0BE;
-  float: right;
-  color: white;
-}
 
-#nav-add-story {
-  color: #AFC0BE;
-  float: right;
-  color: white;
-}
-
-#nav-teacher a, #nav-student a, #nav-add-story a {
+#nav-teacher a, #nav-student a,
+#nav-add-story a, #nav-view-hashtags a {
   color: #AFC0BE;
 }
 
 .nav_buttons {
   margin: 13px 10px 0 0;
 }
-
-
-
-
-
-
-
-
-
 
 main {
   font-family: 'Source Serif Pro', serif;
@@ -197,7 +179,7 @@ main {
   color: #5D5050;
   font-style: georgia, serif;
   text-align: center;
-  margin: 55px 0 20px;
+  margin: 55px 27% 20px;
 }
 
 #author {
@@ -480,15 +462,19 @@ main {
   position: relative;
 }
 
-.card li {
-  margin-top: 10px;
+.card ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 ul {
   list-style: none;
 }
 
-
+.comment_display {
+  max-height: 300px;
+  overflow-y:scroll; 
+}
 
 
 

@@ -4,7 +4,10 @@
 		<% story.newest_comments.each do |comment| %>
 		<li><%= render partial: '/comments/render_comment', locals: {comment: comment} %>
 		 on: 
-		 <a href="#<%= comment.sentence.story_sentence%>">
+		 <a 
+			data-story="<%= comment.sentence.paragraph.story.id %>"
+		  	data-sentence-link="<%= comment.sentence.story_sentence%>" 
+		  	href="/stories/<%= comment.sentence.paragraph.story.id %>/#<%= comment.sentence.story_sentence%>">
 		 	sentence <%= comment.sentence.story_sentence %>
 		</a>.<br></li>
 		<% end %>
