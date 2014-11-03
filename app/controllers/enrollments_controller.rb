@@ -13,7 +13,8 @@ class EnrollmentsController < ApplicationController
 
   def destroy
     Enrollment.destroy(params[:id])
-    Notification.destroy(noteable_type:"enrollment", noteable_id:params[:id])
+    # Notification.destroy(noteable_type:"enrollment", noteable_id:params[:id])
+    # notifications destroyed with dependent: :destroy in model
     redirect_to '/'
   end
 
