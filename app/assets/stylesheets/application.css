@@ -482,6 +482,10 @@ main {
   position: relative;
 }
 
+.card li {
+  margin-top: 15px;
+}
+
 
 
 

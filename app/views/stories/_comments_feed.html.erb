@@ -2,8 +2,11 @@
 	<h1>Recent Comments:</h1>
 	<ul>
 		<% @story.newest_comments.each do |comment| %>
-		Comment on: sentence <%= comment.sentence.story_sentence  %>:
-		<%= render partial: '/comments/render_comment', locals: {comment: comment} %>
+		<li><%= render partial: '/comments/render_comment', locals: {comment: comment} %>
+		 on: 
+		 <a href="#<%= comment.sentence.story_sentence%>">
+		 	sentence <%= comment.sentence.story_sentence %>
+		</a>.<br></li>
 		<% end %>
 	</ul>
 </div>
