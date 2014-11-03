@@ -1,4 +1,4 @@
-<div data-card='mostcommented' data-story="<%=@story.id%>" class="card">
+<div data-card='mostcommented' data-story="<%=@story.id%>" class="card comment_card" id="most_commented">
 	<h1>Most Commented Sentences:</h1>
 	<ul>
 	<% @story.most_commented.each do |sentence| %>
