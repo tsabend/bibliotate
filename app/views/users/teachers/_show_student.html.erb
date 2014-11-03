@@ -6,4 +6,7 @@
     <li><%= @user.email  %></li>
     <li><%= @user.role  %></li>
   </ul>
+<% if current_user.id == @user.id%>
+  <%= link_to 'Delete account', user_path(current_user), method: 'delete', data: {confirm: 'NOTICE: All data associated with this user will be lost. Are you sure? '} %>
+<% end %>
 </div>

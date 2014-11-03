@@ -2,7 +2,7 @@
   <% students.each do |student|  %>
      <li><%= button_to "Remove Student", enrollment_path(1), class:"removestudent", :method => :delete, data: {confirm: 'Are you sure you want to remove this student?'}%><li>
     <li>
-      <img class="student_image" src="
+      <img class="student_image img-circle" src="
          <%= student.photo %>">
       </img>
      <%= link_to "#{student.name}",  student %>
