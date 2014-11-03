@@ -22,6 +22,8 @@ function fetchPopup(id, callback) {
 function listenForComment() {
   $(".comment_form").submit(function(e){
     e.preventDefault()
+    var sentence_id = $(".comment_form [name=sentence_id]").val()
+    $('[data-id=' + sentence_id + ']').addClass('commented')
     submitComment($(this).serialize(), function(data){
       $('.popup').replaceWith(data)
       listenForComment()
