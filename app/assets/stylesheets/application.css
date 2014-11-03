@@ -132,22 +132,14 @@ header {
   color: white;
 }
 
-#nav-teacher a, #nav-student a, #nav-add-story a {
+#nav-teacher a, #nav-student a,
+#nav-add-story a, #nav-view-hashtags a {
   color: #AFC0BE;
 }
 
 .nav_buttons {
   margin: 13px 10px 0 0;
 }
-
-
-
-
-
-
-
-
-
 
 main {
   font-family: 'Source Serif Pro', serif;
@@ -200,7 +192,7 @@ main {
   color: #5D5050;
   font-style: georgia, serif;
   text-align: center;
-  margin: 55px 0 20px;
+  margin: 55px 27% 20px;
 }
 
 #author {
@@ -368,13 +360,13 @@ main {
 }
 
 .card {
-  width: 33%;
+  width: 32.40%;
   height: 400px;
   background-color: white;
   border: 2px solid rgba(175,192,190,0.1);
   border-radius: 4px;
   padding: 1%;
-  margin: 40px 0 ;
+  margin: 40px .10% ;
   margin-bottom: 10%;
   box-shadow: 0px 2px 67px #555;
   float: left;
@@ -484,9 +476,19 @@ main {
   position: relative;
 }
 
+.card ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
 
+ul {
+  list-style: none;
+}
 
-
+.comment_display {
+  max-height: 300px;
+  overflow-y:scroll; 
+}
 
 
 

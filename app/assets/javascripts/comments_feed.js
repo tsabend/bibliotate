@@ -1,7 +1,11 @@
 $(document).on('page:change', function() {
-	if( $('[data-card]').length > 0) {
+	if( $('[data-card=commentsfeed]').length > 0) {
 		ajaxInteveral('commentsfeed')
+	}
+	if( $('[data-card=mostcommented]').length > 0) {
 		ajaxInteveral('mostcommented')
+	}
+	if( $('[data-card=activeusers]').length > 0) {
 		ajaxInteveral('activeusers')
 	}
 })

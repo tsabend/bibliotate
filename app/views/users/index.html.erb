@@ -3,8 +3,6 @@
   	<i class="fa fa-book" id="splash"></i>
   </section>
 <% elsif current_user.is_teacher? %>
-  <h1>Teacher View</h1>
-  <%= link_to 'Delete account', user_path(current_user), method: 'delete' %>
   <%= render partial: '/users/teachers/dashboard' %>
 <% else %>
   <%= render partial: '/users/students/student_dashboard' %>
