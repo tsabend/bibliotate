@@ -1,6 +1,6 @@
-*= require_self
+/**= require_self
 *= require normalize-rails
-*= require_tree .
+*= require_tree*/
 
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
@@ -457,7 +457,7 @@ main {
 /*pertains to notification box*/
 
 .dropdown {   /*The issue with the nav space is here*/
-  float: right; 
+  float: right;
   margin: 10px 10px 0 0;
   list-style-type: none;
   color:#AFC0BE;
