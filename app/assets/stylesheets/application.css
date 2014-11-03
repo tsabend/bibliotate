@@ -367,6 +367,16 @@ main {
   margin: 0px;
 }
 
+#splash_page_icon {
+  width: 100%;
+  text-align: center;
+}
+
+#splash_page_icon i {
+  text-align: center;
+}
+
+
 /* USER INDEX PAGE --------------------------------- */
 
 #my_enrollments {
