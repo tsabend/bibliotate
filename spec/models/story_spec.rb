@@ -26,10 +26,10 @@ RSpec.describe Story, :type => :model do
       expect(Story.all.size > size_before).to eq true
     end
 
-    it "should make 3 paragraphs" do
-      #size_before = Paragraph.all.size
-      Story.make("TTH", "Edgar Allen Poe", "blah blah.\n extra extra. \n\n blah,,,,,. blah.", 1)
-      expect(Paragraph.all.size).to eq 3
+    it "should make 2 paragraphs" do
+      size_before = Paragraph.all.size
+      Story.make("TTH", "Edgar Allen Poe", "blah blah.\n adskfj.", 1)
+      expect(Paragraph.all.size).to eq 2
     end
 
     it "should make 4 sentences" do
