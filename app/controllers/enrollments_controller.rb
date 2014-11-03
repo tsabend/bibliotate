@@ -10,9 +10,11 @@ class EnrollmentsController < ApplicationController
     @enrollment = Enrollment.new
     @courses = Course.all
   end
+
   def destroy
-    @enrollment = Enrollment.new
-    @courses = Course.all
+    Enrollment.destroy(params[:id])
+    Notification.destroy(noteable_type:"enrollment", noteable_id:params[:id])
+    redirect_to '/'
   end
 
   def create
