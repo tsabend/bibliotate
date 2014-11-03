@@ -338,6 +338,7 @@ main {
 #splash_section {
   width: 100%;
   text-align: center;
+
 }
 
 #splash {
@@ -345,7 +346,11 @@ main {
   color: #5D5050;
 }
 
-
+.splashimage{
+  height: 900px;
+  width: 100%;
+  margin: 0px;
+}
 
 /* USER INDEX PAGE --------------------------------- */
 
@@ -491,8 +496,13 @@ ul {
   overflow-y:scroll;
 }
 
-#videoplayer{
+/*#videoplayer{
   width: 100%
+}*/
+#headline {
+  text-align: center;
+  margin:0;
+  padding:0;
 }
 
 
