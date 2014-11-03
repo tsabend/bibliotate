@@ -32,7 +32,7 @@ class StoriesController < ApplicationController
 
   def comments_feed
     @story = Story.find(params[:id])
-    render partial: 'comments_feed'
+    render partial: 'comments_feed', locals: {story: @story}
   end
 
   def most_commented
