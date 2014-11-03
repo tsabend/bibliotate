@@ -146,7 +146,11 @@ header {
 
 #notification_partial {
   display: block;
-  float: right;
+  float: left;
+}
+
+#notification_partial i {
+  margin: 8px 10px 0 0;
 }
 
 .nav_buttons {
@@ -457,7 +461,7 @@ main {
 /*pertains to notification box*/
 
 .dropdown {   /*The issue with the nav space is here*/
-  float: right; 
+  float: right;
   margin: 10px 10px 0 0;
   list-style-type: none;
   color:#AFC0BE;
