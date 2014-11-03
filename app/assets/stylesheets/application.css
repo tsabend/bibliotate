@@ -28,6 +28,7 @@ header {
   background: #5D5050;
 }
 
+
 #top {
   width: 100%;
 
@@ -138,14 +139,6 @@ header {
 }
 
 
-
-
-
-
-
-
-
-
 main {
   font-family: 'Source Serif Pro', serif;
   color: #5D5050;
@@ -154,6 +147,7 @@ main {
   margin: auto;
   margin-top: 45px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .outer {
@@ -286,15 +280,9 @@ main {
   width: 50%;
 }
 
-
-
 .student_image {
   max-width: 50px;
   max-height: 50px;
-}
-
-
-
 }
 
 .storycreate h2 {
@@ -315,16 +303,6 @@ main {
   font-size: 1em
 }
 
-#story_title{
-  text-align: center;
-  width: 30%;
-  height: 20px;
-  margin: 1%;
-  margin-left: 35%;
-   font-family: georgia, serif;
-  font-size: 1em
-}
-=======
 .story_create h2 {
   font-size: 1em;
   font-color:red;
@@ -348,15 +326,16 @@ main {
 }
 
 .newstorybutton {
-   font-family: georgia, serif;
+  font-family: georgia, serif;
   margin-left: 35%;
   width: 30%; /*basic styles*/ width: 250px; height: 50px; color: white; background-color: #d46d45; text-align: center; font-size: 30px; line-height: 50px; /*gradient styles*/ background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#d46d45), to(#b1432a)); background: -moz-linear-gradient(19% 75% 90deg,#b1432a, #d46d45); /*border styles*/ border-top: solid 2px #e28d79; border-bottom: solid 1px #51281f; border-right: solid 1px #d46d45; border-left: solid 1px #d46d45; -moz-border-radius: 30px; -webkit-border-radius: 30px; border-radius: 30px; } .newstorybutton p { font-size: 25px; line-height: 50px; font-family: ‘Trebuchet MS’, sans-serif; } a { text-decoration: none; color: fff; } .newstorybutton:hover { background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#b1432a), to(#d46d45)); background: -moz-linear-gradient(19% 75% 90deg,#d46d45, #b1432a); border-top: solid 2px #b1432a; border-bottom: solid 1px #e28d79; }
 
 /* SPLASH PAGE --------------------------------- */
 
 #splash {
-  font-size: 45em;
+  font-size: 40em;
   text-align: center;
+  margin: auto;
   color: #5D5050;
 }
 
@@ -385,7 +364,7 @@ main {
   margin-bottom: 10%;
   box-shadow: 0px 2px 67px #555;
   float: left;
-  /*overflow-y: scroll;*/
+  overflow-y: scroll;
 }
 
 .card ul {
@@ -395,6 +374,7 @@ main {
 .card h1 {
   text-align: center;
 }
+
 .card h3 {
   text-align: center;
   font-size: 2em;
@@ -403,11 +383,13 @@ main {
 .story_links {
   color: #EC7962;
   font-size: 1.25em;
-  margin: 0 0 0 25px;
+  margin: 0;
 }
 .story_links a {
   color: #EC7962;
   font-size: 1em;
+  margin: 0 0 0 20px;
+  float: left;
 }
 
 .comments {
@@ -416,6 +398,13 @@ main {
   color: #AFC0BE;
 }
 
+
+
+/* FEEDS CARD PARTIALS --------------------------------- */
+
+#comments_card ul {
+  margin: 0;
+}
 
 
 /* PROFILE PAGE --------------------------------- */
@@ -448,44 +437,13 @@ main {
   text-align: center;
 }
 
-
 /*pertains to notification box*/
+
 .notification {
   float: right;
   margin: 13px 10px 0 0;
 }
 
-ul, li, a {
-    margin: 0;
-    padding: 0;
-}
-li {
-    list-style: none;
-}
-
-ul > li {
-    float: left;
-}
-ul > li a {
-    color: black;
-    line-height: 40px;
-    height:40px;
-    display:block;
-    padding:0px 10px;
-}
-ul li a:hover {
-    background: brown;
-}
-ul li ul {
-    display: none;
-    position: absolute;
-    background: #333333;
-}
-ul li ul li {
-    float: none;
-    line-height: 40px;
-    height: 40px;
-}
 #user_information {
   text-align: center;
   margin: 10px 0;

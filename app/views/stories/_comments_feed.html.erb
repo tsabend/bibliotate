@@ -1,4 +1,4 @@
-<div data-card="commentsfeed" data-story="<%=@story.id%>" class="card">
+<div data-card="commentsfeed" data-story="<%=@story.id%>" class="card comment_card" id="comments_card">
 	<h1>Recent Comments:</h1>
 	<ul>
 		<% @story.newest_comments.each do |comment| %>
