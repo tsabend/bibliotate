@@ -462,15 +462,19 @@ main {
   position: relative;
 }
 
-.card li {
-  margin-top: 10px;
+.card ul li {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 ul {
   list-style: none;
 }
 
-
+.comment_display {
+  max-height: 300px;
+  overflow-y:scroll; 
+}
 
 
 
