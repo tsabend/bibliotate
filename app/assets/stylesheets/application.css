@@ -146,7 +146,11 @@ header {
 
 #notification_partial {
   display: block;
-  float: right;
+  float: left;
+}
+
+#notification_partial i {
+  margin: 8px 10px 0 0;
 }
 
 .nav_buttons {
@@ -362,6 +366,16 @@ main {
   width: 100%;
   margin: 0px;
 }
+
+#splash_page_icon {
+  width: 100%;
+  text-align: center;
+}
+
+#splash_page_icon i {
+  text-align: center;
+}
+
 
 /* USER INDEX PAGE --------------------------------- */
 
