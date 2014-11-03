@@ -6,6 +6,7 @@ $(document).on('page:change', function() {
     $('.hover-text').remove();
   })
 
+  listenForComment()
   $(".sentence").click(function(event){
     $('.popup').remove()
     var sentence = $(this)
@@ -31,6 +32,7 @@ function listenForComment() {
     e.preventDefault()
     submitComment($(this).serialize(), function(data){
       $('.popup').replaceWith(data)
+      listenForComment()
     })
   })
 }
