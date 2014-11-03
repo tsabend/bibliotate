@@ -25,6 +25,9 @@
             <span id="login_with_text">Logout With</span>
           </section>
 
+          <section id="notification_partial">
+            <%= render partial: "users/notification", :locals => {:notifications => current_user.notifications.limit(5).order(created_at: :desc)} %>
+          </section>
 
           <section id="nav-name">
             <%= link_to "#{current_user.name}", user_path(current_user) %>
@@ -41,10 +44,6 @@
 
           <section id="nav-view-hashtags" class="nav_buttons">
             <a href="/hashtags">Trending </a>
-          </section>
-
-          <section id="notification_partial">
-            <%= render partial: "users/notification", :locals => {:notifications => current_user.notifications.limit(5).order(created_at: :desc)} %>
           </section>
  
 
