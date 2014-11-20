@@ -2,6 +2,6 @@
 
 Our goal for this project is to create a space where students can discuss literature in an interactive way.
 
-We plan to use Rails, Bootstrap, CLR.CC, and Google OAuth.
+We plan to use Rails, Bootstrap, and Google OAuth.
 
 (https://bibliotate.herokuapp.com/)
