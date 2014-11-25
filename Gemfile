@@ -1,15 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails_12factor'
-gem 'unicorn'
-gem 'oauth2'
-gem 'dotenv'
-gem 'doorkeeper'
-gem 'normalize-rails'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.6'
-# Use postgresql as the database for Active Record
-gem 'pg'
+gem 'rails', '4.1.8'
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
@@ -33,7 +28,7 @@ gem 'spring',        group: :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
-  gem 'tactful_tokenizer'
+
 # Use unicorn as the app server
 # gem 'unicorn'
 
@@ -43,14 +38,3 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'faker', '~> 1.4.3'
-gem 'pry'
-group :test do
-  gem 'shoulda-matchers', require: false
-  gem 'rspec-rails'
-  gem 'factory_girl_rails'
-end
-
-group :development do
-  gem 'byebug'
-end

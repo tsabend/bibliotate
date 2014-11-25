@@ -1,8 +1,0 @@
-<% body.split(" ").each do |word| %>
-
-	<% if word.first == "#" %>
-		<%= link_to "#{word}", hashtag_path(Hashtag.find_by(tag: word)) %>
-	<% else %>
-		<%= word %>
-	<% end %>
-<% end %>
