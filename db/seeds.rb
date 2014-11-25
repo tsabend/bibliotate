@@ -1,7 +1,21 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'yaml'
+
+path = 'db/seed_data.yaml'
+seed_data = YAML.load File.read path
+
+users = seed_data[:users]
+stories = seed_data[:stories]
+comments = seed_data[:comments]
+
+users.each do |attrs|
+  User.new(attrs).save(:validate => false)
+end
+
+comments.each do |attrs|
+  Comment.new(attrs).save(:validate => false)
+end
+
+(1..4).each do |i|
+	story = Story.from_body(stories[i][:body])
+	story.assign_attributes(title: stories[i][:title], author: stories[i][:author])
+end
