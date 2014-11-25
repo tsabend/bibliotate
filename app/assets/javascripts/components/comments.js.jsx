@@ -125,8 +125,8 @@ var CommentForm = React.createClass({
 });
 
 var show = function(sentence_url) {
-  React.renderComponent(
+  React.render(
     <CommentBox url={sentence_url} pollInterval={2000} />,
-    document.getElementById('comments')
+    document.getElementById('popup')
   );
 };
