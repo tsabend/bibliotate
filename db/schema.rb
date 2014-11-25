@@ -35,6 +35,7 @@ ActiveRecord::Schema.define(version: 20141125213013) do
   create_table "sentences", force: true do |t|
     t.integer  "paragraph_id"
     t.text     "body"
+    t.integer  "number"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
