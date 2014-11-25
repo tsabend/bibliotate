@@ -27,7 +27,14 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 
 gem 'faker', '~> 1.4.3'
+
+# Matt's gem for parsing text to sentences
 gem 'tactful_tokenizer'
+
+# Adding react and showdown
+gem 'react-rails', github: 'reactjs/react-rails'
+gem 'showdown-rails'
+
 gem 'byebug', group: :development
 
 # Use ActiveModel has_secure_password
