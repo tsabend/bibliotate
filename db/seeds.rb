@@ -30,12 +30,10 @@ courses.each do |attrs|
   Course.new(attrs).save(:validate => false)
 end
 
-Story.make(stories[0][:title], stories[0][:author], stories[0][:body], 1)
-Story.make(stories[1][:title], stories[1][:author], stories[1][:body], 1)
-Story.make(stories[2][:title], stories[2][:author], stories[2][:body], 1)
-Story.make(stories[3][:title], stories[3][:author], stories[3][:body], 2)
-Story.make(stories[4][:title], stories[4][:author], stories[4][:body], 2)
-
+(1..4).each do |i|
+	story = Story.from_body(stories[i][:body])
+	story.assign_attributes(title: stories[i][:title], author: stories[i][:author], course_id: 1)
+end
 
 
 
