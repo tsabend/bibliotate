@@ -18,4 +18,5 @@ end
 (1..4).each do |i|
 	story = Story.from_body(stories[i][:body])
 	story.assign_attributes(title: stories[i][:title], author: stories[i][:author])
+	story.save
 end

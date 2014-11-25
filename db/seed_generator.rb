@@ -442,32 +442,27 @@ user1 = {
 }
 
 story1 = {
-    :course_id => 1,
     :title => "The Tell-Tale Heart",
     :author => "Edgar Allan Poe",
     :body => thetelltaleheart
 }
 
 story2 = {
-    :course_id => 2,
     :title => "Harrison Bergeron",
     :author => "Kurt Vonnegut Jr.",
     :body => HarrisonBergeron
 }
 story3 = {
-    :course_id => 3,
     :title => "August 2026: There Will Come Soft Rains",
     :author => "Ray Bradbury",
     :body => aug2026
 }
 story4 = {
-    :course_id => 4,
     :title => "All Summer in a Day",
     :author => "Ray Bradbury",
     :body => allinasummerday
 }
 story5 = {
-    :course_id => 5,
     :title => "The Interlopers",
     :author => "Saki",
     :body => interlopers
@@ -511,16 +506,16 @@ end
 
 comment1 = "I second this. The New York School of Poets also included Kenneth Koch, Frank O'Hara, and John Ashbery."
 comment2 = "These are pretty big names that definitely are still impacting young poets today. Ashbery won a Pulitzer and has, over time, won most of the American poetry prizes.
-More recently, Stephen Dunn, Louise Gluck, W. D. Snodgrass, are all pretty big names. (And personal favorites of mine.) They're not as clearly affiliated with a school, but I personally believe that we're too close to them to really categorize them. Dunn and Gluck both won Pulitzers and both books are of course fantastic; "Different Hours" for Dunn and "The Wild Iris" for Gluck. Paul Muldoon and Dana Goia are big right now. I'm not a personal fan of Goia but both draw heavily on formal styles and rhyme."
+More recently, Stephen Dunn, Louise Gluck, W. D. Snodgrass, are all pretty big names. (And personal favorites of mine.) They're not as clearly affiliated with a school, but I personally believe that we're too close to them to really categorize them. Dunn and Gluck both won Pulitzers and both books are of course fantastic; Different Hours for Dunn and The Wild Iris for Gluck. Paul Muldoon and Dana Goia are big right now. I'm not a personal fan of Goia but both draw heavily on formal styles and rhyme."
 comment3 = "Slam poetry is of course a big thing now. I'm not as well-versed there. Not to pun, or anything...If anything I would tell you to start by looking up some Rives videos online. (Pronounced reeves.)
-I think we're moving towards a lot of multi-culturalism in poetry and using poetry to speak to personal stories of race, gender, and sexuality. Examples of poets who I think do this who are hot right now include Terance Hayes, whose book Lighthead I think deserved a Pulitzer, Danez Smith (who is hot and "up and coming" off the presses right now, edits at Muzzle Magazine, recently featured in Poetry magazine as well as others - btw Hayes guest-edited a really great issue of Ploughshares) and Tracy K Smith who I do believe recently won a Pulitzer."
+I think we're moving towards a lot of multi-culturalism in poetry and using poetry to speak to personal stories of race, gender, and sexuality. Examples of poets who I think do this who are hot right now include Terance Hayes, whose book Lighthead I think deserved a Pulitzer, Danez Smith (who is hot and up and coming off the presses right now, edits at Muzzle Magazine, recently featured in Poetry magazine as well as others - btw Hayes guest-edited a really great issue of Ploughshares) and Tracy K Smith who I do believe recently won a Pulitzer."
 comment4 =  "Not to say the Pulizter isn't the only poetry prize in the world but I guess I do pick up poetry books when I see they've won them.
 We're also seeing trauma and war poets. Bob Hicok taught at VSU (still does) during the school shooting and wrote about it a lot in his book 'Words for Empty, Words for Full.' Brian Turner writes about being a vet in his two books Here Bullet and Phantom Noise.
 C. K. Williams is another big name although I lent someone his book and never got it back so I can't speak to it so much.
 OP, consider that the briefest overview I can give you of the biggest (mostly) AMERICAN names in poetry in the past 50 years."
 comment5 = "I feel like consuming literary analysis is only possible when the audience all agrees to hold certain foundational principles regarding linguistics, aesthetics, politics, etc., and what keeps me off /r/books is the absolute hostility towards those principles that the average person seems to have. Even the most evacuated pure New Criticism requires that the reader believes texts are meaningful, and how often do we get the 'blue curtains are blue curtains' rant on reddit."
 comment6 = "Since literary theory tends to have a fairly open definition of what constitutes a 'text', movies, television shows, and other types of media in general could bring in a bigger audience. While some may dismiss anything nearing cultural studies, multimodal texts such as films can have just as much depth and possibility of interpretation as literature does. People have already done this with shows such as Breaking Bad, I'm certain an online journal covering media like that would be popular."
-comment7 = "That is an interesting question. I think its safe to say that what Lord Henry finds alluring in Dorian is physical, or what we would consider to be "outward," appearance. Harry reminds us early in the book that Dorian has the sort of beauty that need not be explained.
+comment7 = "That is an interesting question. I think its safe to say that what Lord Henry finds alluring in Dorian is physical, or what we would consider to be outward, appearance. Harry reminds us early in the book that Dorian has the sort of beauty that need not be explained.
 But I think the beauty that Harry are referring to here goes beyond what we might consider to me mere outward, physical pleasantness. Or, to put it more accurately, that outward, physical pleasantness itself represents the highest form of intellectual, aesthetic, and philosophical experience in his view. It might be easier to understand this idea if we can cast aside the notion that Henry is simply being vein or shallow. To Harry, outward appearance is paradoxically dives deepest into the truth of life. As Wilde writes in the Preface to the 1891 edition: All art is at once surface and symbol. Those who go beneath the surface do so at their peril. This is one of the key ideas of late 19th century English Aestheticism of the sort that Walter Pater prescribes in The Renaissance: Studies in Art and Poetry (A book Wilde described as the golden book) and that is represented in Huysmans's Au Rebours (The novel that most likely provided the inspiration for Dorian's yellow book"
 comment8 = "Wilde is definitely interested in this idea, but it goes back. The man who stands outside of traditional morals is, obviously, important to Nietzsche, but it was also a key problem for the Romantics: see Wordsworth's The Borderers, Blake's revolutionary texts, and especially Shelley's dramas and radical stuff. Wilde was obviously very influenced by the Romantics (at least one of Lord Henry's speeches start as quotations from Keats's letters and follows it up with a Wildean epigram; somebody in the novel mentions Wordsworth's The Idiot Boy) and in Shelley in particular. So this sentiment could have popped up in any of those places, particularly in something like Shelley's The Cenci or Prometheus Unbound (incidentally, I think Wilde was in the audience for the first stage performance of The Cenci in...like...1886 or thereabouts)."
 

@@ -1,12 +1,9 @@
 class Story < ActiveRecord::Base
   attr_accessor :file, :remote_file_url
-
   has_many :paragraphs
   has_many :sentences, through: :paragraphs
   has_many :comments,  -> { order(created_at: :desc) }, through: :sentences
   validates :title, presence: true
-  validates :course_id, presence: true
-  belongs_to :course
 
   def self.from_body(body)
     instance = self.new
@@ -19,6 +16,5 @@ class Story < ActiveRecord::Base
     end
     instance
   end
-
 
 end
