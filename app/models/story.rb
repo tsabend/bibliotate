@@ -1,6 +1,5 @@
 class Story < ActiveRecord::Base
   attr_accessor :file, :remote_file_url
-  mount_uploader :file, StoryfileUploader
 
   has_many :paragraphs
   has_many :sentences, through: :paragraphs

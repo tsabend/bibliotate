@@ -12,21 +12,9 @@ class StoriesController < ApplicationController
 
 
   def create
-    file = params[:story][:text_file]
-    if file
-      if file.content_type == "application/pdf"
-        body = PDF::Reader.open(file.tempfile) do |reader|
-          reader.pages.map {|page| page.text }.join(' ')
-        end
-      else
-        body = file.read
-      end
-    else
-      body = params[:story_body]
-    end
+    body = params[:story_body]
     @story = Story.from_body(body)
     @story.assign_attributes(story_params)
-
     if @story.save
       redirect_to @story
     else
@@ -58,7 +46,7 @@ class StoriesController < ApplicationController
   private
 
   def story_params
-    params.require(:story).permit([:title, :author, :course_id, :file, :remote_file_url])
+    params.require(:story).permit([:title, :author, :course_id])
   end
 
 end

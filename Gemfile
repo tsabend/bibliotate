@@ -43,10 +43,6 @@ gem 'spring',        group: :development
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-# File uploading
-gem 'carrierwave'
-gem 'pdf-reader'
-
 gem 'faker', '~> 1.4.3'
 gem 'pry'
 group :test do
