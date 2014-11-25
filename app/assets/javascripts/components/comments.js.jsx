@@ -9,7 +9,7 @@ var Comment = React.createClass({
       <div className="comment panel panel-default">
         <div className="panel-heading">
           <h3 className="panel-title">
-            {this.props.author}
+            {this.props.userId}
           </h3>
         </div>
         <div className="panel-body">
@@ -76,11 +76,8 @@ var CommentList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function(comment, index) {
       return (
-        // `key` is a React-specific concept and is not mandatory for the
-        // purpose of this tutorial. if you're curious, see more here:
-        // http://facebook.github.io/react/docs/multiple-components.html#dynamic-children
-        <Comment author={comment.author} key={index}>
-          {comment.text}
+        <Comment userId={comment.user_id} key={index}>
+          {comment.body}
         </Comment>
       );
     });
@@ -95,14 +92,14 @@ var CommentList = React.createClass({
 var CommentForm = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
-    var author = this.refs.author.getDOMNode().value.trim();
-    var text = this.refs.text.getDOMNode().value.trim();
-    if (!text || !author) {
+    var userId = this.refs.userId.getDOMNode().value.trim();
+    var body = this.refs.body.getDOMNode().value.trim();
+    if (!body || !userId) {
       return;
     }
-    this.props.onCommentSubmit({author: author, text: text});
-    this.refs.author.getDOMNode().value = '';
-    this.refs.text.getDOMNode().value = '';
+    this.props.onCommentSubmit({userId: userId, body: body});
+    this.refs.userId.getDOMNode().value = '';
+    this.refs.body.getDOMNode().value = '';
     return;
   },
   render: function() {
@@ -112,8 +109,8 @@ var CommentForm = React.createClass({
         <div className="panel-body">
           <form className="commentForm " onSubmit={this.handleSubmit}>
             <div className="form-group">
-              <label className="control-label" forName="authorInput">Author</label>
-              <input type="text" id="authorInput" className="form-control" placeholder="Your name" ref="author" />
+              <label className="control-label" forName="userIdInput">userId</label>
+              <input type="text" id="userIdInput" className="form-control" placeholder="Your name" ref="author" />
             </div>
             <div className="form-group">
               <label className="control-label" forName="commentInput">Comment</label>
@@ -129,7 +126,7 @@ var CommentForm = React.createClass({
 
 var show = function(sentence_url) {
   React.renderComponent(
-    <CommentBox url={sentence_url} />,
+    <CommentBox url={sentence_url} pollInterval={2000} />,
     document.getElementById('comments')
   );
 };
