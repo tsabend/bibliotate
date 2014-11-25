@@ -588,7 +588,7 @@ courses = []
 notifications = []
 
 # hand written example records
-usertest1 = {
+user1 = {
       :name => "Pablo",
       :email => "pablo@rox.always",
       :photo => "https://scontent-a-sjc.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/10672243_10203261369791947_986035253996343461_n.jpg?oh=8ff2c42f0671e7eeb1a0a7abcf861120&oe=54AC85C5",
@@ -650,30 +650,20 @@ course5 = {
       :name =>  "Blackhawks",
 }
 
-notification1 = {
-      :user_id => 2,
-      :noteable_type => "Comment",
-      :noteable_id => 3,
-      :status =>  1,
-}
-
-
 #push individual/outlier example
-users.push usertest1
+users.push user1
 # enrollments.push enrolltest1
 stories.push story1
 stories.push story2
 stories.push story3
 stories.push story4
 stories.push story5
-comments.push comment0
+
 courses.push course1
 courses.push course2
 courses.push course3
 courses.push course4
 courses.push course5
-notifications.push notification1
-
 
 #Generated data
 
@@ -691,7 +681,7 @@ usertotal = 25
     :role => "teacher",
   })
 end
-6.upto(25).each do |id|
+(6..25).each do |id|
   users.push({
     :name => Faker::Name.name,
     :email => Faker::Internet.email,
@@ -701,7 +691,7 @@ end
 end
 
 #enrollments
-1.upto(usertotal).each do |id|
+(1..usertotal).each do |id|
   enrollments.push({
     :user_id => [*5..25].sample,
     :course_id => [*1..5].sample,
@@ -747,100 +737,13 @@ Here is something I found arguing that Hemingway was oversimplifying the situati
 Lastly, and I don't mean to be preachy, but regardless of your political views, you are probably not an anarchist, especially if you are pursuing higher education. Unless you are attending The University of Mogadishu and majoring in preventing the development of a central government, you are probably a capitalist with alternative political views. In any event, I hope this helped.
 eos
 
-@comment_sentences = []
-parser = TactfulTokenizer::Model.new
-def sentence_pusher(array_of_sentences)
-  array_of_sentences.each do |sentence|
-    @comment_sentences.push sentence
-  end
-  @comment_sentences
-end
- sentence_pusher(parser.tokenize_text(comment1))
- sentence_pusher(parser.tokenize_text(comment2))
- sentence_pusher(parser.tokenize_text(comment3))
- sentence_pusher(parser.tokenize_text(comment4))
- sentence_pusher(parser.tokenize_text(comment5))
- sentence_pusher(parser.tokenize_text(comment6))
-#comments for the tell tale heart
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*10..150].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
-#comments for the 2nd story
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*160..342].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
-#comments for the 3rd story
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*345..382].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
-#comments for the 4th story
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*385..509].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
-#comments for the 5th story
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*515..605].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
-#comments for the next story
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*615..770].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
-#comments for the next story
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*775..890].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
-#next
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*895..1010].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
+comment_bodies = [comment1, comment2, comment3, comment4, comment5, comment6]
 
-#comments for the next story
-@comment_sentences.each do |sentence|
+200.times do
     comments.push({
-    :sentence_id => [*1020..1115].sample,
+    :sentence_id => [*10..1150].sample,
     :user_id => [*6..25].sample,
-    :body => sentence,
-  })
-end
-
-#comments for the next story
-@comment_sentences.each do |sentence|
-    comments.push({
-    :sentence_id => [*1120..1210].sample,
-    :user_id => [*6..25].sample,
-    :body => sentence,
+    :body => comment_bodies.sample,
   })
 end
 
