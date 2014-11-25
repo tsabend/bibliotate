@@ -8,4 +8,7 @@ class StoriesController < ApplicationController
 		@story = Story.find(params[:id])
 	end
 
+	def comments_for_sentence
+		render json: Sentence.find(params[:id]).comments
+	end
 end
