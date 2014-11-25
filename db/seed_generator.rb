@@ -595,11 +595,6 @@ usertest1 = {
       :role => "teacher",
 }
 
-# enrolltest1 = {
-#     :user_id => 1,
-#     :course_id => 1,
-# }
-
 story1 = {
     :course_id => 1,
     :title => "The Tell-Tale Heart",
@@ -632,11 +627,6 @@ story5 = {
     :body => interlopers
 }
 
-comment0 = {
-      :sentence_id =>  1,
-      :user_id => 1,
-      :body => "this sentence stinks of stinky shoes",
-}
 #courses all hand made
 course1 = {
       :user_id => 1,
@@ -732,12 +722,12 @@ OP, consider that the briefest overview I can give you of the biggest (mostly) A
 eos
 
 comment2 = <<-eos
- I feel like consuming literary analysis is only possible when the audience all agrees to hold certain foundational principles regarding linguistics, aesthetics, politics, etc., and what keeps me off /r/books is the absolute hostility towards those principles that the average person seems to have. Even the most evacuated pure New Criticism requires that the reader believes texts are meaningful, and how often do we get the "blue curtains are blue curtains" rant on reddit.
-  eos
+I feel like consuming literary analysis is only possible when the audience all agrees to hold certain foundational principles regarding linguistics, aesthetics, politics, etc., and what keeps me off /r/books is the absolute hostility towards those principles that the average person seems to have. Even the most evacuated pure New Criticism requires that the reader believes texts are meaningful, and how often do we get the "blue curtains are blue curtains" rant on reddit.
+eos
 
-  comment3 = <<-eos
-  Since literary theory tends to have a fairly open definition of what constitutes a 'text', movies, television shows, and other types of media in general could bring in a bigger audience. While some may dismiss anything nearing cultural studies, multimodal texts such as films can have just as much depth and possibility of interpretation as literature does. People have already done this with shows such as Breaking Bad, I'm certain an online journal covering media like that would be popular.
-  eos
+comment3 = <<-eos
+Since literary theory tends to have a fairly open definition of what constitutes a 'text', movies, television shows, and other types of media in general could bring in a bigger audience. While some may dismiss anything nearing cultural studies, multimodal texts such as films can have just as much depth and possibility of interpretation as literature does. People have already done this with shows such as Breaking Bad, I'm certain an online journal covering media like that would be popular.
+eos
 
 comment4 = <<-eos
 That is an interesting question. I think its safe to say that what Lord Henry finds alluring in Dorian is physical, or what we would consider to be "outward," appearance. Harry reminds us early in the book that Dorian has the sort of beauty that need not be explained.
@@ -749,7 +739,7 @@ Wilde is definitely interested in this idea, but it goes back. The man who stand
 eos
 
 comment6 = <<-eos
- So I can't be overly helpful, because I am not aware of any relationship between Hemingway and any actual anarchists, and the only time I can think in his writing that he mentions them are in For Whom The Bell Tolls. And this probably isn't what you want to hear, but he had a pretty low opinion of them.
+So I can't be overly helpful, because I am not aware of any relationship between Hemingway and any actual anarchists, and the only time I can think in his writing that he mentions them are in For Whom The Bell Tolls. And this probably isn't what you want to hear, but he had a pretty low opinion of them.
 It would have been better for the town if they had thrown over twenty or thirty of the drunkards, especially those of the red-and-black scarves, and if we ever have another revolution I believe they should be destroyed at the start. But then we did not know this.
 We know he is referencing anarchists specifically because red and black were the colors of the CNT-AIT, an anarchist group that was organized strongly in Barcelona and Catalonia, but probably less so elsewhere.
 Basically his protagonist characters make the argument that the anarchists were a hindrance to the cause of fighting off fascism, which should serve as no surprise, as the ideas behind anarchism don't really lend themselves to well regimented combat units. In fact, the CNT did not allow anyone who was military, police or an employer be a member, so they probably had a huge handicap when it came down to fighting.
@@ -854,13 +844,6 @@ end
   })
 end
 
-1.upto(20).each do |id|
-  notifications.push({
-    :user_id => [*1..5].sample,
-    :noteable_id => [*1..25].sample,
-    :noteable_type => ["comment","enrollment"].sample,
-  })
-end
 
 tables = {
     :users => users,
@@ -868,11 +851,9 @@ tables = {
     :stories => stories,
     :comments => comments,
     :courses => courses,
-    :notifications => notifications
 }
 
 yaml = YAML.dump tables
 yaml = "# DON'T EDIT THIS, EDIT seed_generator.rb\n" + yaml
-# puts yaml
 path = File.join(File.dirname(__FILE__), 'seed_data.yaml')
 File.write path, yaml

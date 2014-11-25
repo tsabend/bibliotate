@@ -39,12 +39,4 @@ RSpec.describe Story, :type => :model do
     end
   end
 
-  describe "validations" do
-    it 'requires course' do
-      should validate_presence_of(:course_id)
-    end
-    it 'requires course' do
-      should validate_presence_of(:title)
-    end
-  end
 end
