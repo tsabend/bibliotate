@@ -18,3 +18,14 @@
 .commented {
 	border-bottom: 1px dashed black;
 }
+
+#popup {
+  border: 1px solid rgba(0,0,0,0.15);
+  background-color: white;
+  overflow-y: scroll;
+  position: fixed;
+  top: 0%;
+  left: 80%;
+  width: 20%;
+  height: 100%;
+}
