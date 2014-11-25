@@ -1,11 +1,9 @@
 class UsersController < ApplicationController
 
   def index
-    @notifications = Notification.where(user_id:current_user)
   end
 
   def show
-    @notifications = Notification.where(user_id:current_user)
     @user = User.find(params[:id])
   end
 
@@ -17,8 +15,8 @@ class UsersController < ApplicationController
 
 # Oauth/Signup routes
 
-  CLIENT_ID = "336184733554-fpkrdqv8iis7hfifcoq6rq2b4ln3kn4c.apps.googleusercontent.com"
-  CLIENT_SECRET = "_MYiDzimywN_PUPp-2VyWuXM"
+  CLIENT_ID = ENV[CLIENT_ID]
+  CLIENT_SECRET = ENV[CLIENT_SECRET]
 
   def client
     client ||= OAuth2::Client.new(CLIENT_ID, CLIENT_SECRET, {
