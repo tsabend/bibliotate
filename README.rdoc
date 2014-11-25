@@ -5,3 +5,12 @@ Our goal for this project is to create a space where students can discuss litera
 We plan to use Rails, Bootstrap, and Google OAuth.
 
 (https://bibliotate.herokuapp.com/)
+
+
+== Working On ==
+
+Currently I am working on overhauling this project. Goals include:
+
+- Using React to handle the comments and feeds
+- Redesigning the navigation bar and the flow of the site
+- Restyling the entire site
