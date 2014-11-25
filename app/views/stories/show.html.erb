@@ -1,3 +1,15 @@
-<div>Hello World</div>
+<div class="titlebox">
+	<h1>
+		<%= @story.title %>
+	</h1>
+	<h2>
+		<%= @story.author %>
+	</h2>
 
-<%= @story.title %>
+</div>
+
+<article>
+	<% @story.paragraphs.each do |paragraph| %>
+	  <p class="paragraph"><%= render partial: 'paragraph', locals: {paragraph: paragraph} %></p>
+	<% end %>
+</article>

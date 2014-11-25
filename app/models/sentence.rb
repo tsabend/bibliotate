@@ -7,4 +7,8 @@ class Sentence < ActiveRecord::Base
 	  self.number = id - paragraph.story.sentences.first.id + 1
 	  self.save
 	end
+
+	def commented?
+		comments.size > 0
+	end
 end
