@@ -747,7 +747,6 @@ comment_bodies = [comment1, comment2, comment3, comment4, comment5, comment6]
   })
 end
 
-
 tables = {
     :users => users,
     :enrollments => enrollments,

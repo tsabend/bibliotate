@@ -1,7 +1,5 @@
 class StoriesController < ApplicationController
-  include StoryHelper
-  def index
-  end
+  include TxtReaderConcern
 
   def show
     @story = Story.find(params[:id])
@@ -12,17 +10,29 @@ class StoriesController < ApplicationController
     @story = Story.new
   end
 
+
   def create
-    if params[:story][:author] == ""
-      params[:story][:author] = "Unknown"
+    file = params[:story][:text_file]
+    if file
+      if file.content_type == "application/pdf"
+        body = PDF::Reader.open(file.tempfile) do |reader|
+          reader.pages.map {|page| page.text }.join(' ')
+        end
+      else
+        body = file.read
+      end
+    else
+      body = params[:story_body]
     end
-    if params[:course_id] == "" || params[:story][:title] == ""
-      flash[:messages] = "Please be sure your story has a title and a course"
+    @story = Story.from_body(body)
+    @story.assign_attributes(story_params)
+
+    if @story.save
+      redirect_to @story
+    else
+      flash[:messages] = @story.errors.messages.first
       redirect_to new_story_path
-#      flash[:messages] = @story.errors.full_messages <<-- uses validation messages from activerecord
     end
-    @story = Story.make(params[:story][:title],params[:story][:author],params[:story_body],params[:course_id])
-    redirect_to @story
   end
 
   def destroy
@@ -45,5 +55,10 @@ class StoriesController < ApplicationController
     render partial: 'active_users'
   end
 
-end
+  private
 
+  def story_params
+    params.require(:story).permit([:title, :author, :course_id, :file, :remote_file_url])
+  end
+
+end
