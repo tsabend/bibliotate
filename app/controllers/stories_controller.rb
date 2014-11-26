@@ -9,11 +9,17 @@ class StoriesController < ApplicationController
 	end
 
 	def comments_for_sentence
-		# render json: Comment.where(sentence_id: params[:id])
 		render json: Comment.where(sentence_id: params[:id]).as_json(include: [:user])
 	end
 
-	def users_for_comments
-		render json: Comment.where(sentence_id: params[:id]).pluck(:user_id).map {|id| User.find(id)}
+	def create_comment_for_sentence
+		comment = Comment.new(
+			body: params[:comment][:body],
+			user_id: 1,
+			sentence_id: params[:id]
+		)
+		puts comment
+		comment.save!
+		render json: comment
 	end
 end
