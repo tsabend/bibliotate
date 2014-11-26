@@ -1,28 +1,17 @@
-== README
+Bibliotate
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Our goal for this project is to create a space where students can discuss literature in an interactive way.
 
-Things you may want to cover:
+We plan to use Rails, Bootstrap, and Google OAuth.
 
-* Ruby version
+(bibliotate.herokuapp.com/)
 
-* System dependencies
+Working On ==
 
-* Configuration
+Currently I am working on overhauling this project. Goals include:
 
-* Database creation
+Using React to handle the comments and feeds
 
-* Database initialization
+Redesigning the navigation bar and the flow of the site
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Restyling the entire site
