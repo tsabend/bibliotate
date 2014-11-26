@@ -25,7 +25,17 @@
   overflow-y: scroll;
   position: fixed;
   top: 0%;
-  left: 80%;
-  width: 20%;
+  left: 60%;
+  width: 40%;
   height: 100%;
+}
+
+.comment img {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+}
+
+.comment h1 {
+	font-size: 12px;
 }
