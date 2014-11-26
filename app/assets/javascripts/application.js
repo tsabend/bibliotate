@@ -10,7 +10,11 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require turbolinks
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require react
+//= require react_ujs
+//= require showdown
+//= require_tree ./components
 //= require_tree .

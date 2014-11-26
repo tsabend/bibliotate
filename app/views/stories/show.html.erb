@@ -1,17 +1,15 @@
+<div class="titlebox">
+	<h1>
+		<%= @story.title %>
+	</h1>
+	<h2>
+		<%= @story.author %>
+	</h2>
 
-<h1 id="story_title"><%= @story.title %></h1>
-<section id="story_info">
-	<span id="author"><%= @story.author %></span>
-	<span id="divider">|</span>
-	<span id="date">1845</span>
-</section>
+</div>
 
-    <% @story.paragraphs.each do |paragraph| %>
-      <p class="paragraph"><%= render partial: 'paragraph', locals: {paragraph: paragraph} %></p>
-    <% end %>
-
-<%= render partial: 'comments_feed', locals: {story: @story} %>
-
-<%= render partial: 'most_commented', locals: {story: @story} %>
-
-<%= render partial: 'active_users', locals: {story: @story} %>
+<article>
+	<% @story.paragraphs.each do |paragraph| %>
+	  <p class="paragraph"><%= render partial: 'paragraph', locals: {paragraph: paragraph} %></p>
+	<% end %>
+</article>

@@ -1,17 +1,14 @@
 class Sentence < ActiveRecord::Base
-  has_many :comments
   belongs_to :paragraph
+  has_many :comments
+  after_create :mark_sentence_number
 
-  def commented?
-    comment_count > 0
-  end
+  def mark_sentence_number
+	  self.number = id - paragraph.story.sentences.first.id + 1
+	  self.save
+	end
 
-  def comment_count 
-  	self.comments.size
-  end
-
-  def story_sentence
-    self.id - self.paragraph.story.sentences.first.id + 1
-  end
-
+	def commented?
+		comments.size > 0
+	end
 end

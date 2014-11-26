@@ -11,10 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141102181815) do
-
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
+ActiveRecord::Schema.define(version: 20141125213013) do
 
   create_table "comments", force: true do |t|
     t.integer  "sentence_id"
@@ -24,41 +21,8 @@ ActiveRecord::Schema.define(version: 20141102181815) do
     t.datetime "updated_at"
   end
 
-  create_table "courses", force: true do |t|
-    t.integer  "user_id"
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "enrollments", force: true do |t|
-    t.integer  "user_id"
-    t.integer  "course_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "hashtags", force: true do |t|
-    t.string   "tag"
-    t.integer  "user_id"
-    t.integer  "comment_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "hashtags", ["comment_id"], name: "index_hashtags_on_comment_id", using: :btree
-  add_index "hashtags", ["user_id"], name: "index_hashtags_on_user_id", using: :btree
-
-  create_table "notifications", force: true do |t|
-    t.boolean  "status",        default: true
-    t.integer  "noteable_id"
-    t.string   "noteable_type"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "notifications", ["user_id"], name: "index_notifications_on_user_id", using: :btree
+  add_index "comments", ["sentence_id"], name: "index_comments_on_sentence_id"
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id"
 
   create_table "paragraphs", force: true do |t|
     t.integer  "story_id"
@@ -66,15 +30,19 @@ ActiveRecord::Schema.define(version: 20141102181815) do
     t.datetime "updated_at"
   end
 
+  add_index "paragraphs", ["story_id"], name: "index_paragraphs_on_story_id"
+
   create_table "sentences", force: true do |t|
     t.integer  "paragraph_id"
     t.text     "body"
+    t.integer  "number"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "sentences", ["paragraph_id"], name: "index_sentences_on_paragraph_id"
+
   create_table "stories", force: true do |t|
-    t.integer  "course_id"
     t.string   "title"
     t.string   "author"
     t.datetime "created_at"
@@ -85,11 +53,11 @@ ActiveRecord::Schema.define(version: 20141102181815) do
     t.string   "name"
     t.string   "email"
     t.string   "photo"
-    t.string   "role",         default: "student"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.string   "role"
     t.string   "oauthtoken"
     t.string   "oauthrefresh"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end
