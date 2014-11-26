@@ -6,8 +6,8 @@ var User = React.createClass({
   render: function() {
     return (
           <div>
-            <h1>{this.props.name}</h1>
             <img src={this.props.photo}></img>
+            <h1>{this.props.name}</h1>
           </div>
     );
   }
@@ -109,29 +109,22 @@ var CommentList = React.createClass({
 var CommentForm = React.createClass({
   handleSubmit: function(e) {
     e.preventDefault();
-    var userId = this.refs.userId.getDOMNode().value.trim();
     var body = this.refs.body.getDOMNode().value.trim();
-    if (!body || !userId) {
+    if (!body) {
       return;
     }
-    this.props.onCommentSubmit({userId: userId, body: body});
-    this.refs.userId.getDOMNode().value = '';
+    this.props.onCommentSubmit({body: body, user: {name: "x", photo: "http://www.google.com"}});
     this.refs.body.getDOMNode().value = '';
     return;
   },
   render: function() {
     return (
       <div className="panel panel-default">
-        <div className="panel-heading">Add a Note</div>
+        <div className="panel-heading">Add your thoughts</div>
         <div className="panel-body">
           <form className="commentForm " onSubmit={this.handleSubmit}>
             <div className="form-group">
-              <label className="control-label" forName="userIdInput">userId</label>
-              <input type="text" id="userIdInput" className="form-control" placeholder="Your name" ref="author" />
-            </div>
-            <div className="form-group">
-              <label className="control-label" forName="commentInput">Comment</label>
-              <textarea className="form-control" id="commentInput" rows="3" placeholder="Say something..." ref="text" />
+              <textarea className="form-control" id="commentInput" rows="3" placeholder="Say something..." ref="body" />
             </div>
             <input type="submit" className="btn btn-primary" value="Post" />
           </form>
