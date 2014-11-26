@@ -10,7 +10,7 @@ $(document).on("page:change", function() {
     show(comment_url)
     
     var users_url = "/users-for-comments/" + sentence_id
-    showUsers(users_url)
+    // showUsers(users_url)
     popupClose()
   })
 })

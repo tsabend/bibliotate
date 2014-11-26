@@ -9,7 +9,8 @@ class StoriesController < ApplicationController
 	end
 
 	def comments_for_sentence
-		render json: Comment.where(sentence_id: params[:id])
+		# render json: Comment.where(sentence_id: params[:id])
+		render json: Comment.where(sentence_id: params[:id]).as_json(include: [:user])
 	end
 
 	def users_for_comments

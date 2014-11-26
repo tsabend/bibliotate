@@ -2,6 +2,17 @@
 
 var converter = new Showdown.converter();
 
+var User = React.createClass({
+  render: function() {
+    return (
+          <div>
+            <h1>{this.props.name}</h1>
+            <img src={this.props.photo}></img>
+          </div>
+    );
+  }
+});
+
 var Comment = React.createClass({
   render: function() {
     var rawMarkup = converter.makeHtml(this.props.children.toString());
@@ -9,7 +20,7 @@ var Comment = React.createClass({
       <div className="comment panel panel-default">
         <div className="panel-heading">
           <h3 className="panel-title">
-            {this.props.userId}
+            
           </h3>
         </div>
         <div className="panel-body">
@@ -76,9 +87,15 @@ var CommentList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function(comment, index) {
       return (
-        <Comment userId={comment.user_id} key={index}>
-          {comment.body}
-        </Comment>
+        <div className="comment">
+          <User name={comment.user.name} photo={comment.user.photo}>
+          </User>
+        <div>
+          <Comment key={index}>
+            {comment.body}
+          </Comment>
+        </div>
+        </div>
       );
     });
     return (

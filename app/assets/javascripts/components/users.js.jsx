@@ -1,13 +1,4 @@
-var User = React.createClass({
-  render: function() {
-    return (
-          <div>
-            <h1>{this.props.name}</h1>
-            <img src={this.props.photo}></img>
-          </div>
-    );
-  }
-});
+
 
 var UserBox = React.createClass({
   loadUsersFromServer: function() {
