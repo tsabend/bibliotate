@@ -64,7 +64,7 @@ var CommentBox = React.createClass({
   render: function() {
     return (
       <div className="commentBox">
-        <h1>Comments</h1>
+        <h1>Comments On This Sentence</h1>
         <CommentList data={this.state.data} />
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
@@ -130,3 +130,8 @@ var show = function(sentence_url) {
     document.getElementById('popup')
   );
 };
+
+// This isn't cleaning up the ajax requests. Why not?
+var hide = function() {
+  React.unmountComponentAtNode(document.getElementById('popup'))
+}

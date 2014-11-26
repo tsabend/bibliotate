@@ -9,6 +9,10 @@ class StoriesController < ApplicationController
 	end
 
 	def comments_for_sentence
-		render json: Sentence.find(params[:id]).comments
+		render json: Comment.where(sentence_id: params[:id])
+	end
+
+	def users_for_comments
+		render json: Comment.where(sentence_id: params[:id]).pluck(:user_id).map {|id| User.find(id)}
 	end
 end
