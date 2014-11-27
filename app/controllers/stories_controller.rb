@@ -22,4 +22,12 @@ class StoriesController < ApplicationController
 		comment.save!
 		render json: comment
 	end
+
+	def new_comments_for_story
+		render json: Story.find(params[:id]).comments.limit(5).as_json(include: [:user])
+	end
+
+	def most_commented_sentences_for_story
+		render json: Story.find(params[:id]).comments.limit(5).as_json(include: [:user])
+	end
 end
