@@ -16,16 +16,9 @@ var User = React.createClass({
 var Comment = React.createClass({
   render: function() {
     var rawMarkup = converter.makeHtml(this.props.children.toString());
-    return (
-      <div className="comment panel panel-default">
-        <div className="panel-heading">
-          <h3 className="panel-title">
-            
-          </h3>
-        </div>
-        <div className="panel-body">
-          <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
-        </div>
+    return (            
+      <div className="panel-body">
+        <span dangerouslySetInnerHTML={{__html: rawMarkup}} />
       </div>
     );
   }
@@ -87,7 +80,7 @@ var CommentList = React.createClass({
   render: function() {
     var commentNodes = this.props.data.map(function(comment, index) {
       return (
-        <div className="comment">
+        <li className="comment">
           <User name={comment.user.name} photo={comment.user.photo}>
           </User>
         <div>
@@ -95,12 +88,14 @@ var CommentList = React.createClass({
             {comment.body}
           </Comment>
         </div>
-        </div>
+        </li>
       );
     });
     return (
       <div className="commentList">
-        {commentNodes}
+        <ul>
+          {commentNodes}
+        </ul>
       </div>
     );
   }
@@ -134,9 +129,48 @@ var CommentForm = React.createClass({
   }
 });
 
+
+
+var NewComments = React.createClass({
+  loadCommentsFromServer: function() {
+    $.ajax({
+      url: this.props.url,
+      dataType: 'json',
+      success: function(data) {
+        this.setState({data: data});
+      }.bind(this),
+      error: function(xhr, status, err) {
+        console.error(this.props.url, status, err.toString());
+      }.bind(this)
+    });
+  },
+  getInitialState: function() {
+    return {data: []};
+  },
+  componentDidMount: function() {
+    this.loadCommentsFromServer();
+    setInterval(this.loadCommentsFromServer, this.props.pollInterval);
+  },
+  render: function() {
+    return (
+      <div className="NewComments">
+        <h1>New Comments</h1>
+        <CommentList data={this.state.data} />
+      </div>
+    );
+  }
+});
+
+var showNewComments = function(story_url) {
+  React.render(
+    <NewComments url={story_url} pollInterval={1000} />,
+    document.getElementById('feed')
+  );
+}
+
 var show = function(sentence_url) {
   React.render(
-    <CommentBox url={sentence_url} pollInterval={2000} />,
+    <CommentBox url={sentence_url} pollInterval={1000} />,
     document.getElementById('popup')
   );
 };
