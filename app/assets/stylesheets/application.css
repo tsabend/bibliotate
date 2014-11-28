@@ -25,7 +25,41 @@
   overflow-y: scroll;
   position: fixed;
   top: 0%;
-  left: 80%;
-  width: 20%;
+  left: 60%;
+  width: 40%;
   height: 100%;
+}
+
+#feed {
+border: 1px solid rgba(0,0,0,0.15);
+  background-color: white;
+  top: 0%;
+  width: 33.33%;
+	height: 300px;
+  overflow-y: scroll;
+}
+
+.comment {
+	display: -webkit-box;
+}
+
+.panel-body {
+	display: inline-block;
+}
+
+.comment img {
+	height: 50px;
+	width: 50px;
+	border-radius: 50px;
+	margin-right: 10px;
+}
+
+.comment h1 {
+	font-size: 12px;
+}
+
+nav li {
+	list-style: none;
+	display: inline-block;
+	padding-left: 30px;
 }
