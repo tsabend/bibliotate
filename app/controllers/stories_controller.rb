@@ -15,7 +15,7 @@ class StoriesController < ApplicationController
 	def create_comment_for_sentence
 		comment = Comment.new(
 			body: params[:comment][:body],
-			user_id: 1,
+			user_id: [1, 2, 3, 4, 5].sample,
 			sentence_id: params[:id]
 		)
 		puts comment
@@ -28,6 +28,6 @@ class StoriesController < ApplicationController
 	end
 
 	def most_commented_sentences_for_story
-		render json: Story.find(params[:id]).comments.limit(5).as_json(include: [:user])
+		render json: Comment.where("sentence_id > ? and sentence_id <= ?", Story.find(2).sentences.first.id,  Story.find(2).sentences.last.id).group(:sentence_id).count(:sentence_id).sort_by {|a, b, | b}.reverse.slice(0..4)
 	end
 end
