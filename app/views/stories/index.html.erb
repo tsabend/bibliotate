@@ -2,6 +2,6 @@
 
 <% @stories.each do |story| %>
 	<li>
-		<%= story.title %>
+		<a href="/stories/<%= story.id %>"><%= story.title %></a>
 	</li>
 <% end %>
